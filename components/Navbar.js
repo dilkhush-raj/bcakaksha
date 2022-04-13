@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 function Navbar() {
   const showSidebar = () =>
     document.getElementById("sidebar").classNameList.toggle("active");
@@ -36,7 +36,7 @@ function Navbar() {
       </header>
       <div className="header">
         <div to="/" className="logo">
-          <img src="/logos/iBC.png" alt="" />
+          <Image src="/logos/iBC.png" alt="" />
         </div>
 
         <div className="navigation-links">
