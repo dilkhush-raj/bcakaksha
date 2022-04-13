@@ -36,7 +36,7 @@ function Navbar() {
       </header>
       <div className="header">
         <div to="/" className="logo">
-          <Image src="/logos/iBC.png" alt="" />
+          {/* <Image src="/logos/iBC.png" alt="" /> */}
         </div>
 
         <div className="navigation-links">
