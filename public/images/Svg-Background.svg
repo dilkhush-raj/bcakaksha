@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1800px"
+	 height="1200px" viewBox="0 0 1800 1200" enable-background="new 0 0 1800 1200" xml:space="preserve">
+<g id="Background">
+	<radialGradient id="SVGID_1_" cx="931.9186" cy="-677.8467" r="2665.1953" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#1C75BC"/>
+		<stop  offset="1" style="stop-color:#262262"/>
+	</radialGradient>
+	<rect x="-38.91" y="-6.767" fill="url(#SVGID_1_)" width="1875.46" height="1213.533"/>
+</g>
+<g id="Dotted">
+	
+		<ellipse opacity=".3" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="25" stroke-dasharray="25,25" cx="871.256" cy="0" rx="625.74" ry="144.105">
+			<animate attributeName="opacity" values=".1;.4;.1" begin="0s" dur="4s" repeatCount="indefinite" />
+		</ellipse>
+	
+		<ellipse opacity=".3" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="25" stroke-dasharray="25,25" cx="1765.553" cy="589.318" rx="144.105" ry="687.422">
+			<animate attributeName="opacity" values=".1;.4;.1" begin="0s" dur="4.5s" repeatCount="indefinite" />
+		</ellipse>
+	
+		<ellipse opacity=".3" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="25" stroke-dasharray="25,25" cx="0" cy="613.32" rx="144.105" ry="687.422">
+			<animate attributeName="opacity" values=".1;.4;.1" begin="0s" dur="5s" repeatCount="indefinite" />
+		</ellipse>
+	
+		<ellipse opacity=".3" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="25" stroke-dasharray="25,25" cx="899.821" cy="1194.316" rx="625.74" ry="144.105">
+			<animate attributeName="opacity" values=".1;.4;.1" begin="0s" dur="5.5s" repeatCount="indefinite" />
+		</ellipse>
+</g>
+<g id="Corner">
+	<g>
+		
+		<g>
+			<linearGradient  id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-420.9741" y1="-210.4911" x2="389.107" y2="398.5698">
+				<stop  offset="0" style="stop-color:#FBB040"/>
+				<stop  offset="1" style="stop-color:#BE1E2D"/>
+			</linearGradient>
+			<path  fill="url(#SVGID_2_)" d="M-334.783,415.727c0,0,496.265,106.633,486.546-84.197
+				c-9.428-185.131,70.286-139.534,205.626-193.341S485.067-46.623,458.25-108.578c-26.818-61.955-670.733,0-670.733,0
+				L-334.783,415.727z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1039.0228" y1="1194.3159" x2="1985.3783" y2="1194.3159">
+				<stop  offset="0" style="stop-color:#FBB040"/>
+				<stop  offset="1" style="stop-color:#BE1E2D"/>
+			</linearGradient>
+			<path fill="url(#SVGID_3_)" d="M1985.378,1154.873c0,0-76.896-618.259-469.179-153.908
+				c-119.627,141.605-173.295,54.479-272.298,74.273c-142.817,28.554-199.459,103.311-204.842,170.606
+				c-5.383,67.295,592.337,314.675,592.337,314.675L1985.378,1154.873z"/>
+		</g>
+	</g>
+	<g>
+		
+			
+		<g>
+			<radialGradient id="SVGID_4_" cx="197.7489" cy="692.8284" r="501.831" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#662D91"/>
+				<stop  offset="1" style="stop-color:#262262"/>
+			</radialGradient>
+			<path fill="url(#SVGID_4_)" d="M-207.292,895.642c0,0,257.112-162.494,390.039,106.217
+				c100.908,203.986,219.022,125.011,315.031,109.01c96.01-16.001,230.953,204.769,230.953,204.769l-837.013-4.748V911.85"/>
+		</g>
+	</g>
+	<g>
+		
+		<g>
+			<radialGradient id="SVGID_5_" cx="1583.8875" cy="353.7945" r="504.1933" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#662D91"/>
+				<stop  offset="1" style="stop-color:#262262"/>
+			</radialGradient>
+			<path fill="url(#SVGID_5_)" d="M2131.486,396.738c0,0-257.112,162.494-390.039-106.217
+				c-100.908-203.986-167.799-15.052-315.031-109.01c-82.05-52.361-230.953-204.769-230.953-204.769l837.013,4.748l87.007,422.077"
+				/>
+		</g>
+	</g>
+</g>
+
+
+<g id="MIddle_Items">
+	<circle opacity="0.2" fill="#FFFFFF" cx="377.767" cy="404.8" r="15">
+		<animateMotion dur="13s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.3;.0" begin="0s" dur="4s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.2" fill="#FFFFFF" cx="163.069" cy="668.826" r="30">
+		<animateMotion dur="11s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.4;0" begin="0s" dur="5s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.3" fill="#FFFFFF" cx="728.732" cy="485.808" r="25">
+		<animateMotion dur="12s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.1;0" begin="0s" dur="5.5s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.3" fill="#FFFFFF" cx="529.602" cy="791.446" r="21">
+		<animateMotion dur="13s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.2;0" begin="0s" dur="6s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.2" fill="#FFFFFF" cx="274.08" cy="1065.974" r="31">
+		<animateMotion dur="14s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.3;0" begin="0s" dur="3s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.1" fill="#FFFFFF" cx="1346.864" cy="791.446" r="42">
+		<animateMotion dur="15s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.4;0" begin="0s" dur="7s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.4" fill="#FFFFFF" cx="1621.448" cy="644.824" r="15">
+		<animateMotion dur="16s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.3;0" begin="0s" dur="5.5s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.1" fill="#FFFFFF" cx="1459.693" cy="404.8" r="23">
+		<animateMotion dur="17s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.2;0" begin="0s" dur="4s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.3" fill="#FFFFFF" cx="1496.996" cy="132.848" r="27">
+		<animateMotion dur="18s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.1;0" begin="0s" dur="5s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.3" fill="#FFFFFF" cx="815.75" cy="154.657" r="24">
+		<animateMotion dur="10s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.3;0" begin="0s" dur="4s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.2" fill="#FFFFFF" cx="218.575" cy="164.776" r="21">
+		<animateMotion dur="19s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.2;0" begin="0s" dur="5.5s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.3" fill="#FFFFFF" cx="1567.706" cy="983.857" r="25">
+		<animateMotion dur="20s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.1;0" begin="0s" dur="6s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.1" fill="#FFFFFF" cx="1108.66" cy="613.32" r="12">
+		<animateMotion dur="21s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.3;0" begin="0s" dur="5.5s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.2" fill="#FFFFFF" cx="871.256" cy="791.446" r="27">
+		<animateMotion dur="22s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.2;0" begin="0s" dur="7s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.2" fill="#FFFFFF" cx="871.256" cy="1065.974" r="18">
+		<animateMotion dur="15s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.1;0" begin="0s" dur="5.5s" repeatCount="indefinite" />
+	</circle>
+
+	<circle opacity="0.1" fill="#FFFFFF" cx="1140.163" cy="304.289" r="11">
+		<animateMotion dur="10s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      <animate attributeName="opacity" values="0;.3;0" begin="0s" dur="5.5s" repeatCount="indefinite" />
+	</circle>
+</g>
+</svg>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+*::selection{
+  color: white;
+  background-color: rgba(67, 1, 121, 0.5);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  user-zoom: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  html::-webkit-scrollbar-track {
+    background: rgb(235, 202, 245);
+  }
+  html::-webkit-scrollbar-thumb {
+    background: #420177;
+  }
+
+body{
+    /* font-family: 'Limelight', cursive; */
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+  
+header{
+  display: flex;
+  /* position: fixed;
+  top: calc(100% - 80px); */
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu{
+  height: 0;
+  background-image: url(/images/Bubble-Background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  margin: auto;
+  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
+}
+
+.menu-grid ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-grid ul li{
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+}
+
+.close-button{
+  position: fixed;
+  top: 7px;
+  right: 10px;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.open-menu{
+  height: 100vh;
+  /* transform: translateY(0); */
+}
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  border-top: 1px solid rgba(146, 161, 176, 0.3);
+  position: sticky;
+  top: 0;
+  padding: 5px 20px;
+}
+
+.logo{
+  padding: 1rem;
+}
+.logo img{
+  height: 35px;
+}
+
+.navigation-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.navigation-links a{
+  color: #420177;
+  font-weight: 800;
+}
+
+.semester-link{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* text-shadow: 2px 2px black; */
+}
+
+.semester-link img{
+  width: 200px;
+}
+
+.semester-bags{
+  background-image: linear-gradient(white, #2b0cc9);
+}
+
+.nav-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  padding: 4rem ;
+  margin: 0 auto;
+}
+
+
+/* Navigation Ends Here  */
+
+/* Hero Section Start Here  */
+
+.hero{
+  background-image: linear-gradient(#fff, #280bbb);
+  min-height: calc(100vh - 50px);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 50px;
+}
+
+.hero .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  font-family: 'Limelight', cursive;
+}
+
+h1{
+  color: white;
+  font-size: 5vw;
+  text-shadow: 0 2px 7px black;
+}
+
+.hero .left p{
+  color: white;
+  font-size: 2vw;
+  text-shadow: 0 1px 5px black;
+}
+
+.cta{
+  padding: 1rem 1.5rem;
+  color: #fff;
+  text-shadow: 2px 1px black;
+  font-weight: 800;
+  font-size: 1.5rem;
+  background-color: gold;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(255, 255, 255, 0.7);
+  border: 5px solid rgba(255, 255, 255, 0);
+  /* border-radius: 10px; */
+}
+
+.cta:hover{
+  border: 5px solid white;
+}
+
+.hero .right{
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/day13-it-girl.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Hero Section Ends Here  */
