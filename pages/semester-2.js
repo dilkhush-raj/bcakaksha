@@ -9,7 +9,7 @@ export default function Books() {
     {mcs011.map((item, index) => {
               return (
                 <ol>
-                <li key={index} className='link'>
+                <li className='link'>
                   <a href={item.url}>
                     <span>{item.title}</span>
                   </a>

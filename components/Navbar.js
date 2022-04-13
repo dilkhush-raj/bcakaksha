@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Navbar() {
   const showSidebar = () =>
     document.getElementById("sidebar").classNameList.toggle("active");
@@ -34,30 +36,18 @@ function Navbar() {
         </div>
       </header>
       <div className="header">
-        <a href="/" className="logo">
+        <Link href="/" className="logo">
           <img src="/logos/iBC.png" alt="" />
-        </a>
+        </Link>
 
         <div className="navigation-links">
-          <a href="/">Home</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+          <Link href="/">Home</Link>
+          <Link href="">About</Link>
+          <Link href="">Contact</Link>
 
-          <a onClick={openMenu}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </a>
+          <Link onClick={openMenu}>
+            =
+          </Link>
         </div>
       </div>
     </>

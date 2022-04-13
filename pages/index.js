@@ -19,7 +19,7 @@ export default function Home() {
     <h1>Welcome to ignou BCA Club</h1>
     <p>Everything for IGNOU BCA student at one place.</p>
     <a >
-      <button className="cta" onclick="openMenu()">Explore</button>
+      <button className="cta">Explore</button>
     </a>
   </div>
   <div className="right"></div>
