@@ -1,9 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Link from "next/dist/client/link";
 
 export default function Home() {
   return (
@@ -19,54 +15,13 @@ export default function Home() {
   <div className="left">
     <h1>Welcome to ignou BCA Club</h1>
     <p>Everything for IGNOU BCA student at one place.</p>
-    <Link >
+    
       <button className="cta">Explore</button>
-    </Link>
   </div>
   <div className="right"></div>
 </section>
 
-      <section className="semester-bags">
-        <div className="nav-grid">
-          <div className="semester-link">
-            <Link to="./semester-1">
-              <img src="images/2nd-semester-bag.svg" alt="" />
-              Semester 1
-            </Link>
-          </div>
-          <div className="semester-link">
-            <Link to="./semester-2">
-              <img src="images/2nd-semester-bag.svg" alt="" />
-              Semester 2
-            </Link>
-          </div>
-          <div className="semester-link">
-            <Link to="./semester-3">
-              <img src="images/2nd-semester-bag.svg" alt="" />
-              Semester 3
-            </Link>
-          </div>
-          <div className="semester-link">
-            <Link to="./semester-4">
-              <img src="images/2nd-semester-bag.svg" alt="" />
-              Semester 4
-            </Link>
-          </div>
-          <div className="semester-link">
-            <Link to="./semester-5">
-              <img src="images/2nd-semester-bag.svg" alt="" />
-              Semester 5
-            </Link>
-          </div>
-          <div className="semester-link">
-            <Link to="./semester-6">
-              <img src="images/2nd-semester-bag.svg" alt="" />
-              Semester 6
-            </Link>
-          </div>
-
-        </div>
-      </section>
+     
 
     </>
   );

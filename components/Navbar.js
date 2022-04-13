@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 function Navbar() {
   const showSidebar = () =>
@@ -36,18 +35,18 @@ function Navbar() {
         </div>
       </header>
       <div className="header">
-        <Link to="/" className="logo">
+        <div to="/" className="logo">
           <img src="/logos/iBC.png" alt="" />
-        </Link>
+        </div>
 
         <div className="navigation-links">
-          <Link to="/">Home</Link>
-          <Link to="">About</Link>
-          <Link to="">Contact</Link>
+          <div to="/">Home</div>
+          <div to="">About</div>
+          <div to="">Contact</div>
 
-          <Link onClick={openMenu}>
+          <div onClick={openMenu}>
             =
-          </Link>
+          </div>
         </div>
       </div>
     </>
