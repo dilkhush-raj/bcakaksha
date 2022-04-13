@@ -19,45 +19,45 @@ export default function Home() {
     <h1>Welcome to ignou BCA Club</h1>
     <p>Everything for IGNOU BCA student at one place.</p>
     <a >
-      <button class="cta" onclick="openMenu()">Explore</button>
+      <button className="cta" onclick="openMenu()">Explore</button>
     </a>
   </div>
-  <div class="right"></div>
+  <div className="right"></div>
 </section>
 
-      <section class="semester-bags">
-        <div class="nav-grid">
-          <div class="semester-link">
+      <section className="semester-bags">
+        <div className="nav-grid">
+          <div className="semester-link">
             <a href="./semester-1">
               <img src="images/2nd-semester-bag.svg" alt="" />
               Semester 1
             </a>
           </div>
-          <div class="semester-link">
+          <div className="semester-link">
             <a href="./semester-2">
               <img src="images/2nd-semester-bag.svg" alt="" />
               Semester 2
             </a>
           </div>
-          <div class="semester-link">
+          <div className="semester-link">
             <a href="./semester-3">
               <img src="images/2nd-semester-bag.svg" alt="" />
               Semester 3
             </a>
           </div>
-          <div class="semester-link">
+          <div className="semester-link">
             <a href="./semester-4">
               <img src="images/2nd-semester-bag.svg" alt="" />
               Semester 4
             </a>
           </div>
-          <div class="semester-link">
+          <div className="semester-link">
             <a href="./semester-5">
               <img src="images/2nd-semester-bag.svg" alt="" />
               Semester 5
             </a>
           </div>
-          <div class="semester-link">
+          <div className="semester-link">
             <a href="./semester-6">
               <img src="images/2nd-semester-bag.svg" alt="" />
               Semester 6
