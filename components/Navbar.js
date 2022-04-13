@@ -36,14 +36,14 @@ function Navbar() {
         </div>
       </header>
       <div className="header">
-        <Link href="/" className="logo">
+        <Link to="/" className="logo">
           <img src="/logos/iBC.png" alt="" />
         </Link>
 
         <div className="navigation-links">
-          <Link href="/">Home</Link>
-          <Link href="">About</Link>
-          <Link href="">Contact</Link>
+          <Link to="/">Home</Link>
+          <Link to="">About</Link>
+          <Link to="">Contact</Link>
 
           <Link onClick={openMenu}>
             =

@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import mcs011 from "./data/mcs011data";
+import Link from "next/dist/client/link";
 
 export default function Books() {
   return (
@@ -10,9 +11,9 @@ export default function Books() {
               return (
                 <ol>
                 <li className='link'>
-                  <a href={item.url}>
+                  <Link to={item.url}>
                     <span>{item.title}</span>
-                  </a>
+                  </Link>
                 </li>
                 </ol>
               );
