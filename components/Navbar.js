@@ -1,20 +1,26 @@
 import Image from "next/image";
+import Link from "next/dist/client/link";
+
 function Navbar() {
   const showSidebar = () =>
     document.getElementById("sidebar").classNameList.toggle("active");
-    function openMenu() {
+  function openMenu() {
     var element = document.getElementById("menu");
     element.classList.toggle("open-menu");
   }
 
   return (
-    < >
-      <header id="header">
+    <header>
+      {/* Navigation Menu Starts  */}
+      <div className="nav-menu" id="header">
         <div id="menu" className="menu">
-
           <div className="menu-grid">
             <ul>
-              <li>Home</li>
+              <li>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
+              </li>
               <li>About Us</li>
               <li>Contact Us</li>
             </ul>
@@ -28,27 +34,36 @@ function Navbar() {
             </ul>
           </div>
 
-
-          <div className="close-button" onClick={openMenu}>
-            x
-          </div>
-        </div>
-      </header>
-      <div className="header">
-        <div to="/" className="logo">
-        </div>
-
-        <div className="navigation-links">
-          <div to="/">Home</div>
-          <div to="">About</div>
-          <div to="">Contact</div>
-
-          <div onClick={openMenu}>
-            =
+          <div className="menu-button" onClick={openMenu}>
+            <b>🍔</b>
           </div>
         </div>
       </div>
-    </>
+      {/* Navigation Menu Ends  */}
+
+      {/* Navigation Bar Starts  */}
+      <div className="nav-bar">
+          <Link href="/">
+            <a>
+              <span className="logo">iBC</span>
+            </a>
+          </Link>
+
+        <div className="navigation-links">
+          <Link href="/">
+            <a className="nav-link">Home</a>
+          </Link>
+          <Link href="./About">
+            <a className="nav-link">About</a>
+          </Link>
+          <Link href="./Contact">
+            <a className="nav-link">Contact</a>
+          </Link>
+        </div>
+      </div>
+      {/* Navigations Bar Ends  */}
+
+    </header>
   );
 }
 

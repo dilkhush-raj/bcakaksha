@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 
-export default function Books() {
+export default function Contact() {
   return (
     <>
     <Navbar />
