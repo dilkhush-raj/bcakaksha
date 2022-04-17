@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import Semester2Data from "./Semester2Data";
 import Navbar from "../../components/Navbar";
 
 function Semester2() {
@@ -8,13 +6,15 @@ function Semester2() {
     <div className="semester-2">
     <Navbar />
     <section className="index">
-      {Semester2Data.map((item, index) => {
-        return (
-          <div key={index} className={item.className}>
-            <div className="title">{item.title}</div>
-          </div>
-        );
-      })}
+    <ul>
+      <li>MCS-011</li>
+      <li>MCS-012</li>
+      <li>MCS-013</li>
+      <li>MCS-015</li>
+      <li>ECO-02</li>
+      <li>BCSL-021</li>
+      <li>BCSL-022</li>
+    </ul>
       </section>
     </div>
     
