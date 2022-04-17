@@ -30,17 +30,21 @@ export default function Home() {
             ignou BCA Club
           </h1>
           <p>
-            This website is created to help IGNOU BCA students by providing all study material and other resources at one place to them.
+            This website is under-construction. There will be many 404 pages. Come back after some days to check it again.
           </p>
 
           <button className="cta" onClick={openMenu}>Explore Us</button>
         </div>
       </div>
       <section className="index">
-        <h2>Available Semesters</h2>
+        <h2>Select a Bag to open</h2>
         <ul>
-          <Link href="/semester2/"><a>
-            <Image src='/images/2nd-semester-bag.svg' width='150px' height='200px' alt="semester 2 bag"/></a></Link>
+          <Link href="/semester1/"><a><Image src='/images/bag1.svg' width='150px' height='200px' alt="semester 1 bag"/></a></Link>
+          <Link href="/semester2/"><a><Image src='/images/bag2.svg' width='150px' height='200px' alt="semester 2 bag"/></a></Link>
+          <Link href="/semester3/"><a><Image src='/images/bag3.svg' width='150px' height='200px' alt="semester 3 bag"/></a></Link>
+          <Link href="/semester4/"><a><Image src='/images/bag4.svg' width='150px' height='200px' alt="semester 4 bag"/></a></Link>
+          <Link href="/semester5/"><a><Image src='/images/bag5.svg' width='150px' height='200px' alt="semester 5 bag"/></a></Link>
+          <Link href="/semester6/"><a><Image src='/images/bag6.svg' width='150px' height='200px' alt="semester 6 bag"/></a></Link>
         </ul>
       </section>
     </>

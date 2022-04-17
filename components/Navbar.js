@@ -19,9 +19,9 @@ function Navbar() {
         </div>
         <div id="menu" className="menu">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <Link href="/"><a><li>Home</li></a></Link>
+            <Link href="/About"><a><li>About</li></a></Link>
+            <Link href="/Contact"><a><li>Contact</li></a></Link>
             {/* <li><SiDiscord /></li>
             <li><SiLinkedin /></li>
             <li><SiYoutube /></li> */}
@@ -57,10 +57,10 @@ function Navbar() {
           <Link href="/">
             <a className="nav-link">Home</a>
           </Link>
-          <Link href="./About">
+          <Link href="/About">
             <a className="nav-link">About</a>
           </Link>
-          <Link href="./Contact">
+          <Link href="/Contact">
             <a className="nav-link">Contact</a>
           </Link>
         </div>

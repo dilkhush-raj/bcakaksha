@@ -241,6 +241,14 @@ a{
 .index ul{
   list-style: none;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.index h2{
+  text-align: center;
 }
 
 
