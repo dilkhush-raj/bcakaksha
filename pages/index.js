@@ -56,7 +56,7 @@ export default function Home() {
         <h2>Available Semesters</h2>
         <ul>
           <Link href="/semester2/"><a>
-            <Image src='/images/2nd-semester-bag.svg' width='150px' height='200px'/></a></Link>
+            <Image src='/images/2nd-semester-bag.svg' width='150px' height='200px' alt="semester 2 bag"/></a></Link>
         </ul>
       </section>
     </>
