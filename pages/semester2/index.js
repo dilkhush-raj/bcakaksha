@@ -6,14 +6,16 @@ function Semester2() {
     <div className="semester-2">
     <Navbar />
     <section className="index">
-    <ul>
-      <li>MCS-011</li>
-      <li>MCS-012</li>
-      <li>MCS-013</li>
-      <li>MCS-015</li>
-      <li>ECO-02</li>
-      <li>BCSL-021</li>
-      <li>BCSL-022</li>
+      <h2>Semester 2</h2>
+    <ul className="books">
+      <li>ECO-02: Accountancy-I </li>
+      <li>MCS - 011: Problem Solving and Programming</li>
+      <li>MCS-012: Computer Organisation and Assembly Language 
+Language Programming </li>
+      <li>MCS-013: Discrete Mathematics </li>
+      <li>MCS-015: Communication Skills</li>
+      <li>BCSL - 021: C Language Programming Lab (Lab Course) </li>
+      <li>BCSL - 022: Assembly Language Programming Lab (Lab Course)</li>
     </ul>
       </section>
     </div>

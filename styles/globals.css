@@ -166,6 +166,7 @@ a{
   min-height: 80vh;
   display: flex;
   align-items: center;
+  position: relative;
 
   
 }
@@ -224,6 +225,29 @@ a{
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.social-media{
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  background-color: #005;
+  color: white;
+}
+
+.social-media ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.lynk{
+  color: white;
 }
 
 /* ##########  Hero Section Ends  ########## */
@@ -303,3 +327,59 @@ section{
   max-width: 800px;
   margin: 0 auto;
 }
+
+.home-nav ul{
+  background-color: #222;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 1rem;
+  /* padding: 1rem; */
+}
+
+.not-found{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #005;
+  line-height: 5rem;
+}
+
+.not-found h1{
+  font-size: 5rem;
+}
+
+.not-found h2{
+  font-size: 2rem;
+}
+
+.not-found p{
+  font-size: 1.5rem;
+}
+
+.books{
+  flex-wrap: wrap;
+
+}
+
+.books li{
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url(/images/book.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+  /* padding-bottom: 3rem; */
+  color: white;
+  font-weight: 800;
+  text-shadow: 3px 3px 5px black;
+  border-radius: 10px;
+}
+
+/* .books li:hover{
+  background: none;
+} */
