@@ -29,6 +29,8 @@ body{
     /* font-family: 'Limelight', cursive; */
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    
+  background-image: url(/images/embossed-diamond.png);
 
 }
 
@@ -54,13 +56,12 @@ a{
 
 .menu{
   height: 0;
-  background-image: url(/images/Bubble-Background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  background-image: url(/images/moulin.png);
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  gap: 2rem;
 }
 
 .menu-button{
@@ -77,33 +78,34 @@ a{
 }
 
 .open-menu{
-  height: 100vh;
+  height: 50vh;
+  padding: 2rem;
 }
 
-.menu-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.3));
-  backdrop-filter: blur(1rem);
-  padding: 1rem;
-  margin: 0 auto;
-  margin-top: 2rem;
+.menu ul{
+  border: 5px solid white;
   border-radius: 10px;
-}
-
-.menu-grid ul{
   list-style: none;
-}
-
-.menu-grid ul li{
-  color: white;
   padding: 1rem;
+  font-size: 1rem;
 }
 
-.menu-grid ul li a{
-  color: white;
+.menu ul li{
+  background-color: #0af;
+  margin: .7rem;
+  padding: .9rem;
+  border-radius: 10px;
+  border: 7px solid rgba(255, 255, 255, 0);
 }
 
+.menu ul li:hover{
+  border: 7px solid white;
+  color: #222;
+}
+
+.menu::-webkit-scrollbar{
+  width: 0;
+}
 
 /* ##########  Navigation Menu Ends  ########## */
 
@@ -118,7 +120,6 @@ a{
   justify-content: space-between;
   height: 80px;
   background-color: white;
-  box-shadow:  1px 4px rgba(66, 66, 66, 0.9);
   border-bottom: 1px solid rgba(146, 161, 176, 0.3);
   padding: 5px 20px;
   z-index: 100;
@@ -183,7 +184,7 @@ a{
   font-size: large;
 }
 
-h1{
+.hero-content h1{
   font-size: 72px;
   max-width: 800px;
   font-family: 'Limelight', cursive;
@@ -192,7 +193,7 @@ h1{
   margin-top: -30px;
 }
 
-.hero-content ul{
+.hero-content p{
   list-style: none;
   font-size: 24px;
   color: #113;
@@ -227,6 +228,26 @@ h1{
 
 /* ##########  Hero Section Ends  ########## */
 
+
+
+/* ##########  Index Section Starts  ########## */
+
+.index{
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.index ul{
+  list-style: none;
+  padding: 1rem;
+}
+
+
+/* ##########  Index Section Ends  ########## */
+
+
+
 @media (max-width: 900px) {
   .hero{
     grid-template-columns: 1fr;
@@ -243,7 +264,7 @@ h1{
   .nav-link {
     display: none;
   }
-  h1{
+  .hero-content h1{
     font-size: 35px;
   }
   .hero-content h3{
@@ -256,6 +277,21 @@ h1{
     font-size: 12px;
   }
 }
+@media (max-width: 1050px) {
+  .menu{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+@media (max-width: 600px) {
+  .menu{
+    grid-template-columns: 1fr ;
+  }
+}
 
 /* Hero Section Ends Here  */
 
+
+section{
+  max-width: 800px;
+  margin: 0 auto;
+}
