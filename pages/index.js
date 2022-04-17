@@ -2,23 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
-import Hero from "../components/Hero";
 
-
-
-// Notification.requestPermission(function() {
-//   if (Notification.permission === 'granted') {
-//   // user approved.
-//   // use of new Notification(...) syntax will now be successful
-//   } else if (Notification.permission === 'denied') {
-//   // user denied.
-//   } else { // Notification.permission === 'default'
-//   // user didn’t make a decision.
-//   // You can’t send notifications until they grant permission.
-//   }
-//   new Notification('Hello', { body: 'Second Notification', icon: 'http://127.0.0.1:5500/assests/logo.svg' });
-  
-//  });
 
 export default function Home() {
   function openMenu() {
