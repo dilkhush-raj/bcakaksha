@@ -1,6 +1,6 @@
 import Link from "next/dist/client/link";
 import { BiMenu } from "react-icons/bi";
-import { SiDiscord, SiLinkedin, SiYoutube } from "react-icons/si";
+// import { SiDiscord, SiLinkedin, SiYoutube } from "react-icons/si";
 
 function Navbar() {
   const showSidebar = () =>
