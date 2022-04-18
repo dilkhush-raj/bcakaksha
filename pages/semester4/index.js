@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Link from "next/link";
 
 function Semester4() {
 
@@ -8,14 +9,22 @@ function Semester4() {
     <section className="index">
       <h2>Semester 4</h2>
     <ul className="books">
-      <li>BCS-040: Statistical Techniques</li>
-      <li>MCS-024: Object Oriented Technologies and Java Programming</li>
-      <li>BCS-041: Fundamental of Computer Networks</li>
-      <li>BCS-042: Analysis and Design of Algorithms</li>
-      <li>MCSL-016: Internet Concepts and Web Design (Lab Course)</li>
-      <li>BCSL-043: Java Programming Lab</li>
-      <li>BCSL-044: Statistical Techniques Lab</li>
-      <li> BCSL-045 : Analysis and Design of Algorithms Lab </li>
+      <Link href=""><a><li>BCS-040: Statistical Techniques</li></a></Link>
+      <Link href=""><a><li>MCS-024: Object Oriented Technologies and Java Programming</li></a></Link>
+      <Link href=""><a><li>BCS-041: Fundamental of Computer Networks</li></a></Link>
+      <Link href=""><a><li>BCS-042: Analysis and Design of Algorithms</li></a></Link>
+      <Link href=""><a><li>MCSL-016: Internet Concepts and Web Design (Lab Course)</li></a></Link>
+      <Link href=""><a><li>BCSL-043: Java Programming Lab</li></a></Link>
+      <Link href=""><a><li>BCSL-044: Statistical Techniques Lab</li></a></Link>
+      <Link href=""><a><li> BCSL-045 : Analysis and Design of Algorithms Lab </li></a></Link>
+      
+      
+      
+      
+      
+      
+      
+      
     </ul>
       </section>
     </div>

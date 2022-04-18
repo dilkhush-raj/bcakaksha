@@ -1,6 +1,8 @@
 import Link from "next/dist/client/link";
 import { BiMenu } from "react-icons/bi";
-// import { SiDiscord, SiLinkedin, SiYoutube } from "react-icons/si";
+import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
+import { AiFillHome } from "react-icons/ai";
+// import { SiDiscord, SiLinkedin, SiYoutube, } from "react-icons/si";
 
 function Navbar() {
   const showSidebar = () =>
@@ -9,6 +11,15 @@ function Navbar() {
     var element = document.getElementById("menu");
     element.classList.toggle("open-menu");
   }
+  function goBack()
+ {
+ window.history.go(-1)
+ }
+  function goForward()
+ {
+ window.history.go(1)
+ }
+
 
   return (
     <header>
@@ -22,9 +33,7 @@ function Navbar() {
             <Link href="/"><a><li>Home</li></a></Link>
             <Link href="/About"><a><li>About</li></a></Link>
             <Link href="/Contact"><a><li>Contact</li></a></Link>
-            {/* <li><SiDiscord /></li>
-            <li><SiLinkedin /></li>
-            <li><SiYoutube /></li> */}
+            
           </ul>
           <ul>
             <li>About IGNOU BCA Course</li>
@@ -32,14 +41,14 @@ function Navbar() {
             <li>Important Links</li>
           </ul>
           <ul>
-            <li>Semester 1</li>
+            <Link href="/semester1/"><a><li>Semester 1</li></a></Link>
             <Link href="/semester2/"><a><li>Semester 2</li></a></Link>
-            <li>Semester 3</li>
+            <Link href="/semester3/"><a><li>Semester 3</li></a></Link>
           </ul>
           <ul>
-            <li>Semester 4</li>
-            <li>Semester 5</li>
-            <li>Semester 6</li>
+            <Link href="/semester4/"><a><li>Semester 4</li></a></Link>
+            <Link href="/semester5/"><a><li>Semester 5</li></a></Link>
+            <Link href="/semester6/"><a><li>Semester 6</li></a></Link>
           </ul>
         </div>
       </div>
@@ -63,8 +72,18 @@ function Navbar() {
           <Link href="/Contact">
             <a className="nav-link">Contact</a>
           </Link>
+          
         </div>
+        
       </div>
+      <ul className="navigations">
+          <li onClick={goBack}><IoMdArrowRoundBack /></li>
+            <li><Link href="/"><a><AiFillHome /></a></Link></li>
+            <li onClick={goForward}><IoMdArrowRoundForward /></li>
+            {/* <li><SiDiscord /></li>
+            <li><SiLinkedin /></li>
+            <li><SiYoutube /></li> */}
+        </ul>
       {/* Navigations Bar Ends  */}
     </header>
   );

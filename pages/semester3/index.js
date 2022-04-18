@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Link from "next/link";
 
 function Semester3() {
 
@@ -8,13 +9,13 @@ function Semester3() {
     <section className="index">
       <h2>Semester 3</h2>
     <ul className="books">
-      <li>MCS-014 : Systems Analysis and Design</li>
-      <li>MCS-021: Data and File Structures </li>
-      <li> MCS 023: Introduction to Database Management Systems </li>
-      <li>BCS-031 : Programming in C++</li>
-      <li>BCSL-032: C++ Programming Lab</li>
-      <li>BCSL-033: Data and File Structures Lab</li>
-      <li>BCSL-034: DBMS Lab</li>
+      <Link href=""><a><li>MCS-014 : Systems Analysis and Design</li></a></Link>
+      <Link href=""><a><li>MCS-021: Data and File Structures </li></a></Link>
+      <Link href=""><a><li> MCS 023: Introduction to Database Management Systems </li></a></Link>
+      <Link href=""><a><li>BCS-031 : Programming in C++</li></a></Link>
+      <Link href=""><a><li>BCSL-032: C++ Programming Lab</li></a></Link>
+      <Link href=""><a><li>BCSL-033: Data and File Structures Lab</li></a></Link>
+      <Link href=""><a><li>BCSL-034: DBMS Lab</li></a></Link>
     </ul>
       </section>
     </div>

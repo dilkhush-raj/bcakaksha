@@ -153,6 +153,22 @@ a{
 
 /* ##########  Navigation Bar Ends  ########## */
 
+.navigations{
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: .5rem 1rem;
+  background-color: #350288;
+  color: white;
+  align-items: center;
+  padding-left: 2rem;
+  /* position: sticky;
+  top: 0; */
+}
+
+.navigations a{
+  color: white;
+}
 
 /* ##########  Hero Section Starts  ########## */
 
@@ -257,22 +273,27 @@ a{
 /* ##########  Index Section Starts  ########## */
 
 .index{
-  padding: 2rem;
+  padding: 2rem 0;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .index ul{
   list-style: none;
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .index h2{
   text-align: center;
+}
+
+.semester-bags{
+  max-width: 620px;
+  margin: auto;
 }
 
 
@@ -363,13 +384,21 @@ section{
 
 }
 
-.books li{
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url(/images/book.svg);
+.books a{
+  background: url(/images/book.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
   height: 300px;
   display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.books li{
+  /* background-image:  linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)); */
+  display: inline-flex;
   align-items: flex-end;
   justify-content: center;
   padding: 1rem;

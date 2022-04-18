@@ -23,13 +23,7 @@ export default function Home() {
       {/* <Hero /> */}
       <div className="hero">
         <div className="hero-content">
-          <div className="social-media">
-            <ul>
-              <li>d</li>
-              <li>l</li>
-              <li>y</li>
-            </ul>
-          </div>
+          
           <h3>Everything for IGNOU BCA Students</h3>
           <h1>
             Welcome to
@@ -54,7 +48,7 @@ export default function Home() {
           </ul>
         </div> */}
         <h2>Select a Bag to open</h2>
-        <ul>
+        <ul className="semester-bags">
           <Link href="/semester1/"><a><Image src='/images/bag1.svg' width='150px' height='200px' alt="semester 1 bag"/></a></Link>
           <Link href="/semester2/"><a><Image src='/images/bag2.svg' width='150px' height='200px' alt="semester 2 bag"/></a></Link>
           <Link href="/semester3/"><a><Image src='/images/bag3.svg' width='150px' height='200px' alt="semester 3 bag"/></a></Link>
