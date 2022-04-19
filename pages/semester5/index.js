@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Link from "next/link";
+import Footer from "../../components/Footer";
 
 function Semester5() {
 
@@ -9,16 +10,17 @@ function Semester5() {
     <section className="index">
       <h2>Semester 5</h2>
     <ul className="books">
-      <Link href="/semester5/BCS051/"><a><li>BCS-051: Introduction to Software Engineering</li></a></Link>
-      <Link href="./BCS052"><a><li>BCS-052: Network Programming and Administration</li></a></Link>
-      <Link href="./BCS053"><a><li>BCS-053: Web Programming</li></a></Link>
-      <Link href="./BCS-054"><a><li>BCS-054 : Computer Oriented Numerical Techniques </li></a></Link>
-      <Link href="./BCS-055"><a><li>BCS-055: Business Communication</li></a></Link>
-      <Link href="./BCSL056"><a><li>BCSL-056: Network Programming and Administration Lab</li></a></Link>
-      <Link href="./BCSL057"><a><li>BCSL-057: Web Programming Lab</li></a></Link>
-      <Link href="./BCSL058"><a><li>BCSL-058: Computer Oriented Numerical Techniques Lab</li></a></Link>      
+      <Link href="https://egyankosh.ac.in/handle/123456789/52136"><a target="_blank"><li>BCS-051: <br /> Introduction to Software Engineering</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/472"><a target="_blank"><li>BCS-052: <br /> Network Programming and Administration</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/51958"><a target="_blank"><li>BCS-053: <br /> Web Programming</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/51889"><a target="_blank"><li>BCS-054: <br /> Computer Oriented Numerical Techniques </li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/476"><a target="_blank"><li>BCS-055: <br /> Business Communication</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/477"><a target="_blank"><li>BCSL-056: <br /> Network Programming and Administration Lab</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/478"><a target="_blank"><li>BCSL-057: <br /> Web Programming Lab</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/52141"><a target="_blank"><li>BCSL-058: <br /> Computer Oriented Numerical Techniques Lab</li></a></Link>      
     </ul>
       </section>
+      <Footer />
     </div>
     
   );

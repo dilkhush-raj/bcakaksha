@@ -1,13 +1,17 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
 
 export default function Home() {
-  function openMenu() {
+
+
+  function explore(){
     var element = document.getElementById("menu");
     element.classList.toggle("open-menu");
+    window.scrollTo(0, 0)
   }
   
   return (
@@ -31,10 +35,10 @@ export default function Home() {
             ignou BCA Club
           </h1>
           <p>
-            This website is under-construction. There will be many 404 pages. Come back after some days to check it again.
+            This website is under-construction. <br />Currently I have linked all books to eGyankosh, organised content will be available soon.
           </p>
 
-          <button className="cta" onClick={openMenu}>Explore Us</button>
+          <button className="cta" onClick={explore}>Explore Us</button>
         </div>
       </div>
       <section className="index">
@@ -57,6 +61,8 @@ export default function Home() {
           <Link href="/semester6/"><a><Image src='/images/bag6.svg' width='150px' height='200px' alt="semester 6 bag"/></a></Link>
         </ul>
       </section>
+
+      <Footer />
     </>
   );
 }

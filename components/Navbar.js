@@ -1,14 +1,14 @@
 import Link from "next/dist/client/link";
 import { BiMenu } from "react-icons/bi";
-import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
-import { AiFillHome } from "react-icons/ai";
-// import { SiDiscord, SiLinkedin, SiYoutube, } from "react-icons/si";
+import { IoMdArrowRoundBack, IoMdArrowRoundForward, IoMdArrowRoundUp } from "react-icons/io";
+import { AiFillHome, AiFillCloseCircle } from "react-icons/ai";
 
 function Navbar() {
   const showSidebar = () =>
     document.getElementById("sidebar").classNameList.toggle("active");
   function openMenu() {
     var element = document.getElementById("menu");
+    var menuBtn = document.getElementById("menu-btn");
     element.classList.toggle("open-menu");
   }
   function goBack()
@@ -19,14 +19,18 @@ function Navbar() {
  {
  window.history.go(1)
  }
+  function Up()
+ {
+  window.scrollTo(0, 0)
+ }
 
 
   return (
     <header>
       {/* Navigation Menu Starts  */}
       <div className="nav-menu" id="header">
-        <div className="menu-button" onClick={openMenu}>
-          <b><BiMenu /></b>
+        <div id="menu-btn" className="menu-button" onClick={openMenu}>
+          <BiMenu />
         </div>
         <div id="menu" className="menu">
           <ul>
@@ -77,12 +81,10 @@ function Navbar() {
         
       </div>
       <ul className="navigations">
+          <li onClick={Up}><IoMdArrowRoundUp /></li>
           <li onClick={goBack}><IoMdArrowRoundBack /></li>
             <li><Link href="/"><a><AiFillHome /></a></Link></li>
             <li onClick={goForward}><IoMdArrowRoundForward /></li>
-            {/* <li><SiDiscord /></li>
-            <li><SiLinkedin /></li>
-            <li><SiYoutube /></li> */}
         </ul>
       {/* Navigations Bar Ends  */}
     </header>

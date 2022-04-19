@@ -25,14 +25,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(#350288, #8b02fb);
   }
 
-body{
-    /* font-family: 'Limelight', cursive; */
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    
-  background-image: url(/images/embossed-diamond.png);
 
-}
 
 
 a{
@@ -44,8 +37,15 @@ a{
   --primary-color: #350288;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
-
+body{
+  /* font-family: 'Limelight', cursive; */
+  font-family: 'Poppins', sans-serif;
+  background-image: url(/images/embossed-diamond.png);
+}
 /* Navigation Menu Starts  */
   
 .nav-menu{
@@ -155,15 +155,29 @@ a{
 
 .navigations{
   display: flex;
+  flex-direction: column;
   list-style: none;
   gap: 1rem;
   padding: .5rem 1rem;
-  background-color: #350288;
   color: white;
   align-items: center;
-  padding-left: 2rem;
-  /* position: sticky;
-  top: 0; */
+  font-size: 1.5rem;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  justify-content: space-evenly;
+
+}
+
+.navigations li{
+  background-color: #350288;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .navigations a{
@@ -212,7 +226,7 @@ a{
 
 .hero-content p{
   list-style: none;
-  font-size: 24px;
+  font-size: 16px;
   color: #113;
 }
 
@@ -243,25 +257,6 @@ a{
   background-size: contain;
 }
 
-.social-media{
-  position: absolute;
-  width: 50px;
-  height: 100%;
-  right: 10px;
-  top: 0;
-  bottom: 0;
-  background-color: #005;
-  color: white;
-}
-
-.social-media ul{
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-}
 .lynk{
   color: white;
 }
@@ -301,6 +296,39 @@ a{
 
 
 
+
+/* ##########  Footer Section Starts  ########## */
+
+footer{
+  background-color: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.social-media{
+  background-color: #222;
+  color: white;
+  list-style: none;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  margin:  .5rem;
+  gap: 2rem;
+}
+
+.social-media li{
+  font-size: 1.5rem;
+}
+
+
+/* ##########  Footer Section Ends  ########## */
+
+
+
 @media (max-width: 900px) {
   .hero{
     grid-template-columns: 1fr;
@@ -329,6 +357,17 @@ a{
   .cta{
     font-size: 12px;
   }
+    /* .navigations{
+    position: fixed;
+    justify-content: space-evenly;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    z-index: 098;
+    flex-direction: row;
+    background-color: #350288;
+    } */
 }
 @media (max-width: 1050px) {
   .menu{

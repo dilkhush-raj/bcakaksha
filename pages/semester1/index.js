@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Link from 'next/link';
+import Footer from "../../components/Footer";
 
 function Semester1() {
 
@@ -9,11 +10,11 @@ function Semester1() {
     <section className="index">
       <h2>Semester 1</h2>
     <ul className="books">
-      <Link href=""><a><li>FEG-02 : Foundation Course in English -2</li></a></Link>
-      <Link href=""><a><li>ECO-01: Business Organisation</li></a></Link>
-      <Link href=""><a><li>BCS-011: Computer Basics and PC Software</li></a></Link>
-      <Link href=""><a><li>BCS-012: Basic Mathematics </li></a></Link>
-      <Link href=""><a><li>BCSL-013: Computer Basics and PC Software Lab</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/422"><a target="_blank"><li>FEG-02: <br /> Foundation Course in English -2</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/3592"><a target="_blank"><li>ECO-01: <br /> Business Organisation</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/434"><a target="_blank"><li>BCS-011: <br /> Computer Basics and PC Software</li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/438"><a target="_blank"><li>BCS-012: <br /> Basic Mathematics </li></a></Link>
+      <Link href="https://egyankosh.ac.in/handle/123456789/442"><a target="_blank"><li>BCSL-013: <br /> Computer Basics and PC Software Lab</li></a></Link>
       
       
       
@@ -21,6 +22,7 @@ function Semester1() {
       
     </ul>
       </section>
+      <Footer />
     </div>
     
   );
