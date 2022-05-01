@@ -31,10 +31,10 @@ function Semester2() {
               </li>
             </a>
           </Link>
-          <Link href="https://egyankosh.ac.in/handle/123456789/951">
-            <a target="_blank">
+          <Link href="/semester2/MCS013">
+            <a>
               <li>
-                MCS-013: <br /> Discrete Mathematics{" "}
+                MCS-013: <br /> Discrete Mathematics
               </li>
             </a>
           </Link>
@@ -45,15 +45,15 @@ function Semester2() {
               </li>
             </a>
           </Link>
-          <Link href="https://egyankosh.ac.in/handle/123456789/4551">
-            <a target="_blank">
+          <Link href="/semester2/BCSL021/">
+            <a>
               <li>
                 BCSL - 021: <br /> C Language Programming Lab (Lab Course){" "}
               </li>
             </a>
           </Link>
-          <Link href="https://www.egyankosh.ac.in/handle/123456789/456">
-            <a target="_blank">
+          <Link href="/semester2/BCSL022/">
+            <a>
               <li>
                 BCSL - 022: <br /> Assembly Language Programming Lab (Lab
                 Course)

@@ -433,6 +433,7 @@ section{
   align-items: flex-end;
   padding: 1rem;
   padding-bottom: 3rem;
+  color: white;
 }
 
 .books li{
