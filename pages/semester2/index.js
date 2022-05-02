@@ -16,8 +16,8 @@ function Semester2() {
               </li>
             </a>
           </Link>
-          <Link href="https://www.egyankosh.ac.in/handle/123456789/451">
-            <a target="_blank">
+          <Link href="/semester2/MCS011/">
+            <a>
               <li>
                 MCS - 011: <br /> Problem Solving and Programming
               </li>

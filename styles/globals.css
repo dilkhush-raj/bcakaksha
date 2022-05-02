@@ -452,3 +452,8 @@ section{
 /* .books li:hover{
   background: none;
 } */
+
+embed{
+  width: 100%;
+  height: 100vh;
+}
