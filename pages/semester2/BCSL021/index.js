@@ -9,7 +9,7 @@ function BCSL021() {
     <section className="index">
       <h2>Books</h2>
       <ul className="books">
-        <li><Link href="https://egyankosh.ac.in/bitstream/123456789/11561/1/Section-1.pdf"><a target="_blank">Section-1 C Programming Lab</a></Link></li>
+        <li><Link href="https://egyankosh.ac.in/bitstream/123456789/11561/1/Section-1.pdf"><a target="_parent">Section-1 C Programming Lab</a></Link></li>
       </ul>
     </section>
     </div>
