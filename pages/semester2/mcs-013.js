@@ -4,26 +4,26 @@ import Link from "next/link";
 
 import data from "../../data/semester2.json";
 
-export default function Home() {
+export default function MCS011() {
   return (
     <div className="book-page">
       <Head>
-        <title>Semester 2 - iBC</title>
+        <title>{data[3].name} - iBC</title>
         <meta
           name="description"
           content="App that displays pretty colors to learn Next!"
         />
       </Head>
-      <h1>Semester 2</h1>
+      <h2>{data[3].name}</h2>
       <div className="book-wrap">
-      {data.map((value, index) => (
-        <Link key={index} href={`/semester2/${value.path}`}>
-          <a className="books">
-            <h2>{value.name}</h2>
-          </a>
-        </Link>
-      ))}
-    </div>
+        {data[3].book.map((value, index) => (
+          <Link key={index} href={value.url}>
+            <a className="books" target="_blank">
+              <h2>{value.name}</h2>
+            </a>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
