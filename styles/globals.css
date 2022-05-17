@@ -216,15 +216,15 @@ body {
 /* ##########  Index Section Starts  ########## */
 
 .index {
-  padding: 2rem;
+  padding: 1rem .5rem;
 }
 
 .semester-bags {
   list-style: none;
   padding: 1rem 0;
   display: flex;
-  /* justify-content: center; */
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -355,7 +355,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+  justify-content: center;
 }
 
 .book-page{
