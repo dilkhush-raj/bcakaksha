@@ -362,7 +362,7 @@ footer {
   padding: 1rem;
 }
 
-.books {
+.bk a, .books {
   background: url(/images/book.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -374,6 +374,14 @@ footer {
   padding-left: 1.6rem;
   color: white;
   flex-wrap: wrap;
+}
+
+.bk{
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
 }
 
 .books h2{
