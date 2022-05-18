@@ -237,8 +237,8 @@ body {
 /* ##########  Footer Section Starts  ########## */
 
 footer {
-  background-color: #222;
-  color: white;
+  background-color: white;
+  color: #222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,8 +247,8 @@ footer {
 }
 
 .social-media {
-  background-color: #222;
-  color: white;
+  color: #222;
+  background-color: white;
   list-style: none;
   padding: 0.5rem;
   display: flex;

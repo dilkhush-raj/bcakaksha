@@ -31,7 +31,7 @@ function Navbar() {
       <div className="nav-bar">
         <Link href="/">
           <a>
-            <span className="logo">iBC</span>
+            <span className="logo">IkBk</span>
           </a>
         </Link>
 
