@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="book-page">
       <Head>
-        <title>Semester 2 - iBC</title>
+        <title>Semester 2</title>
         <meta
           name="description"
           content="App that displays pretty colors to learn Next!"

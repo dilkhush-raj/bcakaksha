@@ -8,7 +8,7 @@ export default function MCS011() {
   return (
     <div className="book-page">
       <Head>
-        <title>{data[2].name} - iBC</title>
+        <title>{data[2].name}</title>
         <meta
           name="description"
           content="App that displays pretty colors to learn Next!"

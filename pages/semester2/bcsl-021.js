@@ -8,7 +8,7 @@ export default function MCS011() {
   return (
     <div className="book-page">
       <Head>
-        <title>{data[5].name} - iBC</title>
+        <title>{data[5].name}</title>
         <meta name="description" content="BCS" />
       </Head>
       <h2>{data[5].name}</h2>
