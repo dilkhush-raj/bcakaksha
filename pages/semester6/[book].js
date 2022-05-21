@@ -3,7 +3,7 @@ import books from "../../data/semester6.json";
 import Link from "next/link";
 import Head from "next/head";
 
-export default function semester6() {
+export default function Semester6() {
   const router = useRouter();
   const post = books[router.query.book];
   if (!post) return <p></p>;
