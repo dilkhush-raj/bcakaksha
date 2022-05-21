@@ -31,7 +31,7 @@ function Navbar() {
       <div className="nav-bar">
         <Link href="/">
           <a>
-            <span className="logo">IkBk</span>
+            <span className="logo">IGNOU की BCA कक्षा</span>
           </a>
         </Link>
 

@@ -34,6 +34,11 @@ function Sidebar() {
                 <li>Contact</li>
               </a>
             </Link>
+            {/* <Link href="/regional-centre">
+              <a>
+                <li>Regional Centre</li>
+              </a>
+            </Link> */}
             <Link href="/semester1">
               <a>
                 <li>Semester 1</li>

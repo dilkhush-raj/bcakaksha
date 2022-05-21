@@ -30,7 +30,7 @@ export default function Home() {
             IGNOU की BCA कक्षा
           </h1>
           <p>
-            This website is under-construction. <br />
+            This website is under-construction. <br />But you can access Semsester 2
             
           </p>
 

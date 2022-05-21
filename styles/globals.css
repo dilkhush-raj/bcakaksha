@@ -76,9 +76,9 @@ body {
   left: 0;
   right: 0;
 }
-
+ 
 .logo {
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Limelight", cursive;
   color: var(--primary-color);
   text-shadow: 2px -2px 5px rgba(182, 180, 182, 0.4);
@@ -89,6 +89,7 @@ body {
   background-clip: text;
   display: flex;
   align-items: center;
+  width: max-content;
 }
 
 .navigation-links {
@@ -290,6 +291,9 @@ footer {
   .cta {
     font-size: 12px;
   }
+  .logo{
+    font-size: 1.5rem;
+  }
   /* .navigations{
     position: fixed;
     justify-content: space-evenly;
@@ -310,6 +314,9 @@ footer {
 @media (max-width: 600px) {
   .menu {
     grid-template-columns: 1fr;
+  }
+  .navigation-links{
+    display: none;
   }
 }
 
@@ -414,3 +421,6 @@ embed {
   max-width: 400px;
 }
 
+.regional-centre{
+  padding-left: 2rem;
+}

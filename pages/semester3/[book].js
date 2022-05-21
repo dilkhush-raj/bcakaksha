@@ -1,22 +1,26 @@
-// index.js
-import Head from "next/head";
+import { useRouter } from "next/router";
+import books from "../../data/semester3.json";
 import Link from "next/link";
+import Head from "next/head";
 
-import data from "../../data/semester2.json";
+export default () => {
+  const router = useRouter();
+  const post = books[router.query.book];
+  if (!post) return <p></p>;
 
-export default function MCS011() {
   return (
-    <div className="book-page">
+    <div className="index">
       <Head>
-        <title>{data[6].name}</title>
+        <title>{post.name}</title>
         <meta
           name="description"
           content="App that displays pretty colors to learn Next!"
         />
       </Head>
-      <h2>{data[6].name}</h2>
+      <h1>{post.name}</h1>
+      {/* <div>{console.log({post})}</div> */}
       <div className="book-wrap">
-        {data[6].book.map((value, index) => (
+        {post.book.map((value, index) => (
           <Link key={index} href={value.url}>
             <a className="books" target="_blank">
               <h2>{value.name}</h2>
@@ -26,4 +30,4 @@ export default function MCS011() {
       </div>
     </div>
   );
-}
+};
