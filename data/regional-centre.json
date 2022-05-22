@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Agartala",
+        "url": "http://rcagartala.ignou.ac.in/"
+    },
+    {
+        "name": "Ahmedabad",
+        "url": "http://rcahmedabad.ignou.ac.in/"
+    },
+    {
+        "name": "Aizawl",
+        "url": "http://rcaizawl.ignou.ac.in/"
+    },
+    {
+        "name": "Aligarh",
+        "url": "http://rcaligarh.ignou.ac.in/"
+    },
+    {
+        "name": "Bangalore",
+        "url": "http://rcbangalore.ignou.ac.in/"
+    },
+    {
+        "name": "Bhagalpur",
+        "url": "http://rcbhagalpur.ignou.ac.in/"
+    },
+    {
+        "name": "Bhopal",
+        "url": "http://rcbhopal.ignou.ac.in/"
+    },
+    {
+        "name": "Bhubaneswar",
+        "url": "http://rcbhubaneshwar.ignou.ac.in/"
+    },
+    {
+        "name": "Bijapur",
+        "url": "http://rcbijapur.ignou.ac.in/"
+    },
+    {
+        "name": "Chandigarh",
+        "url": "http://rcchandigarh.ignou.ac.in/"
+    },
+    {
+        "name": "Chennai",
+        "url": "http://rcchennai.ignou.ac.in/"
+    },
+    {
+        "name": "Cochin",
+        "url": "http://rccochin.ignou.ac.in/"
+    },
+    {
+        "name": "Darbhanga",
+        "url": "http://rcdarbhanga.ignou.ac.in/"
+    },
+    {
+        "name": "Dehradun",
+        "url": "http://rcdehradun.ignou.ac.in/"
+    },
+    {
+        "name": "Delhi-1",
+        "url": "http://rcdelhi1.ignou.ac.in/"
+    },
+    {
+        "name": "Delhi-2",
+        "url": "http://rcdelhi2.ignou.ac.in/"
+    },
+    {
+        "name": "Delhi-3",
+        "url": "http://rcdelhi3.ignou.ac.in/"
+    },
+    {
+        "name": "Deoghar",
+        "url": "http://rcdeoghar.ignou.ac.in/"
+    },
+    {
+        "name": "Gangtok",
+        "url": "http://rcgangtok.ignou.ac.in/"
+    },
+    {
+        "name": "Guwahati",
+        "url": "http://rcguwahati.ignou.ac.in/"
+    },
+    {
+        "name": "Hyderabad",
+        "url": "http://rchyderabad.ignou.ac.in/"
+    },
+    {
+        "name": "Imphal",
+        "url": "http://rcimphal.ignou.ac.in/"
+    },
+    {
+        "name": "Itanagar",
+        "url": "http://rcitanagar.ignou.ac.in/"
+    },
+    {
+        "name": "Jabalpur",
+        "url": "http://rcjabalpur.ignou.ac.in/"
+    },
+    {
+        "name": "Jaipur",
+        "url": "http://rcjaipur.ignou.ac.in/"
+    },
+    {
+        "name": "Jammu",
+        "url": "http://rcjammu.ignou.ac.in/"
+    },
+    {
+        "name": "Jodhpur",
+        "url": "/rcjodhpur.ignou.ac.in/"
+    },
+    {
+        "name": "Jorhat",
+        "url": "http://rcjorhat.ignou.ac.in/http:/"
+    },
+    {
+        "name": "Karnal",
+        "url": "http://rckarnal.ignou.ac.in/"
+    },
+    {
+        "name": "Khanna",
+        "url": "http://rckhanna.ignou.ac.in/"
+    },
+    {
+        "name": "Kohima",
+        "url": "http://rckohima.ignou.ac.in/"
+    },
+    {
+        "name": "Kolkata",
+        "url": "http://rckolkatta.ignou.ac.in/"
+    },
+    {
+        "name": "Koraput",
+        "url": "http://rckoraput.ignou.ac.in/"
+    },
+    {
+        "name": "Lucknow",
+        "url": "http://rclucknow.ignou.ac.in/"
+    },
+    {
+        "name": "Madurai",
+        "url": "http://rcmadurai.ignou.ac.in/"
+    },
+    {
+        "name": "Mumbai",
+        "url": "http://rcmumbai.ignou.ac.in/"
+    },
+    {
+        "name": "Nagpur",
+        "url": "http://rcnagpur.ignou.ac.in/"
+    },
+    {
+        "name": "Noida",
+        "url": "http://rcnoida.ignou.ac.in/"
+    },
+    {
+        "name": "Panaji",
+        "url": "http://rcpanaji.ignou.ac.in/"
+    },
+    {
+        "name": "Patna",
+        "url": "http://rcpatna.ignou.ac.in/"
+    },
+    {
+        "name": "Port Blair",
+        "url": "http://rcportblair.ignou.ac.in/"
+    },
+    {
+        "name": "Pune",
+        "url": "http://rcpune.ignou.ac.in/"
+    },
+    {
+        "name": "Raghunathganj",
+        "url": "http://rcraghunathgunj.ignou.ac.in/"
+    },
+    {
+        "name": "Raipur",
+        "url": "http://rcraipur.ignou.ac.in/"
+    },
+    {
+        "name": "Rajkot",
+        "url": "http://rcrajkot.ignou.ac.in/"
+    },
+    {
+        "name": "Ranchi",
+        "url": "http://rcranchi.ignou.ac.in/"
+    },
+    {
+        "name": "Saharsa",
+        "url": "http://rcsaharsa.ignou.ac.in/"
+    },
+    {
+        "name": "Shillong",
+        "url": "http://rcshillong.ignou.ac.in/"
+    },
+    {
+        "name": "Shimla",
+        "url": "http://rcshimla.ignou.ac.in/"
+    },
+    {
+        "name": "Siliguri",
+        "url": "http://rcsiliguri.ignou.ac.in/"
+    },
+    {
+        "name": "Srinagar",
+        "url": "http://rcsrinagar.ignou.ac.in/"
+    },
+    {
+        "name": "Trivandrum",
+        "url": "http://rctrivandrum.ignou.ac.in/"
+    },
+    {
+        "name": "Varanasi",
+        "url": "http://rcvaranasi.ignou.ac.in/"
+    },
+    {
+        "name": "Vatakara",
+        "url": "http://rcvatakara.ignou.ac.in/"
+    },
+    {
+        "name": "Vijayawada",
+        "url": "http://rcvijayawada.ignou.ac.in/"
+    },
+    {
+        "name": "Visakhapatnam",
+        "url": "http://rcvishakhapatnam.ignou.ac.in/"
+    }
+]

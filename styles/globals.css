@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*::selection{
+*::selection {
   color: white;
   background-color: rgba(67, 1, 121, 0.5);
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,106 +15,54 @@
 }
 
 html::-webkit-scrollbar {
-    width: 10px;
-  }
-  html::-webkit-scrollbar-track {
-    background: rgb(235, 202, 245);
-  }
-  html::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background: linear-gradient(#350288, #8b02fb);
-  }
-
-
-
-
-a{
-    text-decoration: none;
-    color: black;
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(#350288, #8b02fb);
 }
 
-:root{
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
   --primary-color: #350288;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   /* font-family: 'Limelight', cursive; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-image: url(/images/embossed-diamond.png);
 }
+
+.page-wrap {
+  padding-left: 280px;
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
 /* Navigation Menu Starts  */
-  
-.nav-menu{
+
+.nav-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.menu{
-  height: 0;
-  background-image: url(/images/moulin.png);
-  overflow: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  color: white;
-  gap: 2rem;
-}
-
-.menu-button{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: white;
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.open-menu{
-  height: 50vh;
-  padding: 2rem;
-}
-
-.menu ul{
-  border: 5px solid white;
-  border-radius: 10px;
-  list-style: none;
-  padding: 1rem;
-  font-size: 1rem;
-}
-
-.menu ul li{
-  background-color: #0af;
-  margin: .7rem;
-  padding: .9rem;
-  border-radius: 10px;
-  border: 7px solid rgba(255, 255, 255, 0);
-}
-
-.menu ul li:hover{
-  border: 7px solid white;
-  color: #222;
-}
-
-.menu::-webkit-scrollbar{
-  width: 0;
-}
-
 /* ##########  Navigation Menu Ends  ########## */
-
-
-
 
 /* ##########  Navigation Bar Starts  ########## */
 
-.nav-bar{
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,11 +71,15 @@ body{
   border-bottom: 1px solid rgba(146, 161, 176, 0.3);
   padding: 5px 20px;
   z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-
+ 
 .logo {
-  font-size: 4rem;
-  font-family: 'Limelight', cursive;
+  font-size: 2rem;
+  font-family: "Limelight", cursive;
   color: var(--primary-color);
   text-shadow: 2px -2px 5px rgba(182, 180, 182, 0.4);
   color: transparent;
@@ -137,9 +89,10 @@ body{
   background-clip: text;
   display: flex;
   align-items: center;
+  width: max-content;
 }
 
-.navigation-links{
+.navigation-links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,18 +100,18 @@ body{
   gap: 1.5rem;
 }
 
-.navigation-links a{
+.navigation-links a {
   font-size: large;
 }
 
 /* ##########  Navigation Bar Ends  ########## */
 
-.navigations{
+.navigations {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   color: white;
   align-items: center;
   font-size: 1.5rem;
@@ -167,10 +120,9 @@ body{
   bottom: 0;
   z-index: 11;
   justify-content: space-evenly;
-
 }
 
-.navigations li{
+.navigations li {
   background-color: #350288;
   display: flex;
   align-items: center;
@@ -180,14 +132,15 @@ body{
   height: 40px;
 }
 
-.navigations a{
+.navigations a {
   color: white;
 }
 
 /* ##########  Hero Section Starts  ########## */
 
-.hero{
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(40, 11, 187, 0.7)), url(/images/hero.jpg);
+.hero {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(40, 11, 187, 0.7)),
+    url(/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -197,11 +150,9 @@ body{
   display: flex;
   align-items: center;
   position: relative;
-
-  
 }
 
-.hero-content{
+.hero-content {
   max-width: 800px;
   display: flex;
   flex-direction: column;
@@ -209,28 +160,28 @@ body{
   gap: 2rem;
 }
 
-.hero-content h3{
+.hero-content h3 {
   color: #005;
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.332);
   font-size: large;
 }
 
-.hero-content h1{
+.hero-content h1 {
   font-size: 72px;
   max-width: 800px;
-  font-family: 'Limelight', cursive;
+  font-family: "Limelight", cursive;
   color: var(--primary-color);
   text-shadow: 0 2px 10px white;
   margin-top: -30px;
 }
 
-.hero-content p{
+.hero-content p {
   list-style: none;
   font-size: 16px;
   color: #113;
 }
 
-.cta{
+.cta {
   padding: 10px 15px;
   color: #fff;
   font-weight: 800;
@@ -244,11 +195,11 @@ body{
   width: fit-content;
 }
 
-.cta:hover{
+.cta:hover {
   border: 5px solid white;
 }
 
-.hero-img{
+.hero-img {
   width: 100%;
   height: 100%;
   background-image: url(/images/studing.svg);
@@ -257,51 +208,38 @@ body{
   background-size: contain;
 }
 
-.lynk{
+.lynk {
   color: white;
 }
 
 /* ##########  Hero Section Ends  ########## */
 
-
-
 /* ##########  Index Section Starts  ########## */
 
-.index{
-  padding: 2rem 0;
-  max-width: 800px;
-  margin: 0 auto;
+.index {
+  padding: 1rem .5rem;
 }
 
-.index ul{
+.semester-bags {
   list-style: none;
   padding: 1rem 0;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
-.index h2{
-  text-align: center;
-}
-
-.semester-bags{
+.semester-bags {
   max-width: 620px;
-  margin: auto;
 }
-
 
 /* ##########  Index Section Ends  ########## */
 
-
-
-
 /* ##########  Footer Section Starts  ########## */
 
-footer{
-  background-color: #222;
-  color: white;
+footer {
+  background-color: white;
+  color: #222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,55 +247,54 @@ footer{
   padding: 2rem;
 }
 
-.social-media{
-  background-color: #222;
-  color: white;
+.social-media {
+  color: #222;
+  background-color: white;
   list-style: none;
-  padding: .5rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
-  margin:  .5rem;
+  margin: 0.5rem;
   gap: 2rem;
 }
 
-.social-media li{
+.social-media li {
   font-size: 1.5rem;
 }
 
-
 /* ##########  Footer Section Ends  ########## */
 
-
-
 @media (max-width: 900px) {
-  .hero{
+  .hero {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
   }
-  .hero .right{
+  .hero .right {
     grid-row-start: 1;
     height: 50vh;
   }
 }
 
-
 @media (max-width: 450px) {
   .nav-link {
     display: none;
   }
-  .hero-content h1{
+  .hero-content h1 {
     font-size: 35px;
   }
-  .hero-content h3{
+  .hero-content h3 {
     font-size: 15px;
   }
-  .hero-content ul{
+  .hero-content ul {
     font-size: 16px;
   }
-  .cta{
+  .cta {
     font-size: 12px;
   }
-    /* .navigations{
+  .logo{
+    font-size: 1.5rem;
+  }
+  /* .navigations{
     position: fixed;
     justify-content: space-evenly;
     left: 0;
@@ -370,25 +307,28 @@ footer{
     } */
 }
 @media (max-width: 1050px) {
-  .menu{
-    grid-template-columns: 1fr 1fr ;
+  .menu {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 600px) {
-  .menu{
-    grid-template-columns: 1fr ;
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  .navigation-links{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-wrap {
+    padding-left: 0px;
   }
 }
 
 /* Hero Section Ends Here  */
 
-
-section{
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.home-nav ul{
+.home-nav ul {
   background-color: #222;
   border-radius: 10px;
   color: white;
@@ -396,7 +336,7 @@ section{
   /* padding: 1rem; */
 }
 
-.not-found{
+.not-found {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,54 +346,81 @@ section{
   line-height: 5rem;
 }
 
-.not-found h1{
+.not-found h1 {
   font-size: 5rem;
 }
 
-.not-found h2{
+.not-found h2 {
   font-size: 2rem;
 }
 
-.not-found p{
+.not-found p {
   font-size: 1.5rem;
 }
 
-.books{
+.book-wrap {
+  display: flex;
   flex-wrap: wrap;
-
+  gap: 1rem;
+  justify-content: center;
 }
 
-.books a{
+.book-page{
+  padding: 1rem;
+}
+
+.bk a, .books {
   background: url(/images/book.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
-  height: 300px;
+  width: 151px;
+  height: 202px;
   display: flex;
   align-items: flex-end;
   padding: 1rem;
-  padding-bottom: 3rem;
+  padding-left: 1.6rem;
   color: white;
+  flex-wrap: wrap;
 }
 
-.books li{
-  /* background-image:  linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)); */
-  display: inline-flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 1rem;
-  /* padding-bottom: 3rem; */
-  color: white;
-  font-weight: 800;
-  text-shadow: 3px 3px 5px black;
-  border-radius: 10px;
+.bk{
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.books h2{
+  font-size: 1rem;
 }
 
 /* .books li:hover{
   background: none;
 } */
 
-embed{
+embed {
   width: 100%;
   height: 100vh;
+}
+
+.semesters {
+  padding: 1rem;
+}
+
+.notice-board {
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #224;
+  color: white;
+  border-radius: 15px;
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.regional-centre{
+  padding-left: 2rem;
 }

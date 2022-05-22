@@ -1,4 +1,5 @@
 import { SiDiscord, SiLinkedin, SiYoutube } from "react-icons/si";
+import Link from "next/link";
 
 function Footer() {
 
@@ -7,9 +8,9 @@ function Footer() {
       <>
       <footer>
           <ul className="social-media">
-          <li><SiDiscord /></li>
-            <li><SiLinkedin /></li>
-            <li><SiYoutube /></li>
+          <li><Link href="https://discord.gg/M4CXzrud3e"><a target="_blank"><SiDiscord /></a></Link></li>
+          <li><Link href="https://linkedin.com/in/dilkhushraj"><a target="_blank"><SiLinkedin /></a></Link></li>
+          <li><Link href="/"><a target="_blank"><SiYoutube /></a></Link></li>
           </ul>
         {/* <div className="row">End of the page.</div> */}
         <div className="row">Created and designed by Dilkhush Raj</div>
