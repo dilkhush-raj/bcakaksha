@@ -8,6 +8,7 @@
   width: 280px;
   padding: 2rem;
   background-color: white;
+  overflow: auto;
 }
 
 .sidebar .menu {
@@ -39,3 +40,15 @@
     top: 30px;
     z-index: 999;
 }
+
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+.sidebar::-webkit-scrollbar-track {
+  background: rgb(235, 202, 245);
+}
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(#350288, #8b02fb);
+}
+

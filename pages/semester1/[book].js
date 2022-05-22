@@ -16,6 +16,11 @@ export default function Semester1() {
           name="description"
           content="App that displays pretty colors to learn Next!"
         />
+        <link
+          rel="shortcut icon"
+          href="/images/favicon.ico"
+          type="image/x-icon"
+        />
       </Head>
       <h1>{post.name}</h1>
       {/* <div>{console.log({post})}</div> */}
