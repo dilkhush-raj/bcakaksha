@@ -24,13 +24,20 @@
   overflow: hidden;
 }
 
+.menu-button{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .sidebar {
     left: -100%;
   }
+  .menu-button{
+    display: flex;
+  }
 }
 
-.open-menu {
+.active {
   left: 0;
 }
 
@@ -42,7 +49,7 @@
 }
 
 .sidebar::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 .sidebar::-webkit-scrollbar-track {
   background: rgb(235, 202, 245);
@@ -52,3 +59,10 @@
   background: linear-gradient(#350288, #8b02fb);
 }
 
+.sidebar:hover::-webkit-scrollbar{
+  width: 10px;
+}
+
+.nav-text:hover{
+  text-decoration: underline;
+}

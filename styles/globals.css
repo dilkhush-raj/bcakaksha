@@ -426,7 +426,8 @@ embed {
   gap: 1rem;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  width: 400px;
+  height: 400px;
 }
 
 .notice-board a{
@@ -455,4 +456,8 @@ embed {
     margin: 1rem auto;
     padding: 1rem;
   }
+}
+
+.home-list{
+  list-style-position: inside;
 }
