@@ -4,8 +4,100 @@
     "path": "feg-02",
     "book": [
       {
-        "name": "Unit-1",
-        "path": ""
+        "name": "Unit-1: Writing Paragraph-1",
+        "path": "/semester1/feg-02/unit-1"
+      },
+      {
+        "name": "Unit-2: Writing Paragraph-2",
+        "path": "unit-2"
+      },
+      {
+        "name": "Unit-3: Writing a Composition",
+        "path": "unit-3"
+      },
+      {
+        "name": "Unit-4: Expository Composition",
+        "path": "unit-4"
+      },
+      {
+        "name": "Unit-5: Note-taking-1",
+        "path": "unit-5"
+      },
+      {
+        "name": "Unit-6: Writing reports-1, Reporting Events",
+        "path": "unit-6"
+      },
+      {
+        "name": "Unit-7: Argumentative Composition-1, Techniques of Argument",
+        "path": "unit-7"
+      },
+      {
+        "name": "Unit-8: Argumentative Composition-2, Logical Presentation",
+        "path": "unit-8"
+      },
+      {
+        "name": "Unit-9: Note taking-2, use of tables and diagrams",
+        "path": "unit-9"
+      },
+      {
+        "name": "Unit-10: Writing reports-2, Reporting meetings and speeches",
+        "path": "unit-10"
+      },
+      {
+        "name": "Unit-11: Writing Summaries-1",
+        "path": "unit-11"
+      },
+      {
+        "name": "Unit-12: Writing Summaries-2",
+        "path": "unit-1"
+      },
+      {
+        "name": "Unit-13: Writing Paragraphs-2",
+        "path": "unit-13"
+      },
+      {
+        "name": "Unit-14: Narrative Composition-1",
+        "path": "unit-14"
+      },
+      {
+        "name": "Unit-15: Narrative Composition-2",
+        "path": "unit-15"
+      },
+      {
+        "name": "Unit-16: Writing Reports-3, Reporting Interviews",
+        "path": "unit-16"
+      },
+      {
+        "name": "Unit-17",
+        "path": "unit-17"
+      },
+      {
+        "name": "Unit-18",
+        "path": "unit-18"
+      },
+      {
+        "name": "Unit-19",
+        "path": "unit-19"
+      },
+      {
+        "name": "Unit-20",
+        "path": "unit-20"
+      },
+      {
+        "name": "Unit-21",
+        "path": "unit-21"
+      },
+      {
+        "name": "Unit-22",
+        "path": "unit-22"
+      },
+      {
+        "name": "Unit-23",
+        "path": "unit-23"
+      },
+      {
+        "name": "Unit-24",
+        "path": "unit-24"
       }
     ]
   },
@@ -92,8 +184,52 @@
     "path": "bcs-011",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Unit-1",
+        "path": "unit-1"
+      },
+      {
+        "name": "Unit-2",
+        "path": "unit-2"
+      },
+      {
+        "name": "Unit-3",
+        "path": "unit-3"
+      },
+      {
+        "name": "Unit-4",
+        "path": "unit-4"
+      },
+      {
+        "name": "Unit-5",
+        "path": "unit-5"
+      },
+      {
+        "name": "Unit-6",
+        "path": "unit-6"
+      },
+      {
+        "name": "Unit-7",
+        "path": "unit-7"
+      },
+      {
+        "name": "Unit-8",
+        "path": "unit-8"
+      },
+      {
+        "name": "Unit-9",
+        "path": "unit-9"
+      },
+      {
+        "name": "Unit-10",
+        "path": "unit-10"
+      },
+      {
+        "name": "Unit-11",
+        "path": "unit-11"
+      },
+      {
+        "name": "Unit-12",
+        "path": "unit-12"
       }
     ]
   },
@@ -102,8 +238,52 @@
     "path": "bcs-012",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Unit-1",
+        "path": "unit-1"
+      },
+      {
+        "name": "Unit-2",
+        "path": "unit-2"
+      },
+      {
+        "name": "Unit-3",
+        "path": "unit-3"
+      },
+      {
+        "name": "Unit-4",
+        "path": "unit-4"
+      },
+      {
+        "name": "Unit-5",
+        "path": "unit-5"
+      },
+      {
+        "name": "Unit-6",
+        "path": "unit-6"
+      },
+      {
+        "name": "Unit-7",
+        "path": "unit-7"
+      },
+      {
+        "name": "Unit-8",
+        "path": "unit-8"
+      },
+      {
+        "name": "Unit-9",
+        "path": "unit-9"
+      },
+      {
+        "name": "Unit-10",
+        "path": "unit-10"
+      },
+      {
+        "name": "Unit-11",
+        "path": "unit-11"
+      },
+      {
+        "name": "Unit-12",
+        "path": "unit-12"
       }
     ]
   },
@@ -112,8 +292,28 @@
     "path": "bcsl-013",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Section-1",
+        "path": "section-1"
+      },
+      {
+        "name": "Section-2",
+        "path": "section-2"
+      },
+      {
+        "name": "Section-3",
+        "path": "section-3"
+      },
+      {
+        "name": "Section-4",
+        "path": "section-4"
+      },
+      {
+        "name": "Section-5",
+        "path": "section-5"
+      },
+      {
+        "name": "Section-6",
+        "path": "section-6"
       }
     ]
   },
@@ -440,16 +640,6 @@
       {
         "name": "Section-2 Assembly Language Programming",
         "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:50d157f5-187b-46f3-837e-6980b1b537e7"
-      }
-    ]
-  },
-  "pre-question-paper": {
-    "name": "Previous Year Question Paper",
-    "path": "bcsl-022",
-    "book": [
-      {
-        "name": "June 2021",
-        "path": ""
       }
     ]
   }

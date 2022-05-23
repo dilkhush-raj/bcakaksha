@@ -457,3 +457,7 @@ embed {
     padding: 1rem;
   }
 }
+
+.home-list{
+  list-style-position: inside;
+}

@@ -68,17 +68,17 @@ export default function Home() {
           </h1>
             <h4>This website is under-construction. </h4><br />
           <p>
-            Visit only Semester 2 (this also hasn't completed yet). Others are in progress and will be
+            Visit only Semester 2 (this also hasn&apos;t completed yet). Others are in progress and will be
             available soon.
           </p>
 
             <h2>Join our Discord server for: </h2>
-            <ul>
+            <ul className="home-list">
               <li>Connect with other students & help each other.</li>
               <li>Share resources with other students</li>
               <li>Has separate channels for everything.</li>
               <li>Study together with dedicated study rooms</li>
-              <li>Joining Discord won't make your mobile number or email id public like WhatsApp or Telegram</li>
+              <li>Joining Discord won &apos;t make your mobile number or email id public like WhatsApp or Telegram</li>
             </ul>
 
           <button className="cta">
