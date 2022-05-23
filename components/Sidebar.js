@@ -64,6 +64,11 @@ function Sidebar() {
       className: "nav-text",
     },
     {
+      title: "Previous Year Questions",
+      path: "https://webservices.ignou.ac.in/Pre-Question/",
+      className: "nav-text",
+    },
+    {
       title: "Gyan Vani",
       path: "http://www.ignou.ac.in/ignou/aboutignou/broadcast/3",
       className: "nav-text",

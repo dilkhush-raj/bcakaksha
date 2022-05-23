@@ -219,6 +219,11 @@ body {
 .index {
   padding: 1rem .5rem;
 }
+.home-index {
+  padding: 1rem .5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .semester-bags {
   list-style: none;
@@ -227,11 +232,9 @@ body {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-}
-
-.semester-bags {
   max-width: 620px;
 }
+
 
 /* ##########  Index Section Ends  ########## */
 
@@ -324,7 +327,11 @@ footer {
   .page-wrap {
     padding-left: 0px;
   }
+  .index{
+    grid-template-columns: 1fr;
+  }
 }
+
 
 /* Hero Section Ends Here  */
 
@@ -409,10 +416,11 @@ embed {
 }
 
 .notice-board {
-  margin: 0 auto;
   padding: 2rem;
-  background-color: #224;
+  background-color: rgb(0, 169, 118);
   color: white;
+  border: 15px solid rgb(241, 221, 1);
+  margin: 4rem auto;
   border-radius: 15px;
   list-style: none;
   gap: 1rem;
@@ -421,6 +429,30 @@ embed {
   max-width: 400px;
 }
 
+.notice-board a{
+  color: white;
+}
+
+.notice-board h2{
+  text-align: center;
+}
+
+.notice-board ul{
+  list-style: none;
+}
+
 .regional-centre{
   padding-left: 2rem;
+}
+
+
+@media (max-width: 1200px) {
+  .home-index{
+    grid-template-columns: 1fr;
+  }
+  .notice-board{
+    grid-row: 1/2;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
 }

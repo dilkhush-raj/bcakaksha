@@ -324,5 +324,15 @@
         "url": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:50d157f5-187b-46f3-837e-6980b1b537e7"
       }
     ]
+  },
+  "pre-question-paper":{
+    "name": "Previous Year Question Paper",
+    "path": "bcsl-022",
+    "book": [
+      {
+        "name": "June 2021",
+        "url": ""
+      }
+    ]
   }
 }
