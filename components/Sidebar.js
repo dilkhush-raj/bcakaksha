@@ -16,16 +16,6 @@ function Sidebar() {
       className: "nav-text",
     },
     {
-      title: "About",
-      path: "/about",
-      className: "nav-text",
-    },
-    {
-      title: "Contact",
-      path: "/contact",
-      className: "nav-text",
-    },
-    {
       title: "Semester 1",
       path: "/semester1",
       className: "nav-text",

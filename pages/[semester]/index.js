@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
-import books from "../../data/semester5.json";
+import semesters from "../../data/semester.json";
 import Link from "next/link";
 import Head from "next/head";
 
-export default  function Semester5() {
+export default function Semester() {
   const router = useRouter();
-  const post = books[router.query.book];
+  const post = semesters[router.query.semester];
   if (!post) return <p></p>;
 
   return (
@@ -26,8 +26,8 @@ export default  function Semester5() {
       {/* <div>{console.log({post})}</div> */}
       <div className="book-wrap">
         {post.book.map((value, index) => (
-          <Link key={index} href={value.url}>
-            <a className="books" target="_blank">
+          <Link key={index} href={post.path + "/" + value.url}>
+            <a className="books">
               <h2>{value.name}</h2>
             </a>
           </Link>
@@ -35,4 +35,4 @@ export default  function Semester5() {
       </div>
     </div>
   );
-};
+}
