@@ -14,7 +14,7 @@ export default function Semester1() {
         <title>{post.name}</title>
         <meta
           name="description"
-          content="App that displays pretty colors to learn Next!"
+          content="IGNOU की BCA कक्षा: Ebooks, Syllabus, Previous Year Question Paper, Assignments, Notes and many more."
         />
         <link
           rel="shortcut icon"
