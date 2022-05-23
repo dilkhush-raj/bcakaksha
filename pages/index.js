@@ -47,13 +47,15 @@ export default function Home() {
     <div className="page">
       <Head>
         <title>IGNOU की BCA कक्षा</title>
-        <meta name="description" content="IGNOU की BCA कक्षा: Ebooks, Syllabus, Previous Year Question Paper, Assignments, Notes and many more." />
-        <meta name="keywords" content="ignou, bca, kaksha, book, ebook, assignment, question paper, notes,IGNOU की BCA कक्षा" />
-        <link
-          rel="shortcut icon"
-          href="/images/favicon.ico"
-          type="image/x-icon"
+        <meta
+          name="description"
+          content="IGNOU की BCA कक्षा: Ebooks, Syllabus, Previous Year Question Paper, Assignments, Notes and many more."
         />
+        <meta
+          name="keywords"
+          content="ignou, bca, kaksha, book, ebook, assignment, question paper, notes,IGNOU की BCA कक्षा"
+        />
+        <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
       {/* <Hero /> */}
       <div className="hero">
@@ -64,10 +66,20 @@ export default function Home() {
             <br />
             IGNOU की BCA कक्षा
           </h1>
+            <h4>This website is under-construction. </h4><br />
           <p>
-            This website is under-construction. <br />
-            Visit only Semester 2 only. Others are in progress and will be available soon.
+            Visit only Semester 2 (this also hasn't completed yet). Others are in progress and will be
+            available soon.
           </p>
+
+            <h2>Join our Discord server for: </h2>
+            <ul>
+              <li>Connect with other students & help each other.</li>
+              <li>Share resources with other students</li>
+              <li>Has separate channels for everything.</li>
+              <li>Study together with dedicated study rooms</li>
+              <li>Joining Discord won't make your mobile number or email id public like WhatsApp or Telegram</li>
+            </ul>
 
           <button className="cta">
             <Link href="https://discord.gg/M4CXzrud3e">

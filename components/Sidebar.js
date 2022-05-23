@@ -1,14 +1,12 @@
 import Link from "next/dist/client/link";
+import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 
 function Sidebar() {
-  const showSidebar = () =>
-    document.getElementById("sidebar").classNameList.toggle("active");
-  function openMenu() {
-    var element = document.getElementById("menu");
-    var menuBtn = document.getElementById("menu-btn");
-    document.getElementById("menu").classList.toggle("open-menu");
-  }
+
+  const [sidebar, setSidebar] = useState(false);
+  const ShowSidebar = () => setSidebar(!sidebar);
+
   const InternalLinks = [
     {
       title: "Home",
@@ -82,17 +80,17 @@ function Sidebar() {
 
   return (
     <>
-      <div id="menu-btn" className="menu-button" onClick={openMenu}>
+      <div id="menu-btn" className="menu-button" onClick={ShowSidebar} >
         <BiMenu />
       </div>
-      <div className="sidebar" id="menu" onClick={openMenu}>
+      <div className={sidebar ? "sidebar active" : "sidebar"}  onClick={ShowSidebar}>
         <div className="nav-menu" id="header">
           <ul className="menu">
             {InternalLinks.map((item, index) => {
               return (
-                <Link key={index} className={item.className} href={item.path}>
+                <Link key={index} href={item.path}>
                   <a>
-                    <li>{item.title}</li>
+                    <li  className={item.className}>{item.title}</li>
                   </a>
                 </Link>
               );
@@ -101,9 +99,9 @@ function Sidebar() {
             <h4>External Links</h4>
             {ExternalLinks.map((item, index) => {
               return (
-                <Link key={index} className={item.className} href={item.path}>
+                <Link key={index} href={item.path}>
                   <a target="_blank">
-                    <li>{item.title}</li>
+                    <li className={item.className}>{item.title}</li>
                   </a>
                 </Link>
               );
