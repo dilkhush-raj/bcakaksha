@@ -24,7 +24,7 @@ export default function NoticeBoard() {
                 <Link key={index} className={item.className} href={item.path}>
                   <a target="_blank">
                     <li>{item.title}</li>
-                  </a><br />
+                  </a><br /><br />
                 </Link>
               );
             })}
