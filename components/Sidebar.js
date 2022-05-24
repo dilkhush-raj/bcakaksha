@@ -43,6 +43,11 @@ function Sidebar() {
       path: "/semester6",
       className: "nav-text",
     },
+    {
+      title: "Previous Year Questions",
+      path: "/PYQP",
+      className: "nav-text",
+    },
   ];
 
   const ExternalLinks = [

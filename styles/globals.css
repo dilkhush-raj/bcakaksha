@@ -251,7 +251,6 @@ footer {
 }
 
 .social-media {
-  color: #222;
   background-color: white;
   list-style: none;
   padding: 0.5rem;
@@ -261,7 +260,8 @@ footer {
   gap: 2rem;
 }
 
-.social-media li {
+.social-media li a{
+  color: rgb(0, 21, 60);
   font-size: 1.5rem;
 }
 
@@ -426,7 +426,7 @@ embed {
   gap: 1rem;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  max-width: 400px;
   height: 400px;
 }
 

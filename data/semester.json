@@ -642,5 +642,137 @@
         "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:50d157f5-187b-46f3-837e-6980b1b537e7"
       }
     ]
+  },
+  
+
+  "eco02": {
+    "name": "ECO-02 Previous Year Question Paper",
+    "path": "mcs011",
+    "book": [
+      {
+        "name": "June 2021",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:8229157a-9719-49cb-bbdb-e96d46274b28"
+      },
+      {
+        "name": "December 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:dd7f2352-9389-4953-a9be-2c27867d7997"
+      },
+      {
+        "name": "June 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:a7d658b5-ec31-4faf-b7be-a52d4c7c030a"
+      },
+      {
+        "name": "December 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:a9b3e450-6ee0-441d-b714-de5b1a10f2b6"
+      },
+      {
+        "name": "June 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:36f8ecf7-3a53-4ba6-b246-6245e008b464"
+      }
+    ]
+  },
+  "mcs011": {
+    "name": "MCS-011 Previous Year Question Paper",
+    "path": "mcs011",
+    "book": [
+      {
+        "name": "June 2021",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:dab2248d-a764-4d79-85cd-fa2202bc21d6"
+      },
+      {
+        "name": "December 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:f7dd2ad2-5d15-4394-8355-2a987e1dcf45"
+      },
+      {
+        "name": "June 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:2b04c6d4-917e-4134-81ae-67ceed09b5e4"
+      },
+      {
+        "name": "December 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:3cfb3a39-5f84-4916-a75b-952e1fe8bd9e"
+      },
+      {
+        "name": "June 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:88ac30c5-9231-466c-bdf0-4562847ffcd0"
+      }
+    ]
+  },
+  "mcs012": {
+    "name": "MCS-011 Previous Year Question Paper",
+    "path": "mcs011",
+    "book": [
+      {
+        "name": "June 2021",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b4f3db90-72b1-43a4-8a60-c29838e7f4cb"
+      },
+      {
+        "name": "December 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:e659e5e1-195d-46fb-b50b-4f439f6e2c9c"
+      },
+      {
+        "name": "June 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:dc7a1902-ed1f-45be-821e-f04b27063308"
+      },
+      {
+        "name": "December 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:c4850141-7c7b-48a5-b8e3-c7340c7b73d2"
+      },
+      {
+        "name": "June 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:3f4274f0-e580-4bb0-a636-8e4222f0e665"
+      }
+    ]
+  },
+  "mcs013": {
+    "name": "MCS-011 Previous Year Question Paper",
+    "path": "mcs011",
+    "book": [
+      {
+        "name": "June 2021",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:7435b775-9d78-4a7e-b2c3-2075728fea09"
+      },
+      {
+        "name": "December 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:42079e7e-081e-4e45-9151-6cafe3dd48ee"
+      },
+      {
+        "name": "June 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:42079e7e-081e-4e45-9151-6cafe3dd48ee"
+      },
+      {
+        "name": "December 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:a91d4cda-776e-4307-9ab7-935cef85429c"
+      },
+      {
+        "name": "June 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:faa5deb4-e6f6-46c0-8cd2-609d4947990e"
+      }
+    ]
+  },
+  "mcs015": {
+    "name": "MCS-011 Previous Year Question Paper",
+    "path": "mcs011",
+    "book": [
+      {
+        "name": "June 2021",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:0580ff4b-a67f-43bf-a470-dfcec8093ca6"
+      },
+      {
+        "name": "December 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:376fed23-fc3a-4469-b35e-c2821e756da8"
+      },
+      {
+        "name": "June 2020",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:da1a7221-481a-4c89-a766-6ac6a0182cb3"
+      },
+      {
+        "name": "December 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:da1a7221-481a-4c89-a766-6ac6a0182cb3"
+      },
+      {
+        "name": "June 2019",
+        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:94f125f6-ef10-43d4-9e49-f7696c18bdec"
+      }
+    ]
   }
 }

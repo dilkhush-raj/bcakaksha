@@ -11,7 +11,7 @@ export default function Semester2() {
   return (
     <div className="index">
       <Head>
-        <title>{post.name + "IGNOU की BCA कक्षा"}</title>
+        <title>{post.name + " - IGNOU की BCA कक्षा"}</title>
         <meta
           name="description"
           content="IGNOU की BCA कक्षा: Ebooks, Syllabus, Previous Year Question Paper, Assignments, Notes and many more."
