@@ -7,6 +7,11 @@ export default function NoticeBoard() {
       path: "http://www.ignou.ac.in/userfiles/Notification%20-%20Assignment%20Extension.pdf",
       className: "nav-text",
     },
+    {
+      title: "Re-registration for July 2022 Session - Last Date: 30th June 2022",
+      path: "https://onlinerr.ignou.ac.in/",
+      className: "nav-text",
+    },
   ];
 
   return (
