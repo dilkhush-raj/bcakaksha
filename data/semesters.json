@@ -190,6 +190,32 @@
           "url": "bcsp-064"
         }
       ]
+    },
+    "PYQP":{
+      "name": "Previous Year Question Paper",
+      "path": "PYQP",
+      "book": [
+        {
+          "name": "ECO-02: Accountancy-I",
+          "url": "eco02"
+        },
+        {
+          "name": "MCS-011: Problem Solving and Programming",
+          "url": "mcs011"
+        },
+        {
+          "name": "MCS-012: Computer Organisation and Assembly Language Programming",
+          "url": "mcs012"
+        },
+        {
+          "name": "MCS-013: Discrete Mathematics",
+          "url": "mcs013"
+        },
+        {
+          "name": "MCS-015: Communication Skills",
+          "url": "mcs015"
+        }
+      ]
     }
   }
   
