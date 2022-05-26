@@ -3,6 +3,11 @@ import Link from "next/link";
 export default function NoticeBoard() {
   const Notice = [
     {
+      title: "Tentative Date Sheet for conduct of June 2022 Term End Examination",
+      path: "http://www.ignou.ac.in/userfiles/datesheet.pdf",
+      className: "nav-text",
+    },
+    {
       title: "Extension of last date for submission of Assignments for June 2022 Term End Examination",
       path: "http://www.ignou.ac.in/userfiles/Notification%20-%20Assignment%20Extension.pdf",
       className: "nav-text",
@@ -11,7 +16,7 @@ export default function NoticeBoard() {
       title: "Re-registration for July 2022 Session - Last Date: 30th June 2022",
       path: "https://onlinerr.ignou.ac.in/",
       className: "nav-text",
-    },
+    }
   ];
 
   return (
@@ -23,8 +28,8 @@ export default function NoticeBoard() {
               return (
                 <Link key={index} className={item.className} href={item.path}>
                   <a target="_blank">
-                    <li>{item.title}</li>
-                  </a><br /><br />
+                    <li>{item.title}</li><br />
+                  </a>
                 </Link>
               );
             })}
