@@ -774,5 +774,244 @@
         "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:94f125f6-ef10-43d4-9e49-f7696c18bdec"
       }
     ]
+  },
+
+  "mcs-014": {
+    "name": "MCS-014: Systems Analysis and Design",
+    "path": "mcs-014",
+    "book": [
+      {
+        "name": "Unit-1 Introduction to SAD",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9844/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-2 Systems Analyst - A Profession",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9845/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-3 Process of System Development",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9847/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-4 Introduction to Documentation of Systems",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9850/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-5 Process of Systems Planning",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9855/1/Unit-5.pdf"
+      },
+      {
+        "name": "Unit-6 Modular and Structured Design",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9857/1/Unit-6.pdf"
+      },
+      {
+        "name": "Unit-7 System Design and Modeling",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9860/1/Unit-7.pdf"
+      },
+      {
+        "name": "Unit-8 Forms and Reports Design",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9865/1/Unit-8.pdf"
+      },
+      {
+        "name": "Unit-9 Physical File Design and Data Base Design",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9868/1/Unit-9.pdf"
+      },
+      {
+        "name": "Unit-10 CASE Tools For Systems Development",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9870/1/Unit-10.pdf"
+      },
+      {
+        "name": "Unit-11 Implementation and Maintenance of Systems",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9873/1/Unit-11.pdf"
+      },
+      {
+        "name": "Unit-12 Audit and Security of Computer Systems",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9879/1/Unit-12.pdf"
+      },
+      {
+        "name": "Unit-13 Management Information Systems",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/9883/1/Unit-13.pdf"
+      }
+    ]
+  },
+  "mcs-021": {
+    "name": "Data and File Structures",
+    "path": "mcs-021",
+    "book": [
+      {
+        "name": "Unit-1 Analysis of Algorithms",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10030/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-2 Arrays",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10031/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-3 Lists",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10033/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-4 Stacks",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10036/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-5 Queues",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10037/1/Unit-5.pdf"
+      },
+      {
+        "name": "Unit-6 Trees",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10038/1/Unit-6.pdf"
+      },
+      {
+        "name": "Unit-7 Advanced Trees",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10040/1/Unit-7.pdf"
+      },
+      {
+        "name": "Unit-8 Graphs",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10041/1/Unit-8.pdf"
+      },
+      {
+        "name": "Unit-9 Searching",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10042/1/Unit-9.pdf"
+      },
+      {
+        "name": "Unit-10 Sorting",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10043/1/Unit-10.pdf"
+      },
+      {
+        "name": "Unit-11 Advanced Data Structures",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10044/1/Unit-11.pdf"
+      },
+      {
+        "name": "Unit-12 File Structures",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/10045/1/Unit-12.pdf"
+      }
+    ]
+  },
+  "mcs-023": {
+    "name": "Introduction to Database Management System",
+    "path": "mcs-023",
+    "book": [
+      {
+        "name": "Unit-1 Basic Concepts",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11626/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-2 Relational and E-R Models",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11630/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-3 Database Integrity and Normalisation",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11631/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-4 File Organisation in DBMS",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11634/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-1 The Structured Query Language",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11638/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-2 Transactions and Concurrency Management",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11639/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-3 Database Recovery and Security",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11642/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-4 Distributed and Client Server Databases",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11645/1/Unit-4.pdf"
+      },
+      {
+        "name": "Development of a Hospital Management System (An HMS)",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11654/1/Development%20of%20HMS.pdf"
+      },
+      {
+        "name": "Study Centre Management System : A Case Study",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11656/1/Study%20Centre%20Management%20System%20%20A%20Case%20Study.pdf"
+      }
+    ]
+  },
+  "bcs-031": {
+    "name": "Programming in C++",
+    "path": "bcs-031",
+    "book": [
+      {
+        "name": "Unit-1 Object Oriented Programming",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11570/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-2 Introduction to C++",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11571/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-3 Objects and Classes",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11573/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-4 Constructors and Destructors",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11576/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-5 Inheritance",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11580/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-6 Operator Overloading",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11585/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-7 Polymorphism and Virtual Function",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11586/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-8 Streams and Files",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11592/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-9 Templates and Standard Template Library",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11596/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-10 Exception Handling",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11597/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-11 A Case Study",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11599/1/Unit-4.pdf"
+      }
+    ]
+  },
+  "bcsl-032": {
+    "name": "C++ Programming Lab",
+    "path": "bcsl-032",
+    "book": [
+      {
+        "name": "Section-1 C+ + Programming Lab",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11606/1/Section-1%20C%2b%2b%20Lab.pdf"
+      }
+    ]
+  },
+  "bcsl-033": {
+    "name": "Data and File Structures Lab",
+    "path": "bcsl-033",
+    "book": [
+      {
+        "name": "Section-1 Data and File Structures Lab Manual",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11607/1/Section-1.pdf"
+      }
+    ]
+  },
+  "bcsl-034": {
+    "name": "DBMS Lab",
+    "path": "bcsl-034",
+    "book": [
+      {
+        "name": "Section-1 DBMS Lab",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11613/1/Section-1.pdf"
+      }
+    ]
   }
 }
