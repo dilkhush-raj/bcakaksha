@@ -13,26 +13,28 @@ export default function NoticeBoard() {
       className: "nav-text",
     },
     {
-      title: "The Last Date for Re-Registration for July 2022 Session extended till 12th August, 2022",
+      title:
+        "The Last Date for Re-Registration for July 2022 Session extended till 12th August, 2022",
       path: "https://onlinerr.ignou.ac.in/",
       className: "nav-text",
-    }
+    },
   ];
 
   return (
     <>
       <div className="notice-board">
-          <h2>Notice Board</h2>
+        <h2>Notice Board</h2>
         <ul>
-        {Notice.map((item, index) => {
-              return (
-                <Link key={index} className={item.className} href={item.path}>
-                  <a target="_blank">
-                    <li>{item.title}</li><br />
-                  </a>
-                </Link>
-              );
-            })}
+          {Notice.map((item, index) => {
+            return (
+              <Link key={index} className={item.className} href={item.path}>
+                <a target="_blank">
+                  <li>{item.title}</li>
+                  <br />
+                </a>
+              </Link>
+            );
+          })}
         </ul>
       </div>
     </>
