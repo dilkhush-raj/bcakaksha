@@ -93,13 +93,6 @@ export default function Home() {
                 </Link>
               );
             })}
-            <div className="book-wrap">
-                <Link href="/PYQP">
-                  <a className="books">
-                    <h2>Previous Year Question Paper</h2>
-                  </a>
-                </Link>
-            </div>
           </ul>
         </div>
         <NoticeBoard />

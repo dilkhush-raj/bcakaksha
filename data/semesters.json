@@ -23,7 +23,8 @@
           "name": "BCSL-013: Computer Basics and PC Software Lab",
           "url": "bcsl-013"
         }
-      ]
+      ],
+      "notes": []
     },
     "semester2":{
       "name": "Semester 2",
@@ -57,7 +58,8 @@
           "name": "BCSL-022: Assembly Language Programming Lab",
           "url": "bcsl-022"
         }
-      ]
+      ],
+      "notes": []
     },
     "semester3":{
       "name": "Semester 3",
@@ -91,7 +93,8 @@
           "name": "BCSL-034: DBMS Lab",
           "url": "bcsl-034"
         }
-      ]
+      ],
+      "notes": []
     },
     "semester4":{
       "name": "Semester 4",
@@ -129,7 +132,8 @@
           "name": "BCSL-045: Analysis and Design of Algorithms Lab",
           "url": "bcsl-045"
         }
-      ]
+      ],
+      "notes": []
     },
     "semester5":{
       "name": "Semester 5",
@@ -167,7 +171,8 @@
           "name": "BCSL-058: Computer Oriented Numerical Techniques Lab",
           "url": "bcsl-058"
         }
-      ]
+      ],
+      "notes": []
     },
     "semester6":{
       "name": "Semester 6",
@@ -189,33 +194,8 @@
           "name": "BCSP-064: Project",
           "url": "bcsp-064"
         }
-      ]
-    },
-    "PYQP":{
-      "name": "Previous Year Question Paper",
-      "path": "PYQP",
-      "book": [
-        {
-          "name": "ECO-02: Accountancy-I",
-          "url": "eco02"
-        },
-        {
-          "name": "MCS-011: Problem Solving and Programming",
-          "url": "mcs011"
-        },
-        {
-          "name": "MCS-012: Computer Organisation and Assembly Language Programming",
-          "url": "mcs012"
-        },
-        {
-          "name": "MCS-013: Discrete Mathematics",
-          "url": "mcs013"
-        },
-        {
-          "name": "MCS-015: Communication Skills",
-          "url": "mcs015"
-        }
-      ]
+      ],
+      "notes": []
     }
   }
   

@@ -23,9 +23,19 @@ export default function Semester() {
         />
       </Head>
       <h1>{post.name}</h1>
-      {/* <div>{console.log({post})}</div> */}
+      <div>{console.log({post})}</div>
       <div className="book-wrap">
         {post.book.map((value, index) => (
+          <Link key={index} href={post.path + "/" + value.url}>
+            <a className="books">
+              <h2>{value.name}</h2>
+            </a>
+          </Link>
+        ))}
+      </div>
+
+      <div className="book-wrap">
+        {post.notes.map((value, index) => (
           <Link key={index} href={post.path + "/" + value.url}>
             <a className="books">
               <h2>{value.name}</h2>
