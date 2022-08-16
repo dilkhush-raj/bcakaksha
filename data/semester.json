@@ -4,100 +4,20 @@
     "path": "feg-02",
     "book": [
       {
-        "name": "Unit-1: Writing Paragraph-1",
-        "path": "/semester1/feg-02/unit-1"
+        "name": "Block-1 English-II Part-1",
+        "path": ""
       },
       {
-        "name": "Unit-2: Writing Paragraph-2",
-        "path": "unit-2"
+        "name": "Block-2 English-II Part-2",
+        "path": ""
       },
       {
-        "name": "Unit-3: Writing a Composition",
-        "path": "unit-3"
+        "name": "Block-3 English-II Part-3",
+        "path": ""
       },
       {
-        "name": "Unit-4: Expository Composition",
-        "path": "unit-4"
-      },
-      {
-        "name": "Unit-5: Note-taking-1",
-        "path": "unit-5"
-      },
-      {
-        "name": "Unit-6: Writing reports-1, Reporting Events",
-        "path": "unit-6"
-      },
-      {
-        "name": "Unit-7: Argumentative Composition-1, Techniques of Argument",
-        "path": "unit-7"
-      },
-      {
-        "name": "Unit-8: Argumentative Composition-2, Logical Presentation",
-        "path": "unit-8"
-      },
-      {
-        "name": "Unit-9: Note taking-2, use of tables and diagrams",
-        "path": "unit-9"
-      },
-      {
-        "name": "Unit-10: Writing reports-2, Reporting meetings and speeches",
-        "path": "unit-10"
-      },
-      {
-        "name": "Unit-11: Writing Summaries-1",
-        "path": "unit-11"
-      },
-      {
-        "name": "Unit-12: Writing Summaries-2",
-        "path": "unit-1"
-      },
-      {
-        "name": "Unit-13: Writing Paragraphs-2",
-        "path": "unit-13"
-      },
-      {
-        "name": "Unit-14: Narrative Composition-1",
-        "path": "unit-14"
-      },
-      {
-        "name": "Unit-15: Narrative Composition-2",
-        "path": "unit-15"
-      },
-      {
-        "name": "Unit-16: Writing Reports-3, Reporting Interviews",
-        "path": "unit-16"
-      },
-      {
-        "name": "Unit-17",
-        "path": "unit-17"
-      },
-      {
-        "name": "Unit-18",
-        "path": "unit-18"
-      },
-      {
-        "name": "Unit-19",
-        "path": "unit-19"
-      },
-      {
-        "name": "Unit-20",
-        "path": "unit-20"
-      },
-      {
-        "name": "Unit-21",
-        "path": "unit-21"
-      },
-      {
-        "name": "Unit-22",
-        "path": "unit-22"
-      },
-      {
-        "name": "Unit-23",
-        "path": "unit-23"
-      },
-      {
-        "name": "Unit-24",
-        "path": "unit-24"
+        "name": "Block-4 English-II Part-4",
+        "path": ""
       }
     ]
   },
@@ -106,76 +26,24 @@
     "path": "eco-01",
     "book": [
       {
-        "name": "Nature and Scope of Business",
-        "path": "unit-1"
+        "name": "Block-1 Basic Concept and Forms of Business Organisation",
+        "path": ""
       },
       {
-        "name": "Forms of Business Organisation-I",
+        "name": "Block-2 Financing of Business",
         "path": "unit-2"
       },
       {
-        "name": "Forms of Business Organisation-II",
+        "name": "Block-3 Marketing",
         "path": "unit-3"
       },
       {
-        "name": "Business Promotion",
+        "name": "Block-4 Business Services",
         "path": "unit-4"
       },
       {
-        "name": "Methods of Raising Finance",
+        "name": "Block-5 Government and Business",
         "path": "unit-5"
-      },
-      {
-        "name": "Sources of Long-term Finance and Underwriting",
-        "path": "unit-6"
-      },
-      {
-        "name": "Stock Exchanges",
-        "path": "unit-7"
-      },
-      {
-        "name": "Advertising",
-        "path": "unit-8"
-      },
-      {
-        "name": "Advertising Media",
-        "path": "unit-9"
-      },
-      {
-        "name": "Home Trade and Channels of Distribution",
-        "path": "unit-10"
-      },
-      {
-        "name": "Wholesalers and Retailers",
-        "path": "unit-11"
-      },
-      {
-        "name": "Procedure for Import and Export Trade",
-        "path": "unit-12"
-      },
-      {
-        "name": "Banking",
-        "path": "unit-13"
-      },
-      {
-        "name": "Business Risk and Insurance",
-        "path": "unit-14"
-      },
-      {
-        "name": "Transport and Warehousing",
-        "path": "unit-15"
-      },
-      {
-        "name": "Government In Business",
-        "path": "unit-16"
-      },
-      {
-        "name": "Forms of Organisation in Public Enterprises",
-        "path": "unit-17"
-      },
-      {
-        "name": "Public Utilities",
-        "path": "unit-18"
       }
     ]
   },
@@ -184,52 +52,16 @@
     "path": "bcs-011",
     "book": [
       {
-        "name": "Unit-1",
-        "path": "unit-1"
+        "name": "Block-1 Basic of Computer Hardware",
+        "path": ""
       },
       {
-        "name": "Unit-2",
-        "path": "unit-2"
+        "name": "Block-2 Basic of Computer Software",
+        "path": ""
       },
       {
-        "name": "Unit-3",
-        "path": "unit-3"
-      },
-      {
-        "name": "Unit-4",
-        "path": "unit-4"
-      },
-      {
-        "name": "Unit-5",
-        "path": "unit-5"
-      },
-      {
-        "name": "Unit-6",
-        "path": "unit-6"
-      },
-      {
-        "name": "Unit-7",
-        "path": "unit-7"
-      },
-      {
-        "name": "Unit-8",
-        "path": "unit-8"
-      },
-      {
-        "name": "Unit-9",
-        "path": "unit-9"
-      },
-      {
-        "name": "Unit-10",
-        "path": "unit-10"
-      },
-      {
-        "name": "Unit-11",
-        "path": "unit-11"
-      },
-      {
-        "name": "Unit-12",
-        "path": "unit-12"
+        "name": "Internet Technologies",
+        "path": ""
       }
     ]
   },
@@ -238,52 +70,20 @@
     "path": "bcs-012",
     "book": [
       {
-        "name": "Unit-1",
-        "path": "unit-1"
+        "name": "Block-1 Algebra-I",
+        "path": ""
       },
       {
-        "name": "Unit-2",
-        "path": "unit-2"
+        "name": "Block-2 Algebra-II",
+        "path": ""
       },
       {
-        "name": "Unit-3",
-        "path": "unit-3"
+        "name": "Block-3 Calculus",
+        "path": ""
       },
       {
-        "name": "Unit-4",
-        "path": "unit-4"
-      },
-      {
-        "name": "Unit-5",
-        "path": "unit-5"
-      },
-      {
-        "name": "Unit-6",
-        "path": "unit-6"
-      },
-      {
-        "name": "Unit-7",
-        "path": "unit-7"
-      },
-      {
-        "name": "Unit-8",
-        "path": "unit-8"
-      },
-      {
-        "name": "Unit-9",
-        "path": "unit-9"
-      },
-      {
-        "name": "Unit-10",
-        "path": "unit-10"
-      },
-      {
-        "name": "Unit-11",
-        "path": "unit-11"
-      },
-      {
-        "name": "Unit-12",
-        "path": "unit-12"
+        "name": "Block-4 Vectors and Three-Dimensional Geometry",
+        "path": ""
       }
     ]
   },
@@ -643,139 +443,6 @@
       }
     ]
   },
-  
-
-  "eco02": {
-    "name": "ECO-02 Previous Year Question Paper",
-    "path": "mcs011",
-    "book": [
-      {
-        "name": "June 2021",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:8229157a-9719-49cb-bbdb-e96d46274b28"
-      },
-      {
-        "name": "December 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:dd7f2352-9389-4953-a9be-2c27867d7997"
-      },
-      {
-        "name": "June 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:a7d658b5-ec31-4faf-b7be-a52d4c7c030a"
-      },
-      {
-        "name": "December 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:a9b3e450-6ee0-441d-b714-de5b1a10f2b6"
-      },
-      {
-        "name": "June 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:36f8ecf7-3a53-4ba6-b246-6245e008b464"
-      }
-    ]
-  },
-  "mcs011": {
-    "name": "MCS-011 Previous Year Question Paper",
-    "path": "mcs011",
-    "book": [
-      {
-        "name": "June 2021",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:dab2248d-a764-4d79-85cd-fa2202bc21d6"
-      },
-      {
-        "name": "December 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:f7dd2ad2-5d15-4394-8355-2a987e1dcf45"
-      },
-      {
-        "name": "June 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:2b04c6d4-917e-4134-81ae-67ceed09b5e4"
-      },
-      {
-        "name": "December 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:3cfb3a39-5f84-4916-a75b-952e1fe8bd9e"
-      },
-      {
-        "name": "June 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:88ac30c5-9231-466c-bdf0-4562847ffcd0"
-      }
-    ]
-  },
-  "mcs012": {
-    "name": "MCS-011 Previous Year Question Paper",
-    "path": "mcs011",
-    "book": [
-      {
-        "name": "June 2021",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b4f3db90-72b1-43a4-8a60-c29838e7f4cb"
-      },
-      {
-        "name": "December 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:e659e5e1-195d-46fb-b50b-4f439f6e2c9c"
-      },
-      {
-        "name": "June 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:dc7a1902-ed1f-45be-821e-f04b27063308"
-      },
-      {
-        "name": "December 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:c4850141-7c7b-48a5-b8e3-c7340c7b73d2"
-      },
-      {
-        "name": "June 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:3f4274f0-e580-4bb0-a636-8e4222f0e665"
-      }
-    ]
-  },
-  "mcs013": {
-    "name": "MCS-011 Previous Year Question Paper",
-    "path": "mcs011",
-    "book": [
-      {
-        "name": "June 2021",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:7435b775-9d78-4a7e-b2c3-2075728fea09"
-      },
-      {
-        "name": "December 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:42079e7e-081e-4e45-9151-6cafe3dd48ee"
-      },
-      {
-        "name": "June 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:42079e7e-081e-4e45-9151-6cafe3dd48ee"
-      },
-      {
-        "name": "December 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:a91d4cda-776e-4307-9ab7-935cef85429c"
-      },
-      {
-        "name": "June 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:faa5deb4-e6f6-46c0-8cd2-609d4947990e"
-      }
-    ]
-  },
-  "mcs015": {
-    "name": "MCS-011 Previous Year Question Paper",
-    "path": "mcs011",
-    "book": [
-      {
-        "name": "June 2021",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:0580ff4b-a67f-43bf-a470-dfcec8093ca6"
-      },
-      {
-        "name": "December 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:376fed23-fc3a-4469-b35e-c2821e756da8"
-      },
-      {
-        "name": "June 2020",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:da1a7221-481a-4c89-a766-6ac6a0182cb3"
-      },
-      {
-        "name": "December 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:da1a7221-481a-4c89-a766-6ac6a0182cb3"
-      },
-      {
-        "name": "June 2019",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:94f125f6-ef10-43d4-9e49-f7696c18bdec"
-      }
-    ]
-  },
-
   "mcs-014": {
     "name": "MCS-014: Systems Analysis and Design",
     "path": "mcs-014",
@@ -1011,6 +678,274 @@
       {
         "name": "Section-1 DBMS Lab",
         "path": "https://www.egyankosh.ac.in/bitstream/123456789/11613/1/Section-1.pdf"
+      }
+    ]
+  },
+  "bcs-040": {
+    "name": "BCS-040: Statistical Techniques",
+    "path": "bcs-040",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "mcs-024": {
+    "name": "MCS-024: Object Oriented Technologies and Java Programming",
+    "path": "mcs-024",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcs-041": {
+    "name": "BCS-041: Fundamental of Computer Networks",
+    "path": "bcs-041",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcs-042": {
+    "name": "BCS-042: Analysis and Design of Algorithms",
+    "path": "bcs-042",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "mcsl-016": {
+    "name": "MCSL-016: Internet Concepts and Web Design (Lab Course)",
+    "path": "mcsl-016",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcsl-043": {
+    "name": "BCSL-043: Java Programming Lab",
+    "path": "bcsl-043",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcsl-044": {
+    "name": "BCSL-044: Statistical Techniques Lav",
+    "path": "bcsl-044",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcsl-045": {
+    "name": "BCSL-045: Analysis and Design of Algorithms Lab",
+    "path": "bcsl-045",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcs-051": {
+    "name": "BCS-051: Introduction to Software Engineering",
+    "path": "bcs-051",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcs-052": {
+    "name": "BCS-052: Network Programming and Administration",
+    "path": "bcs-052",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcs-053": {
+    "name": "BCS-053: Web Programming",
+    "path": "bcs-053",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcs-054": {
+    "name": "BCS-054: Computer Oriented Numerical Techniques",
+    "path": "bcs-054",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcs-055": {
+    "name": "BCS-055: Business Communication",
+    "path": "bcs-055",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcsl-056": {
+    "name": "BCSL-056: Network Programming and Adminnistration Lab",
+    "path": "bcsl-056",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcsl-057": {
+    "name": "BCSL-057: Web Programming Lab",
+    "path": "bcsl-057",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "bcsl-058": {
+    "name": "BCSL-058: Computer Oriented Numerical Techniques Lab",
+    "path": "bcsl-058",
+    "book": [
+      {
+        "name": "",
+        "path": ""
+      }
+    ]
+  },
+  "mcs-022": {
+    "name": "MCS-022 Operating System Concepts and Networking Management",
+    "path": "mcs-022",
+    "book": [
+      {
+        "name": "Unit-1 Graphical User Interface",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10050/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-2 Introduction to Operating System",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10051/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-3 Introduction to Networking Concept",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10052/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-4 Internetworking: Concept, Architecture and Protocols",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10053/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-5 Introduction to Linux Operating System",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10056/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-6 Linux Commands and Utilities",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10057/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-7 Linux Utilities and Editors",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10060/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-8 User to User Communication",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10061/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-9 Unix System Administration",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10062/1/Unit-5.pdf"
+      },
+      {
+        "name": "Unit-10 Windows 2000 Networking",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10063/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-11 Managing Windows 2000 Server",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10064/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-12 Advanced Windows 2000 Networking",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10065/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-13 Windows XP Networking",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10066/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-14 Security Concepts",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10067/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-15 Computer Security",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10068/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-16 Security and Management-I",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10069/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-17 Security and Management-II",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/10070/1/Unit-4.pdf"
+      }
+    ]
+  },
+  "bcs-062": {
+    "name": "BCS-062 E-Commerce",
+    "path": "bcs-062",
+    "book": [
+      {
+        "name": "Block-1 E-Commerce concepts and models",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/51830/1/Block-1.pdf"
+      },
+      {
+        "name": "Block-2 Practices in E-commerce",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/51831/1/Block-2.pdf"
+      }
+    ]
+  },
+  "bcsl-063": {
+    "name": "BCSL-063 Operating System Concepts and Networking LAB",
+    "path": "bcsl-063",
+    "book": [
+      {
+        "name": "Lab manual",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/51908/1/BCSL-063.pdf"
+      }
+    ]
+  },
+  "bcsp-064": {
+    "name": "BCSP-064 Bachelor of Computer Applications",
+    "path": "bcsp-064",
+    "book": [
+      {
+        "name": "Project guidelines",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/51906/1/project_guidelines.pdf"
       }
     ]
   }

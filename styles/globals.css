@@ -139,9 +139,10 @@ body {
 /* ##########  Hero Section Starts  ########## */
 
 .hero {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(40, 11, 187, 0.7)),
-    url(/images/hero.jpg);
+  background-image: url(/images/hero.svg);
+  background-color: rgb(184, 231, 255);
   background-repeat: no-repeat;
+  background-position: right;
   background-size: cover;
   width: 100%;
   gap: 20px;
@@ -158,6 +159,10 @@ body {
   flex-direction: column;
   margin: 0 auto;
   gap: 2rem;
+  backdrop-filter: blur(3px);
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.326);
 }
 
 .hero-content h3 {
@@ -381,11 +386,11 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   width: 151px;
-  height: 202px;
+  height: 180px;
   display: flex;
   align-items: flex-end;
   padding: 1rem;
-  padding-left: 1.6rem;
+  padding-left: 1.3rem;
   color: white;
   flex-wrap: wrap;
 }
@@ -399,7 +404,7 @@ footer {
 }
 
 .books h2{
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 /* .books li:hover{
