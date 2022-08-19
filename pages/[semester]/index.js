@@ -1,22 +1,20 @@
 import Head from "next/head";
 import Link from "next/link";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 import semesters from "../../data/semesters.json";
 
 export default function Semester() {
   const router = useRouter();
   const post = semesters[router.query.semester];
-  if (!post)
-    return <p>
-           </p>;
+  if (!post) return <p></p>;
 
   return (
     <div className="index">
       <Head>
-        <title>{post.name + " - IGNOU की BCA कक्षा"}</title><
-           meta
-    name = "description"
+        <title>{post.name + " - IGNOU की BCA कक्षा"}</title>
+        <meta
+          name="description"
           content="IGNOU की BCA कक्षा: Ebooks, Syllabus, Previous Year Question Paper, Assignments, Notes and many more."
         />
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
@@ -44,7 +42,7 @@ export default function Semester() {
           </Link>
         ))}
       </div>
-      
+
       <h2>Assignments</h2>
       <div className="book-wrap">
         {post.assignments.map((value, index) => (
