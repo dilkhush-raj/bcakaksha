@@ -52,6 +52,11 @@ function Sidebar() {
       className: "nav-text",
     },
     {
+      title: "Assignments",
+      path: "https://webservices.ignou.ac.in/assignments/schools/socis/bca/bca.html",
+      className: "nav-text",
+    },
+    {
       title: "Previous Year Questions",
       path: "https://webservices.ignou.ac.in/Pre-Question/",
       className: "nav-text",
