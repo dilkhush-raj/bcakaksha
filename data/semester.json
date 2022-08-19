@@ -92,28 +92,28 @@
     "path": "bcsl-013",
     "book": [
       {
-        "name": "Section-1",
-        "path": "section-1"
+        "name": "Unit-1 Operating System",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11013/1/Unit-1.pdf"
       },
       {
-        "name": "Section-2",
-        "path": "section-2"
+        "name": "Unit-2 Word Processor",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11015/1/Unit-2.pdf"
       },
       {
-        "name": "Section-3",
-        "path": "section-3"
+        "name": "Unit-3 Spread Sheet",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11017/1/Unit-3.pdf"
       },
       {
-        "name": "Section-4",
-        "path": "section-4"
+        "name": "Unit-4 PowerPoint",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11019/1/Unit-4.pdf"
       },
       {
-        "name": "Section-5",
-        "path": "section-5"
+        "name": "Unit-5 E-mail",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11021/1/Unit-5.pdf"
       },
       {
-        "name": "Section-6",
-        "path": "section-6"
+        "name": "Unit-6 Browsing and Discussion Forum",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11022/1/Unit-6.pdf"
       }
     ]
   },

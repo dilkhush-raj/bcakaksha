@@ -24,7 +24,28 @@
           "url": "bcsl-013"
         }
       ],
-      "notes": []
+      "notes": [
+        {
+          "name": "ECO-01 Help Book",
+          "url": "pdf/ECO-01.pdf"
+        },
+        {
+          "name": "BCS-011 Help Book",
+          "url": "pdf/BCS-011.pdf"
+        }
+      ],
+      "assignments": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ],
+      "pyqp": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ]
     },
     "semester2":{
       "name": "Semester 2",
@@ -59,7 +80,28 @@
           "url": "bcsl-022"
         }
       ],
-      "notes": []
+      "notes": [
+        {
+          "name": "MCS-011 Help Book",
+          "url": "pdf/MCS-011.pdf"
+        },
+        {
+          "name": "MCS-012 Notes",
+          "url": "pdf/MCS-012.pdf"
+        }
+      ],
+      "assignments": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ],
+      "pyqp": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ]
     },
     "semester3":{
       "name": "Semester 3",
@@ -94,7 +136,26 @@
           "url": "bcsl-034"
         }
       ],
-      "notes": []
+      "notes": [
+        {
+          "name": "MCS-014 Help Book",
+          "url": "pdf/MCS-014.pdf"
+        },
+        {
+          "name": "BCS-031 Help Book",
+          "url": "pdf/BCS-031.pdf"
+        }
+      ],
+      "assignments": [{
+        "name": "Coming Soon",
+        "url": "#"
+      }],
+      "pyqp": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ]
     },
     "semester4":{
       "name": "Semester 4",
@@ -133,7 +194,24 @@
           "url": "bcsl-045"
         }
       ],
-      "notes": []
+      "notes": [
+        {
+          "name": "MCS-024 Help Book",
+          "url": "pdf/MCS-024.pdf"
+        }
+      ],
+      "assignments": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ],
+      "pyqp": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ]
     },
     "semester5":{
       "name": "Semester 5",
@@ -172,7 +250,24 @@
           "url": "bcsl-058"
         }
       ],
-      "notes": []
+      "notes": [
+        {
+          "name": "BCS-055 Help Book",
+          "url": "pdf/BCS-055.pdf"
+        }
+      ],
+      "assignments": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ],
+      "pyqp": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ]
     },
     "semester6":{
       "name": "Semester 6",
@@ -195,7 +290,24 @@
           "url": "bcsp-064"
         }
       ],
-      "notes": []
+      "notes": [
+        {
+          "name": "Not Available",
+          "url": "#"
+        }
+      ],
+      "assignments": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ],
+      "pyqp": [
+        {
+          "name": "Coming Soon",
+          "url": "#"
+        }
+      ]
     }
   }
   
