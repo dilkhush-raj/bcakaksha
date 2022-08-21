@@ -132,8 +132,8 @@ const defaultLayoutPluginInstance = defaultLayoutPlugin();
         <div className="category">
         {Category.map((item, index) => {
           return (
-            <div>
-              <Link key={index} href={item.path}>
+            <div key={index}>
+              <Link  href={item.path}>
                 <div>
                 <img src={"/images/" + item.img} alt={item.title} />
                 <b>{item.title}</b></div>
