@@ -1,9 +1,17 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import NoticeBoard from "../components/NoticeBoard";
+// import NoticeBoard from "../components/NoticeBoard";
+
+import { Viewer, Worker } from '@react-pdf-viewer/core';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+
 
 export default function Home() {
+const defaultLayoutPluginInstance = defaultLayoutPlugin();
   function explore() {
     var element = document.getElementById("menu");
     element.classList.toggle("open-menu");
@@ -43,6 +51,29 @@ export default function Home() {
     },
   ];
 
+  const Category = [
+    {
+      title: "Imp Links",
+      path: "",
+      img: "icons8-link.svg"
+    },
+    {
+      title: "Notice Board",
+      path: "",
+      img: "icons8-noticeboard.svg"
+    },
+    {
+      title: "Blog",
+      path: "",
+      img: "icons8-blog.svg"
+    },
+    {
+      title: "Resources",
+      path: "",
+      img: "icons8-albums.svg"
+    },
+  ];
+
   return (
     <div className="page">
       <Head>
@@ -70,10 +101,13 @@ export default function Home() {
 
           <button className="cta">
             <Link href="https://discord.gg/M4CXzrud3e">
-              <a target="_blank">Join Discord Group</a>
+              <a target="_blank">Join on Discord</a>
             </Link>
           </button>
         </div>
+      </div>
+      <div className="announcement">
+        <marquee behavior="scroll" direction="">Under development | Please bookmark this website | Do share with your friends</marquee>
       </div>
       <section className="home-index">
         <div>
@@ -95,7 +129,32 @@ export default function Home() {
             })}
           </ul>
         </div>
-        <NoticeBoard />
+        <div className="category">
+        {Category.map((item, index) => {
+          return (
+            <div>
+              <Link key={index} href={item.path}>
+                <div>
+                <img src={"/images/" + item.img} alt={item.title} />
+                <b>{item.title}</b></div>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+        {/* <NoticeBoard /> */}
+        
+
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.js">
+        <div style={{ height: '750px'}}>
+            <Viewer
+                fileUrl="/pdf/ECO-01.pdf"
+                plugins={[
+                    defaultLayoutPluginInstance,
+                ]}
+            />
+        </div>
+    </Worker>
       </section>
     </div>
   );

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="40" viewBox="0 0 33 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.221" y1="-0.076" x2="0.864" y2="1.25" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#33bef0"/>
+      <stop offset="1" stop-color="#22a5e2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.281" y1="0.5" x2="1.605" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dfe9f2"/>
+      <stop offset="0.391" stop-color="#d6e0e9"/>
+      <stop offset="1" stop-color="#bfc8d1"/>
+    </linearGradient>
+  </defs>
+  <g id="notes" transform="translate(-6 -4)">
+    <path id="Path_1" data-name="Path 1" d="M37,4H11A2,2,0,0,0,9,6V42a2,2,0,0,0,2,2H37a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2Z" fill="url(#linear-gradient)"/>
+    <path id="Path_2" data-name="Path 2" d="M12.5,12h-5A1.5,1.5,0,0,1,6,10.5H6A1.5,1.5,0,0,1,7.5,9h5A1.5,1.5,0,0,1,14,10.5h0A1.5,1.5,0,0,1,12.5,12ZM14,19.5h0A1.5,1.5,0,0,0,12.5,18h-5A1.5,1.5,0,0,0,6,19.5H6A1.5,1.5,0,0,0,7.5,21h5A1.5,1.5,0,0,0,14,19.5Zm0,9h0A1.5,1.5,0,0,0,12.5,27h-5A1.5,1.5,0,0,0,6,28.5H6A1.5,1.5,0,0,0,7.5,30h5A1.5,1.5,0,0,0,14,28.5Zm0,9h0A1.5,1.5,0,0,0,12.5,36h-5A1.5,1.5,0,0,0,6,37.5H6A1.5,1.5,0,0,0,7.5,39h5A1.5,1.5,0,0,0,14,37.5Z" fill="url(#linear-gradient-2)"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="9" height="2" rx="0.5" transform="translate(18 26)" fill="#1b9de2"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="6" height="2" rx="0.5" transform="translate(29 26)" fill="#1b9de2"/>
+    <path id="Path_3" data-name="Path 3" d="M19,12H34a1.146,1.146,0,0,1,1,1.25v7.5A1.146,1.146,0,0,1,34,22H19a1.146,1.146,0,0,1-1-1.25v-7.5A1.146,1.146,0,0,1,19,12Z" fill="#50e6ff"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="17" height="2" rx="0.5" transform="translate(18 30)" fill="#1b9de2"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="11" height="2" rx="0.5" transform="translate(18 34)" fill="#1b9de2"/>
+    <path id="Path_4" data-name="Path 4" d="M12.5,8H9V9h3.5a1.5,1.5,0,1,1,0,3H9v1h3.5a2.5,2.5,0,1,0,0-5Z" opacity="0.05"/>
+    <path id="Path_5" data-name="Path 5" d="M12.5,8.5H9V9h3.5a1.5,1.5,0,1,1,0,3H9v.5h3.5a2,2,0,0,0,0-4Z" opacity="0.07"/>
+    <path id="Path_6" data-name="Path 6" d="M12.5,17H9v1h3.5a1.5,1.5,0,1,1,0,3H9v1h3.5a2.5,2.5,0,0,0,0-5Z" opacity="0.05"/>
+    <path id="Path_7" data-name="Path 7" d="M12.5,17.5H9V18h3.5a1.5,1.5,0,1,1,0,3H9v.5h3.5a2,2,0,0,0,0-4Z" opacity="0.07"/>
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_8" data-name="Path 8" d="M12.5,26H9v1h3.5a1.5,1.5,0,1,1,0,3H9v1h3.5a2.5,2.5,0,1,0,0-5Z" opacity="0.05"/>
+      <path id="Path_9" data-name="Path 9" d="M12.5,26.5H9V27h3.5a1.5,1.5,0,1,1,0,3H9v.5h3.5a2,2,0,0,0,0-4Z" opacity="0.07"/>
+    </g>
+    <g id="Group_2" data-name="Group 2">
+      <path id="Path_10" data-name="Path 10" d="M12.5,35H9v1h3.5a1.5,1.5,0,1,1,0,3H9v1h3.5a2.5,2.5,0,0,0,0-5Z" opacity="0.05"/>
+      <path id="Path_11" data-name="Path 11" d="M12.5,35.5H9V36h3.5a1.5,1.5,0,1,1,0,3H9v.5h3.5a2,2,0,0,0,0-4Z" opacity="0.07"/>
+    </g>
+  </g>
+</svg>
