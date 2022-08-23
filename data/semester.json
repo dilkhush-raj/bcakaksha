@@ -2,6 +2,7 @@
   "feg-02": {
     "name": "FEG-02: Foundation Course in English-2",
     "path": "feg-02",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Block-1 English-II Part-1",
@@ -24,6 +25,7 @@
   "eco-01": {
     "name": "ECO-01: Business Organisation",
     "path": "eco-01",
+    "date": "August 22 2022 10:00:00 UTC+0530",
     "book": [
       {
         "name": "Block-1 Basic Concept and Forms of Business Organisation",
@@ -120,6 +122,7 @@
   "eco-02": {
     "name": "ECO 02: Accountancy-I",
     "path": "eco-02",
+    "date": "August 06 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Basic Concepts of Accounting",
@@ -214,6 +217,7 @@
   "mcs-011": {
     "name": "MCS 011: Problem Solving and Programming",
     "path": "mcs-011",
+    "date": "September 05 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Problem Solving",
@@ -268,6 +272,7 @@
   "mcs-012": {
     "name": "MCS 012: Computer Organisation and Assembly Language Programming",
     "path": "mcs-012",
+    "date": "August 29 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 The Basic Computer",
@@ -342,6 +347,7 @@
   "mcs-013": {
     "name": "MCS013: Discrete Mathematics",
     "path": "mcs-013",
+    "date": "September 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Propositional Calculus",
@@ -376,6 +382,7 @@
   "mcs-015": {
     "name": "MCS015: Communication Skills",
     "path": "mcs-015",
+    "date": "August 27 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 The Process of Communication",
@@ -422,6 +429,7 @@
   "bcsl-021": {
     "name": "BCSL 021: C Language Programming Lab",
     "path": "bcsl-021",
+    "date": "August 23 2022 15:15:59 UTC+0530",
     "book": [
       {
         "name": "Section-1 C Programming Lab",

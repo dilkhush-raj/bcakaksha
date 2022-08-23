@@ -1,17 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-// import NoticeBoard from "../components/NoticeBoard";
-
-import { Viewer, Worker } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
-
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-
 
 export default function Home() {
-const defaultLayoutPluginInstance = defaultLayoutPlugin();
   function explore() {
     var element = document.getElementById("menu");
     element.classList.toggle("open-menu");
@@ -59,12 +50,12 @@ const defaultLayoutPluginInstance = defaultLayoutPlugin();
     },
     {
       title: "Notice Board",
-      path: "",
+      path: "/notice",
       img: "icons8-noticeboard.svg"
     },
     {
       title: "Blog",
-      path: "",
+      path: "/Timer",
       img: "icons8-blog.svg"
     },
     {
@@ -144,17 +135,6 @@ const defaultLayoutPluginInstance = defaultLayoutPlugin();
       </div>
         {/* <NoticeBoard /> */}
         
-
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.js">
-        <div style={{ height: '750px'}}>
-            <Viewer
-                fileUrl="/pdf/ECO-01.pdf"
-                plugins={[
-                    defaultLayoutPluginInstance,
-                ]}
-            />
-        </div>
-    </Worker>
       </section>
     </div>
   );
