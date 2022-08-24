@@ -32,10 +32,10 @@ function Timer ({date}){
       setSeconds(s);
 
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
-        setSeconds(0);
-        setDays(0);
-        setHours(0);
-        setMinutes(0);
+        setDays("O");
+        setHours("V");
+        setMinutes("E");
+        setSeconds("R");
       }
     }, 1000);
 
@@ -70,6 +70,7 @@ function Timer ({date}){
                 <span className="label">Seconds</span>
               </div>
             </div>
+            <span>{date}</span>
           </div>
         </>
     </div>

@@ -2,7 +2,6 @@
   "feg-02": {
     "name": "FEG-02: Foundation Course in English-2",
     "path": "feg-02",
-    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Block-1 English-II Part-1",
@@ -52,6 +51,7 @@
   "bcs-011": {
     "name": "BCS-011: Computer Basics and PC Software",
     "path": "bcs-011",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Block-1 Basic of Computer Hardware",
@@ -70,6 +70,7 @@
   "bcs-012": {
     "name": "BCS-012: Basic Mathematics",
     "path": "bcs-012",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Block-1 Algebra-I",
@@ -92,6 +93,7 @@
   "bcsl-013": {
     "name": "BCSL-013: Computer Basics and PC Software Lab",
     "path": "bcsl-013",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Operating System",
@@ -440,6 +442,7 @@
   "bcsl-022": {
     "name": "BCSL 022: Assembly Language Programming Lab",
     "path": "bcsl-022",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Section-1 Digital Logic Circuits",
@@ -454,6 +457,7 @@
   "mcs-014": {
     "name": "MCS-014: Systems Analysis and Design",
     "path": "mcs-014",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Introduction to SAD",
@@ -512,6 +516,7 @@
   "mcs-021": {
     "name": "Data and File Structures",
     "path": "mcs-021",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Analysis of Algorithms",
@@ -566,6 +571,7 @@
   "mcs-023": {
     "name": "Introduction to Database Management System",
     "path": "mcs-023",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Basic Concepts",
@@ -612,6 +618,7 @@
   "bcs-031": {
     "name": "Programming in C++",
     "path": "bcs-031",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Object Oriented Programming",
@@ -662,6 +669,7 @@
   "bcsl-032": {
     "name": "C++ Programming Lab",
     "path": "bcsl-032",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Section-1 C+ + Programming Lab",
@@ -672,6 +680,7 @@
   "bcsl-033": {
     "name": "Data and File Structures Lab",
     "path": "bcsl-033",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Section-1 Data and File Structures Lab Manual",
@@ -682,6 +691,7 @@
   "bcsl-034": {
     "name": "DBMS Lab",
     "path": "bcsl-034",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Section-1 DBMS Lab",
@@ -692,6 +702,7 @@
   "bcs-040": {
     "name": "BCS-040: Statistical Techniques",
     "path": "bcs-040",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -702,6 +713,7 @@
   "mcs-024": {
     "name": "MCS-024: Object Oriented Technologies and Java Programming",
     "path": "mcs-024",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -712,6 +724,7 @@
   "bcs-041": {
     "name": "BCS-041: Fundamental of Computer Networks",
     "path": "bcs-041",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -722,6 +735,7 @@
   "bcs-042": {
     "name": "BCS-042: Analysis and Design of Algorithms",
     "path": "bcs-042",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -732,6 +746,7 @@
   "mcsl-016": {
     "name": "MCSL-016: Internet Concepts and Web Design (Lab Course)",
     "path": "mcsl-016",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -742,6 +757,7 @@
   "bcsl-043": {
     "name": "BCSL-043: Java Programming Lab",
     "path": "bcsl-043",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -752,6 +768,7 @@
   "bcsl-044": {
     "name": "BCSL-044: Statistical Techniques Lav",
     "path": "bcsl-044",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -762,6 +779,7 @@
   "bcsl-045": {
     "name": "BCSL-045: Analysis and Design of Algorithms Lab",
     "path": "bcsl-045",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -772,6 +790,7 @@
   "bcs-051": {
     "name": "BCS-051: Introduction to Software Engineering",
     "path": "bcs-051",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -782,6 +801,7 @@
   "bcs-052": {
     "name": "BCS-052: Network Programming and Administration",
     "path": "bcs-052",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -792,6 +812,7 @@
   "bcs-053": {
     "name": "BCS-053: Web Programming",
     "path": "bcs-053",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -802,6 +823,7 @@
   "bcs-054": {
     "name": "BCS-054: Computer Oriented Numerical Techniques",
     "path": "bcs-054",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -812,6 +834,7 @@
   "bcs-055": {
     "name": "BCS-055: Business Communication",
     "path": "bcs-055",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -822,6 +845,7 @@
   "bcsl-056": {
     "name": "BCSL-056: Network Programming and Adminnistration Lab",
     "path": "bcsl-056",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -832,6 +856,7 @@
   "bcsl-057": {
     "name": "BCSL-057: Web Programming Lab",
     "path": "bcsl-057",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -842,6 +867,7 @@
   "bcsl-058": {
     "name": "BCSL-058: Computer Oriented Numerical Techniques Lab",
     "path": "bcsl-058",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "",
@@ -852,6 +878,7 @@
   "mcs-022": {
     "name": "MCS-022 Operating System Concepts and Networking Management",
     "path": "mcs-022",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Unit-1 Graphical User Interface",
@@ -926,6 +953,7 @@
   "bcs-062": {
     "name": "BCS-062 E-Commerce",
     "path": "bcs-062",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Block-1 E-Commerce concepts and models",
@@ -940,6 +968,7 @@
   "bcsl-063": {
     "name": "BCSL-063 Operating System Concepts and Networking LAB",
     "path": "bcsl-063",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Lab manual",
@@ -950,6 +979,7 @@
   "bcsp-064": {
     "name": "BCSP-064 Bachelor of Computer Applications",
     "path": "bcsp-064",
+    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
         "name": "Project guidelines",

@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </div>
       <div className="announcement">
-        <marquee behavior="scroll" direction="">Under development | Please bookmark this website | Do share with your friends</marquee>
+        <marquee behavior="scroll" direction="">📢 Under Construction 🚧 | Please bookmark this website 🔖 | Do share with your friends 🎉</marquee>
       </div>
       <section className="home-index">
         <div>

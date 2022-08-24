@@ -506,7 +506,7 @@ embed {
 
 
 .timer-wrapper {
-  padding: .5rem;
+  padding: .5rem 1rem;
   border-radius: 5px;
   display: flex;
   width: 100%;
@@ -514,6 +514,7 @@ embed {
   z-index: 2;
   background-color: rgba(151, 212, 255, 0.732);
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: .5rem 0 1rem;
 }
 
