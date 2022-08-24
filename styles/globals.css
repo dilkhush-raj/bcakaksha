@@ -83,6 +83,7 @@ body {
   color: var(--primary-color);
   text-shadow: 2px -2px 5px rgba(182, 180, 182, 0.4);
   color: transparent;
+  /* background-color: var(--primary-color); */
   background-color: var(--primary-color);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -162,7 +163,7 @@ body {
   backdrop-filter: blur(3px);
   padding: 1rem;
   border-radius: 20px;
-  background-color: rgba(252, 252, 252, 0.326);
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .hero-content h3 {
@@ -200,10 +201,6 @@ body {
   width: fit-content;
 }
 
-.cta:hover {
-  border: 5px solid white;
-}
-
 .hero-img {
   width: 100%;
   height: 100%;
@@ -228,6 +225,33 @@ body {
   padding: 1rem .5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.announcement{
+  display: flex;
+  background-color: #350288;
+  gap: .5rem;
+  padding: .5rem 0;
+}
+
+.announcement *{
+  color: white;
+}
+
+.category{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.category div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .semester-bags {
@@ -378,6 +402,8 @@ footer {
   padding-left: .5rem;
 }
 
+
+
 .book-page{
   padding: 1rem;
 }
@@ -396,6 +422,13 @@ footer {
   flex-wrap: wrap;
 }
 
+
+.note{
+  background: url(/images/notes.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 2.4rem;
+}
 .bk{
   flex-direction: row;
   display: flex;
@@ -462,8 +495,52 @@ embed {
     margin: 1rem auto;
     padding: 1rem;
   }
+  .category{
+    grid-row: 1/2;
+  }
 }
 
 .home-list{
   list-style-position: inside;
+}
+
+
+.timer-wrapper {
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  z-index: 2;
+  background-color: rgba(151, 212, 255, 0.732);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: .5rem 0 1rem;
+}
+
+.timer-inner {
+  color: #333;
+  display: flex;
+  padding: .5rem;
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+.timer-segment {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.divider,
+.time {
+  font-size: 1.5rem;
+}
+
+.diver {
+  padding: 0 2rem;
+}
+
+.label {
+  font-size: .7rem;
 }

@@ -1,0 +1,74 @@
+{
+    "feg-02" : {
+        "date": "August 01 2022 14:00:00 UTC+0530"
+    },
+    "eco-01" : {
+        "date": "August 22 2022 10:00:00 UTC+0530"
+    },
+    "bcs-012" : {
+        "date": "August 29 2022 10:00:00 UTC+0530"
+    },
+    "bcs-011" : {
+        "date": "September 05 2022 10:00:00 UTC+0530"
+    },
+    "eco-02" : {
+        "date": "August 06 2022 14:00:00 UTC+0530"
+    },
+    "mcs-015" : {
+        "date": "August 27 2022 14:00:00 UTC+0530"
+    },
+    "mcs-012" : {
+        "date": "August 29 2022 14:00:00 UTC+0530"
+    },
+    "mcs-013" : {
+        "date": "September 01 2022 14:00:00 UTC+0530"
+    },
+    "mcs-011" : {
+        "date": "September 05 2022 14:00:00 UTC+0530"
+    },
+    "mcs-014" : {
+        "date": "August 23 2022 14:00:00 UTC+0530"
+    },
+    "mcs-021" : {
+        "date": "August 25 2022 14:00:00 UTC+0530"
+    },
+    "mcs-023" : {
+        "date": "August 08 2022 14:00:00 UTC+0530"
+    },
+    "bcs-031" : {
+        "date": "September 01 2022 10:00:00 UTC+0530"
+    },
+    "mcs-024" : {
+        "date": "August 10 2022 14:00:00 UTC+0530"
+    },
+    "bcs-040" : {
+        "date": "September 03 2022 10:00:00 UTC+0530"
+    },
+    "bcs-041" : {
+        "date": "August 27 2022 10:00:00 UTC+0530"
+    },
+    "bcs-042" : {
+        "date": "September 02 2022 10:00:00 UTC+0530"
+    },
+    "bcs-051" : {
+        "date": "July 29 2022 10:00:00 UTC+0530"
+    },
+    "bcs-052" : {
+        "date": "August 08 2022 10:00:00 UTC+0530"
+    },
+    "bcs-053" : {
+        "date": "August 10 2022 10:00:00 UTC+0530"
+    },
+    "bcs-054" : {
+        "date": "August 12 2022 10:00:00 UTC+0530"
+    },
+    "bcs-055" : {
+        "date": "August 13 2022 10:00:00 UTC+0530"
+    },
+    "bcs-062" : {
+        "date": "August 16 2022 10:00:00 UTC+0530"
+    },
+    "mcs-022" : {
+        "date": "July 29 2022 14:00:00 UTC+0530"
+    }
+}

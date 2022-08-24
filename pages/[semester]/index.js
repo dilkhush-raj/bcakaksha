@@ -19,7 +19,7 @@ export default function Semester() {
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
       <h1>{post.name}</h1>
-      <div>{console.log({ post })}</div>
+      {/* <div>{console.log({ post })}</div> */}
       <h2>Books</h2>
       <div className="book-wrap">
         {post.book.map((value, index) => (
@@ -35,7 +35,7 @@ export default function Semester() {
       <div className="book-wrap">
         {post.notes.map((value, index) => (
           <Link key={index} href={value.url}>
-            <a className="books" target="_blank">
+            <a className="books note" target="_blank">
               <h2>{value.name}</h2>
             </a>
           </Link>

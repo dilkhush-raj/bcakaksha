@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import NoticeBoard from "../components/NoticeBoard";
 
 export default function Home() {
   function explore() {
@@ -43,6 +42,29 @@ export default function Home() {
     },
   ];
 
+  const Category = [
+    {
+      title: "Imp Links",
+      path: "",
+      img: "icons8-link.svg"
+    },
+    {
+      title: "Notice Board",
+      path: "/notice",
+      img: "icons8-noticeboard.svg"
+    },
+    {
+      title: "Blog",
+      path: "/Timer",
+      img: "icons8-blog.svg"
+    },
+    {
+      title: "Resources",
+      path: "",
+      img: "icons8-albums.svg"
+    },
+  ];
+
   return (
     <div className="page">
       <Head>
@@ -70,10 +92,13 @@ export default function Home() {
 
           <button className="cta">
             <Link href="https://discord.gg/M4CXzrud3e">
-              <a target="_blank">Join Discord Group</a>
+              <a target="_blank">Join on Discord</a>
             </Link>
           </button>
         </div>
+      </div>
+      <div className="announcement">
+        <marquee behavior="scroll" direction="">📢 Under Construction 🚧 | Please bookmark this website 🔖 | Do share with your friends 🎉</marquee>
       </div>
       <section className="home-index">
         <div>
@@ -95,7 +120,21 @@ export default function Home() {
             })}
           </ul>
         </div>
-        <NoticeBoard />
+        <div className="category">
+        {Category.map((item, index) => {
+          return (
+            <div key={index}>
+              <Link  href={item.path}>
+                <div>
+                <img src={"/images/" + item.img} alt={item.title} />
+                <b>{item.title}</b></div>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+        {/* <NoticeBoard /> */}
+        
       </section>
     </div>
   );

@@ -1,16 +1,12 @@
 import { useRouter } from "next/router";
 import books from "../../../data/semester.json";
-import examDate from "../../../data/exam-date.json";
 import Link from "next/link";
 import Head from "next/head";
-import Timer from "../../../components/Timer";
 
 export default function Semester2() {
   const router = useRouter();
-  const post = books[router.query.book];
-  var date = examDate[router.query.book];
-  if (!date) date = "August 01 2022 14:00:00 UTC+0530";
-  if (!post) return <p></p>;
+  const post = [router.query.pdf];
+  console.log(post);
 
   return (
     <div className="index">
@@ -26,19 +22,10 @@ export default function Semester2() {
           type="image/x-icon"
         />
       </Head>
-      <h1>{post.name}</h1>
-      <Timer  date={date.date}/>
-      
-      {/* <Timer  date="12/31/2023 23:59:59"/> */}
-      {/* <div>{console.log({post})}</div> */}
-      <div className="book-wrap">
-        {post.book.map((value, index) => (
-          <Link key={index} href={value.path}>
-            <a className="books" target="_blank">
-              <h2>{value.name}</h2>
-            </a>
-          </Link>
-        ))}
+
+      <div>
+{post}
+
       </div>
     </div>
   );
