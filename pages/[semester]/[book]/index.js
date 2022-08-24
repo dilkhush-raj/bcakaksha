@@ -4,6 +4,7 @@ import examDate from "../../../data/exam-date.json";
 import Link from "next/link";
 import Head from "next/head";
 import Timer from "../../../components/Timer";
+import { PDFObject } from 'react-pdfobject'
 
 export default function Semester2() {
   const router = useRouter();
@@ -13,7 +14,7 @@ export default function Semester2() {
   if (!post) return <p></p>;
 
   return (
-    <div className="index">
+    <div>
       <Head>
         <title>{post.name + " - IGNOU की BCA कक्षा"}</title>
         <meta
@@ -26,7 +27,8 @@ export default function Semester2() {
           type="image/x-icon"
         />
       </Head>
-      <h1>{post.name}</h1>
+      <h1 className="page-heading">{post.name}</h1>
+      <div className="index">
       <Timer  date={date.date}/>
       
       {/* <Timer  date="12/31/2023 23:59:59"/> */}
@@ -40,6 +42,12 @@ export default function Semester2() {
           </Link>
         ))}
       </div>
+    </div>
+
+
+    
+<PDFObject className="pdf-viewer" url="https://www.egyankosh.ac.in/bitstream/123456789/10030/1/Unit-1.pdf" height="700px"  />
+
     </div>
   );
 };
