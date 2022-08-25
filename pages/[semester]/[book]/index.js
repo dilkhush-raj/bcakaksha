@@ -58,7 +58,7 @@ export default function Semester2() {
         var adobeDCView = new AdobeDC.View({clientId: "d6a5fb0a611a4a6d87a0cc1c116a25f2", divId: "adobe-dc-view"});
         adobeDCView.previewFile(
        {
-          content:   {location: {url: "https://www.egyankosh.ac.in/bitstream/123456789/9844/1/Unit-1.pdf"}},
+          content:   {location: {url: "/pdf/ECO-01.pdf"}},
           metaData: {fileName: "Bodea Brochure.pdf"}
        })
     })
