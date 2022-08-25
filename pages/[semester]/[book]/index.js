@@ -50,8 +50,7 @@ export default function Semester2() {
 
       <div onClick={Viewpdf}>View pdf</div>
 
-      <PdfViewer url={pdf}/>
-      {console.log(pdf)}
+      <PdfViewer pdf={pdf}/>
     </div>
   );
 }

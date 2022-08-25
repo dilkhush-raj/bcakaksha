@@ -1,6 +1,8 @@
 import Script from "next/script";
 
-export default function PdfViewer({url}) {
+export default function PdfViewer({pdf}) {
+
+    const url = pdf;
   return (
     <div className="pdf-viewer">
       <Script
@@ -21,6 +23,7 @@ export default function PdfViewer({url}) {
           metaData: { fileName: "Bodea Brochure.pdf" },
         });
       })}
+      {console.log(url)}
     </div>
   );
 }
