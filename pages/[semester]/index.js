@@ -13,7 +13,7 @@ export default function Semester() {
       Home
     </Link>,
     <Typography key="3" color="text.primary">
-      {post.name}
+      {/* {post.name} */}
     </Typography>,
   ];
   if (!post) return <p></p>;
