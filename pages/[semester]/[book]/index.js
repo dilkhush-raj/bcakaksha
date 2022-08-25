@@ -4,7 +4,7 @@ import examDate from "../../../data/exam-date.json";
 import Link from "next/link";
 import Head from "next/head";
 import Timer from "../../../components/Timer";
-import { PDFObject } from 'react-pdfobject'
+import Script from 'next/script';
 
 export default function Semester2() {
   const router = useRouter();
@@ -12,6 +12,8 @@ export default function Semester2() {
   var date = examDate[router.query.book];
   if (!date) date = "August 01 2022 14:00:00 UTC+0530";
   if (!post) return <p></p>;
+
+
 
   return (
     <div>
@@ -43,10 +45,29 @@ export default function Semester2() {
         ))}
       </div>
     </div>
+    <Script
+        src="https://documentcloud.adobe.com/view-sdk/viewer.js"
+        onLoad={() =>
+          console.log(`script loaded correctly, window.FB has been populated`)
+        }
+      />
+      <div id="adobe-dc-view"></div>
 
+{document.addEventListener("adobe_dc_view_sdk.ready", function()
+    {
+        var adobeDCView = new AdobeDC.View({clientId: "d6a5fb0a611a4a6d87a0cc1c116a25f2", divId: "adobe-dc-view"});
+        adobeDCView.previewFile(
+       {
+          content:   {location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+          metaData: {fileName: "Bodea Brochure.pdf"}
+       })
+    })
+}
+
+
+      
 
     
-<PDFObject className="pdf-viewer" url="https://www.egyankosh.ac.in/bitstream/123456789/10030/1/Unit-1.pdf" height="700px"  />
 
     </div>
   );
