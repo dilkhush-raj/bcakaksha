@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Button from '@mui/material/Button';
 
 export default function Home() {
   function explore() {
@@ -90,11 +91,14 @@ export default function Home() {
           </h1>
           <h4>This website is under-construction. </h4>
 
-          <button className="cta">
+          {/* <button className="cta">
             <Link href="https://discord.gg/M4CXzrud3e">
               <a target="_blank">Join on Discord</a>
             </Link>
-          </button>
+          </button> */} <b>
+           <Button variant="outlined" href="https://discord.gg/M4CXzrud3e" target="_blank" size="large">
+        Join on Discord
+      </Button></b>
         </div>
       </div>
       <div className="announcement">

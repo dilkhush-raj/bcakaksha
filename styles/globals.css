@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 *::selection {
   color: white;
   background-color: rgba(67, 1, 121, 0.5);
@@ -458,19 +458,24 @@ embed {
   padding: 2rem;
   background-color: rgb(0, 169, 118);
   color: white;
-  border: 15px solid rgb(241, 221, 1);
-  margin: 4rem auto;
+  border: 15px solid rgb(222, 222, 222);
+  margin: 4rem 1rem;
   border-radius: 15px;
   list-style: none;
   gap: 1rem;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: 400px;
+  font-family: 'Pangolin', cursive;
+  /* border-inline-color: rgb(74, 74, 74); */
+  border-style: ridge;
 }
 
 .notice-board a{
   color: white;
+  font-size: large;
+  text-decoration: underline;
 }
 
 .notice-board h2{
@@ -543,4 +548,14 @@ embed {
 
 .label {
   font-size: .7rem;
+}
+
+.page-heading{
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  padding: 1rem;
+}
+
+#adobe-dc-view{
+  height: calc(100vh - 90px);
+  width: 100%;
 }
