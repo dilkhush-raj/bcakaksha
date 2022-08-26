@@ -1,25 +1,34 @@
 import { useRouter } from "next/router";
 import books from "../../../data/semester.json";
 import examDate from "../../../data/exam-date.json";
+import semesters from "../../../data/semesters.json";
 import Link from "next/link";
 import Head from "next/head";
 import Timer from "../../../components/Timer";
-import PdfViewer from "../../../components/PdfViewer";
-import { useState } from "react";
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Typography from '@mui/material/Typography';
 
 
 export default function Semester2() {
   
-  const [pdf, setPdf] = useState(0);
   const router = useRouter();
   const post = books[router.query.book];
+  const sem = semesters[router.query.semester];
   var date = examDate[router.query.book];
   if (!date) date = "August 01 2022 14:00:00 UTC+0530";
   if (!post) return <p></p>;
-
-  const Viewpdf = () => {
-    setPdf("/pdf/ECO-02.pdf")
-  };
+  if (!sem) return <p></p>;
+  const breadcrumbs = [
+    <Link underline="hover" key="1" color="inherit" href="/" >
+      Home
+    </Link>,
+    <Link underline="hover" key="1" color="inherit" href={"/" + sem.path} >
+    {sem.name}
+  </Link>,
+    <Typography key="3" color="text.primary">
+      {post.name}
+    </Typography>,
+  ];
 
   return (
     <div>
@@ -33,6 +42,12 @@ export default function Semester2() {
       </Head>
       <h1 className="page-heading">{post.name}</h1>
       <div className="index">
+        <Breadcrumbs
+       
+       aria-label="breadcrumb"
+     >
+       {breadcrumbs}
+     </Breadcrumbs><br />
         <Timer date={date.date} />
 
         {/* <Timer  date="12/31/2023 23:59:59"/> */}
@@ -48,9 +63,6 @@ export default function Semester2() {
         </div>
       </div>
 
-      <div onClick={Viewpdf}>View pdf</div>
-
-      <PdfViewer pdf={pdf}/>
     </div>
   );
 }
