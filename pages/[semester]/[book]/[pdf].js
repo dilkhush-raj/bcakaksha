@@ -25,11 +25,9 @@ export default function Semester2() {
   // console.log(pdf); 
 
   return (
-    <div className="index">
+    <div>
 
 <PdfViewer pdf={pdf}/>
-      <div>
-      </div>
     </div>
   );
 };

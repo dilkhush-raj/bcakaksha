@@ -555,12 +555,7 @@ embed {
   padding: 1rem;
 }
 
-.pdf-viewer{
-  height: 700px;
-  margin: 1rem;
-}
-
 #adobe-dc-view{
-  height: 50vh;
-  margin: 1rem .5rem;
+  height: calc(100vh - 90px);
+  width: 100%;
 }
