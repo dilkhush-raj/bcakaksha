@@ -7,6 +7,7 @@ import Head from "next/head";
 import Timer from "../../../components/Timer";
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
+import PdfViewer from "../../../components/PdfViewer";
 
 
 export default function Semester2() {
@@ -14,9 +15,17 @@ export default function Semester2() {
   const router = useRouter();
   const post = books[router.query.book];
   const sem = semesters[router.query.semester];
+  
+  const test = router.query.book;
+  const pdf = "/pdf/" + test;
+  console.log(pdf);
   var date = examDate[router.query.book];
   if (!date) date = "August 01 2022 14:00:00 UTC+0530";
-  if (!post) return <p></p>;
+  if (!post) return (
+  <>
+  <PdfViewer pdf={pdf}/>
+  </>
+  );
   if (!sem) return <p></p>;
   const breadcrumbs = [
     <Link underline="hover" key="1" color="inherit" href="/" >
