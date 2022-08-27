@@ -17,6 +17,7 @@ export default function Semester2() {
   const sem = semesters[router.query.semester];
   
   const test = router.query.book;
+  if (!test) return <p></p>;
   const pdf = "/pdf/" + test;
   console.log(pdf);
   var date = examDate[router.query.book];
