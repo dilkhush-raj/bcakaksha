@@ -60,8 +60,8 @@ function ImportantLinks() {
       <ul className="imp-links">
       {links.map((item, index) => {
               return (
-                <li>
-                <Link key={index} href={item.path}>
+                <li key={index}>
+                <Link href={item.path}>
                   <a target="_blank">
                     <li>{item.title}</li>
                   </a>
