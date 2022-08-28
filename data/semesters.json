@@ -27,11 +27,11 @@
       "notes": [
         {
           "name": "ECO-01 Help Book",
-          "url": "pdf/ECO-01.pdf"
+          "url": "ECO-01.pdf"
         },
         {
           "name": "BCS-011 Help Book",
-          "url": "pdf/BCS-011.pdf"
+          "url": "BCS-011.pdf"
         }
       ],
       "assignments": [
@@ -83,11 +83,11 @@
       "notes": [
         {
           "name": "MCS-011 Help Book",
-          "url": "pdf/MCS-011.pdf"
+          "url": "MCS-011.pdf"
         },
         {
           "name": "MCS-012 Notes",
-          "url": "pdf/MCS-012.pdf"
+          "url": "MCS-012.pdf"
         }
       ],
       "assignments": [
@@ -139,11 +139,11 @@
       "notes": [
         {
           "name": "MCS-014 Help Book",
-          "url": "pdf/MCS-014.pdf"
+          "url": "MCS-014.pdf"
         },
         {
           "name": "BCS-031 Help Book",
-          "url": "pdf/BCS-031.pdf"
+          "url": "BCS-031.pdf"
         }
       ],
       "assignments": [{
@@ -197,7 +197,7 @@
       "notes": [
         {
           "name": "MCS-024 Help Book",
-          "url": "pdf/MCS-024.pdf"
+          "url": "MCS-024.pdf"
         }
       ],
       "assignments": [
@@ -253,7 +253,7 @@
       "notes": [
         {
           "name": "BCS-055 Help Book",
-          "url": "pdf/BCS-055.pdf"
+          "url": "BCS-055.pdf"
         }
       ],
       "assignments": [

@@ -5,8 +5,9 @@ import semesters from "../../../data/semesters.json";
 import Link from "next/link";
 import Head from "next/head";
 import Timer from "../../../components/Timer";
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Typography from '@mui/material/Typography';
+
+import Typography from "@mui/material/Typography";
+import PdfViewer from "../../../components/PdfViewer";
 
 
 export default function Semester2() {
@@ -14,21 +15,22 @@ export default function Semester2() {
   const router = useRouter();
   const post = books[router.query.book];
   const sem = semesters[router.query.semester];
+
+
+  const test = router.query.book;
+  if (!test) return <p></p>;
+  const pdf = "/pdf/" + test;
+  console.log(pdf);
   var date = examDate[router.query.book];
   if (!date) date = "August 01 2022 14:00:00 UTC+0530";
-  if (!post) return <p></p>;
+  if (!post) return <></>;
+  // if (!post) return (
+  // <>
+  // <PdfViewer pdf={pdf}/>
+  // </>
+  // );
   if (!sem) return <p></p>;
-  const breadcrumbs = [
-    <Link underline="hover" key="1" color="inherit" href="/" >
-      Home
-    </Link>,
-    <Link underline="hover" key="1" color="inherit" href={"/" + sem.path} >
-    {sem.name}
-  </Link>,
-    <Typography key="3" color="text.primary">
-      {post.name}
-    </Typography>,
-  ];
+
 
   return (
     <div>
@@ -41,13 +43,22 @@ export default function Semester2() {
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
       <h1 className="page-heading">{post.name}</h1>
+
+      <ul className="breadcrumbs">
+        <li>
+          <Link underline="hover" key="1" color="inherit" href="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link underline="hover" key="1" color="inherit" href={"/" + sem.path}>
+            {sem.name}
+          </Link>
+        </li>
+        <li>{post.name}</li>
+      </ul>
       <div className="index">
-        <Breadcrumbs
-       
-       aria-label="breadcrumb"
-     >
-       {breadcrumbs}
-     </Breadcrumbs><br />
+
         <Timer date={date.date} />
 
         {/* <Timer  date="12/31/2023 23:59:59"/> */}
