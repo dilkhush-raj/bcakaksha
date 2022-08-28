@@ -1,7 +1,9 @@
+import { Button } from "@mui/material";
+import { useRouter } from "next/router";
 import Script from "next/script";
 
 export default function PdfViewer({pdf}) {
-
+  const router = useRouter()
     const url = pdf;
   return (
     <div className="pdf-viewer">
@@ -11,7 +13,9 @@ export default function PdfViewer({pdf}) {
           console.log(`script loaded correctly, window.FB has been populated`)
         }
       />
-      <div id="adobe-dc-view"></div>
+      <div id="adobe-dc-view">
+      <Button className="pdf-back-btn"   onClick={() => router.back()}>Back</Button>
+      </div>
 
       {document.addEventListener("adobe_dc_view_sdk.ready", function () {
         var adobeDCView = new AdobeDC.View({
@@ -20,7 +24,7 @@ export default function PdfViewer({pdf}) {
         });
         adobeDCView.previewFile({
           content: { location: { url: url } },
-          metaData: { fileName: "Bodea Brochure.pdf" },
+          metaData: { fileName: "IGNOU की BCA कक्षा" },
         });
       })}
       {console.log(url)}

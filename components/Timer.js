@@ -37,6 +37,12 @@ function Timer ({date}){
         setMinutes("E");
         setSeconds("R");
       }
+      if (!d && !h && !m && !s ){
+        setDays("Check");
+        setHours("Your");
+        setMinutes("RC");
+        setSeconds("Website");
+      }
     }, 1000);
 
     return () => clearInterval(interval);

@@ -45,8 +45,8 @@ export default function Home() {
 
   const Category = [
     {
-      title: "Imp Links",
-      path: "",
+      title: "Links",
+      path: "/links",
       img: "icons8-link.svg"
     },
     {
@@ -56,7 +56,7 @@ export default function Home() {
     },
     {
       title: "Blog",
-      path: "/Timer",
+      path: "/blog",
       img: "icons8-blog.svg"
     },
     {

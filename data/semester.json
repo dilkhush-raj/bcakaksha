@@ -5,20 +5,19 @@
     "book": [
       {
         "name": "Block-1 English-II Part-1",
-        "url": "block-1",
-        "path": ""
+        "path": "/pdf/FEG-02/Block-1.pdf"
       },
       {
         "name": "Block-2 English-II Part-2",
-        "path": ""
+        "path": "/pdf/FEG-02/Block-2.pdf"
       },
       {
         "name": "Block-3 English-II Part-3",
-        "path": ""
+        "path": "/pdf/FEG-02/Block-3.pdf"
       },
       {
         "name": "Block-4 English-II Part-4",
-        "path": ""
+        "path": "/pdf/FEG-02/Block-4.pdf"
       }
     ]
   },
@@ -29,23 +28,23 @@
     "book": [
       {
         "name": "Block-1 Basic Concept and Forms of Business Organisation",
-        "path": ""
+        "path": "/pdf/ECO-01/Block-1.pdf"
       },
       {
         "name": "Block-2 Financing of Business",
-        "path": "unit-2"
+        "path": "/pdf/ECO-01/Block-2.pdf"
       },
       {
         "name": "Block-3 Marketing",
-        "path": "unit-3"
+        "path": "/pdf/ECO-01/Block-3.pdf"
       },
       {
         "name": "Block-4 Business Services",
-        "path": "unit-4"
+        "path": "/pdf/ECO-01/Block-4.pdf"
       },
       {
         "name": "Block-5 Government and Business",
-        "path": "unit-5"
+        "path": "/pdf/ECO-01/Block-5.pdf"
       }
     ]
   },
@@ -56,15 +55,15 @@
     "book": [
       {
         "name": "Block-1 Basic of Computer Hardware",
-        "path": ""
+        "path": "/pdf/BCS-011/Block-1.pdf"
       },
       {
         "name": "Block-2 Basic of Computer Software",
-        "path": ""
+        "path": "/pdf/BCS-011/Block-2.pdf"
       },
       {
         "name": "Internet Technologies",
-        "path": ""
+        "path": "/pdf/BCS-011/Block-3.pdf"
       }
     ]
   },
@@ -75,19 +74,19 @@
     "book": [
       {
         "name": "Block-1 Algebra-I",
-        "path": ""
+        "path": "/pdf/BCS-012/Block-1.pdf"
       },
       {
         "name": "Block-2 Algebra-II",
-        "path": ""
+        "path": "/pdf/BCS-012/Block-2.pdf"
       },
       {
         "name": "Block-3 Calculus",
-        "path": ""
+        "path": "/pdf/BCS-012/Block-3.pdf"
       },
       {
         "name": "Block-4 Vectors and Three-Dimensional Geometry",
-        "path": ""
+        "path": "/pdf/BCS-012/Block-4.pdf"
       }
     ]
   },
