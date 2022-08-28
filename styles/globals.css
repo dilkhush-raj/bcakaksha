@@ -557,6 +557,7 @@ embed {
 
 #adobe-dc-view{
   height: calc(100vh - 90px);
+
   /* width: 100%; */
 }
 
@@ -621,4 +622,5 @@ embed {
 
 .imp-links{
   padding: 1rem 2rem;
+
 }
