@@ -2,29 +2,16 @@ import { useRouter } from "next/router";
 import semesters from "../../data/semesters.json";
 import Link from "next/link";
 import Head from "next/head";
-
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-
 
 export default function Semester() {
   const router = useRouter();
   const post = semesters[router.query.semester];
   if (!post) return <p></p>;
-  const breadcrumbs = [
-    <Link underline="hover" key="1" color="inherit" href="/" >
-      Home
-    </Link>,
-    <Typography key="3" color="text.primary">
-      {post.name}
-    </Typography>,
-  ];
 
   return (
-    <>
-
     <div>
       <Head>
-
         <title>{post.name + " - IGNOU की BCA कक्षा"}</title>
         <meta
           name="description"
@@ -33,12 +20,10 @@ export default function Semester() {
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
       <h1 className="page-heading">{post.name}</h1>
-
       <ul className="breadcrumbs">
         <li>
           <Link underline="hover" key="1" color="inherit" href="/">
             Home
-
           </Link>
         </li>
         <li>{post.name}</li>
@@ -94,8 +79,7 @@ export default function Semester() {
           ))}
         </div>
       </div>
-      </div>
     </div>
-</>
   );
 }
+
