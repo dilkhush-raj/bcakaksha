@@ -20,6 +20,7 @@ export default function Semester() {
   ];
 
   return (
+    <>
 
     <div>
       <Head>
@@ -95,5 +96,6 @@ export default function Semester() {
       </div>
       </div>
     </div>
+</>
   );
 }
