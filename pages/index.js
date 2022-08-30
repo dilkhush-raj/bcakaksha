@@ -47,7 +47,7 @@ export default function Home() {
     {
       title: "Links",
       path: "/links",
-      img: "icons8-link.svg"
+      img: "icons8-external-link.svg"
     },
     {
       title: "Notice Board",
@@ -63,6 +63,11 @@ export default function Home() {
       title: "Resources",
       path: "",
       img: "icons8-albums.svg"
+    },
+    {
+      title: "Exam Timer",
+      path: "/exam-countdown",
+      img: "icons8-timer.svg"
     },
   ];
 
