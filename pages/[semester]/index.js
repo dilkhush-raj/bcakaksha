@@ -93,7 +93,6 @@ export default function Semester() {
           ))}
         </div>
       </div>
-      </div>
     </div>
   );
 }
