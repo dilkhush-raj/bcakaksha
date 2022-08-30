@@ -18,6 +18,7 @@ export default function Semester2() {
   console.log(post);
   // console.log(book);
 
+
   const unit = post.book[test];
 
   const pdf = unit.path;
@@ -33,6 +34,7 @@ export default function Semester2() {
     />
     <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
   </Head>
+
 
 <PdfViewer pdf={pdf}/>
     </div>

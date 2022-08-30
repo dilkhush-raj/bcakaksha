@@ -5,13 +5,17 @@ import semesters from "../../../data/semesters.json";
 import Link from "next/link";
 import Head from "next/head";
 import Timer from "../../../components/Timer";
+
 import Typography from "@mui/material/Typography";
 import PdfViewer from "../../../components/PdfViewer";
 
+
 export default function Semester2() {
+  
   const router = useRouter();
   const post = books[router.query.book];
   const sem = semesters[router.query.semester];
+
 
   const test = router.query.book;
   if (!test) return <p></p>;
@@ -27,6 +31,7 @@ export default function Semester2() {
   // );
   if (!sem) return <p></p>;
 
+
   return (
     <div>
       <Head>
@@ -38,6 +43,7 @@ export default function Semester2() {
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
       <h1 className="page-heading">{post.name}</h1>
+
       <ul className="breadcrumbs">
         <li>
           <Link underline="hover" key="1" color="inherit" href="/">
@@ -52,6 +58,7 @@ export default function Semester2() {
         <li>{post.name}</li>
       </ul>
       <div className="index">
+
         <Timer date={date.date} />
 
         {/* <Timer  date="12/31/2023 23:59:59"/> */}
@@ -66,6 +73,7 @@ export default function Semester2() {
           ))}
         </div>
       </div>
+
     </div>
   );
 }
