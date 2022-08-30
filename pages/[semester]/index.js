@@ -10,14 +10,6 @@ export default function Semester() {
   const router = useRouter();
   const post = semesters[router.query.semester];
   if (!post) return <p></p>;
-  const breadcrumbs = [
-    <Link underline="hover" key="1" color="inherit" href="/" >
-      Home
-    </Link>,
-    <Typography key="3" color="text.primary">
-      {post.name}
-    </Typography>,
-  ];
 
   return (
 
