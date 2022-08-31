@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import semesters from "../../data/semesters.json";
 import Link from "next/link";
 import Head from "next/head";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
 
 export default function Semester() {
   const router = useRouter();
@@ -12,6 +11,7 @@ export default function Semester() {
   return (
     <div>
       <Head>
+
         <title>{post.name + " - IGNOU की BCA कक्षा"}</title>
         <meta
           name="description"
@@ -20,10 +20,13 @@ export default function Semester() {
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
       <h1 className="page-heading">{post.name}</h1>
+
+
       <ul className="breadcrumbs">
         <li>
           <Link underline="hover" key="1" color="inherit" href="/">
             Home
+
           </Link>
         </li>
         <li>{post.name}</li>
@@ -34,6 +37,7 @@ export default function Semester() {
           <span className="breadcrumbs1"></span>
           <span key="2" className="breadcrumbs2"></span>
         </Breadcrumbs> */}
+
 
         <h2>Books</h2>
         <div className="book-wrap">
