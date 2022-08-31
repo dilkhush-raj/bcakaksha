@@ -1,4 +1,5 @@
 import Link from "next/dist/client/link";
+
 import HeadTag from "../components/Head";
 
 function Notice() {
@@ -9,6 +10,7 @@ function Notice() {
     <div className="page">
       <HeadTag data={headData} />
       <h1 className="page-heading">Blog</h1>
+
       <ul className="breadcrumbs">
         <li>
           <Link underline="hover" key="1" color="inherit" href="/">
@@ -18,7 +20,9 @@ function Notice() {
         <li>Blog</li>
       </ul>
 
+
       <h1>Comming Soon....</h1>
+
     </div>
   );
 }
