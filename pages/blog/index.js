@@ -1,10 +1,5 @@
 import Link from "next/dist/client/link";
-<<<<<<< HEAD:pages/blog/index.js
 import HeadTag from "../../components/HeadTag";
-=======
-
-import HeadTag from "../components/Head";
->>>>>>> 57db5fac10e2b10d07ea09516fbfd5ef1897851f:pages/blog.js
 
 function Notice() {
   const headData = {

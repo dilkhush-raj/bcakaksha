@@ -82,10 +82,7 @@ export default function Semester() {
             </Link>
           ))}
         </div>
-<<<<<<< HEAD
 {/* <div className="shapes-9"></div> */}
-=======
->>>>>>> 57db5fac10e2b10d07ea09516fbfd5ef1897851f
       </div>
     </div>
   );
