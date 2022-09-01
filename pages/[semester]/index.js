@@ -3,16 +3,12 @@ import semesters from "../../data/semesters.json";
 import Link from "next/link";
 import Head from "next/head";
 
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-
-
 export default function Semester() {
   const router = useRouter();
   const post = semesters[router.query.semester];
   if (!post) return <p></p>;
 
   return (
-
     <div>
       <Head>
 
@@ -24,6 +20,7 @@ export default function Semester() {
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
       <h1 className="page-heading">{post.name}</h1>
+
 
       <ul className="breadcrumbs">
         <li>
@@ -40,6 +37,7 @@ export default function Semester() {
           <span className="breadcrumbs1"></span>
           <span key="2" className="breadcrumbs2"></span>
         </Breadcrumbs> */}
+
 
         <h2>Books</h2>
         <div className="book-wrap">
@@ -84,8 +82,12 @@ export default function Semester() {
             </Link>
           ))}
         </div>
+<<<<<<< HEAD
 {/* <div className="shapes-9"></div> */}
+=======
+>>>>>>> 57db5fac10e2b10d07ea09516fbfd5ef1897851f
       </div>
     </div>
   );
 }
+
