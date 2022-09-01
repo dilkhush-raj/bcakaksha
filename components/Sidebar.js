@@ -61,49 +61,81 @@ function Sidebar() {
     },
     {
       title: "Links",
+<<<<<<< HEAD
       path: "/links",
+=======
+      path: "/pages/links",
+>>>>>>> dev
       img: "icons8-external-link.svg",
       className: "nav-text",
     },
     {
       title: "Notice Board",
+<<<<<<< HEAD
       path: "/notice",
+=======
+      path: "/pages/notice",
+>>>>>>> dev
       img: "icons8-noticeboard.svg",
       className: "nav-text",
     },
     {
       title: "Resources",
+<<<<<<< HEAD
       path: "/resources",
+=======
+      path: "/pages/resources",
+>>>>>>> dev
       img: "icons8-albums.svg",
       className: "nav-text",
     },
     {
       title: "Exam Timer",
+<<<<<<< HEAD
       path: "/exam-countdown",
+=======
+      path: "/pages/exam-countdown",
+>>>>>>> dev
       img: "icons8-timer.svg",
       className: "nav-text",
     },
     {
       title: "FAQ",
+<<<<<<< HEAD
       path: "/faq",
+=======
+      path: "/pages/faq",
+>>>>>>> dev
       img: "icons8-faq.svg",
       className: "nav-text",
     },
     {
       title: "Feedback",
+<<<<<<< HEAD
       path: "/feedback",
+=======
+      path: "/pages/feedback",
+>>>>>>> dev
       img: "icons8-feedback-hub.svg",
       className: "nav-text",
     },
     {
       title: "Support Us",
+<<<<<<< HEAD
       path: "/support",
+=======
+      path: "/pages/support",
+>>>>>>> dev
       img: "icons8-charity-box.svg",
       className: "nav-text",
     },
     {
       title: "Contact Us",
+<<<<<<< HEAD
       path: "/contact",
+=======
+      path: "/pages/contact",
+>>>>>>> dev
       img: "icons8-contact-us.svg",
       className: "nav-text",
     },

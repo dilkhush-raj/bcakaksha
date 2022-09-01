@@ -1,5 +1,5 @@
 import Link from "next/dist/client/link";
-import NoticeBoard from "../components/NoticeBoard"
+import NoticeBoard from "../../components/NoticeBoard"
 
 function Notice() {
 
