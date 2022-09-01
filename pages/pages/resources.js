@@ -1,26 +1,22 @@
 import Link from "next/dist/client/link";
-import HeadTag from "../components/Head";
+import HeadTag from "../../components/HeadTag";
 
-function Notice() {
-  const headData = {
-    title: "Blog",
-  };
+export default function Resources() {
+    const pageTitle = "Resources";
   return (
     <div className="page">
-      <HeadTag data={headData} />
-      <h1 className="page-heading">Blog</h1>
+      <HeadTag title={pageTitle + " - IGNOU की BCA कक्षा"} />
+      <h1 className="page-heading">{pageTitle}</h1>
       <ul className="breadcrumbs">
         <li>
           <Link underline="hover" key="1" color="inherit" href="/">
             Home
           </Link>
         </li>
-        <li>Blog</li>
+        <li>{pageTitle}</li>
       </ul>
 
       <h1>Comming Soon....</h1>
     </div>
   );
 }
-
-export default Notice;

@@ -437,7 +437,7 @@
     "book": [
       {
         "name": "Section-1 C Programming Lab",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:5539758b-b109-434c-8390-bdee08745729"
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11561/1/Section-1.pdf"
       }
     ]
   },
@@ -448,11 +448,11 @@
     "book": [
       {
         "name": "Section-1 Digital Logic Circuits",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:3fa8079c-f6eb-4e06-92aa-e2d0302c1b45"
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11562/1/Section-1.pdf"
       },
       {
         "name": "Section-2 Assembly Language Programming",
-        "path": "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:50d157f5-187b-46f3-837e-6980b1b537e7"
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11563/1/Section-2.pdf"
       }
     ]
   },
@@ -751,19 +751,58 @@
     "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Unit-1 The Internet",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11761/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-2 Introduction to HTML",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11763/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-3 Advanced HTML",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11764/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-4 Introduction to JavaScript",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11766/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-5 VB Script",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11767/1/Unit-5.pdf"
+      },
+      {
+        "name": "Unit-6 Dreamweaver",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11769/1/Unit-6.pdf"
+      },
+      {
+        "name": "Section-1 HTML (Hypertext Markup Language)",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11770/1/Section-1.pdf"
+      },
+      {
+        "name": "Section-2 Advanced HTML",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11771/1/Section-2.pdf"
+      },
+      {
+        "name": "Section-3 JavaScript",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11772/1/Section-3.pdf"
+      },
+      {
+        "name": "Section-4 VBScript",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11773/1/Section-4.pdf"
+      },
+      {
+        "name": "Section-5 Dreamweaver",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11774/1/Section-5.pdf"
       }
     ]
   },
   "bcsl-043": {
     "name": "BCSL-043: Java Programming Lab",
     "path": "bcsl-043",
-    "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Section-1 Java Programming Lab",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11717/1/Section-1%20Java%20Programming%20Lab.pdf"
       }
     ]
   },
@@ -773,8 +812,24 @@
     "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Section-1 Descriptive Statistics and Statistical Inferences",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11718/1/Section-1.pdf"
+      },
+      {
+        "name": "Section-2 Correlation & Regression",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11719/1/Section-2.pdf"
+      },
+      {
+        "name": "Section-3 Analysis of Variance",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11720/1/Section-3.pdf"
+      },
+      {
+        "name": "Section-4 Time Series Analysis and Control Charts",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11721/1/Section-4.pdf"
+      },
+      {
+        "name": "Section-5 Sampling – Case Study",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11722/1/Section-5.pdf"
       }
     ]
   },
@@ -784,8 +839,8 @@
     "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Lab Manual",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11723/1/Lab%20Manual.pdf"
       }
     ]
   },
@@ -850,8 +905,20 @@
     "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Section-1 Introduction to Unix",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11808/1/Section-1.pdf"
+      },
+      {
+        "name": "Section-2 Introduction to Linux",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11809/1/Section-2.pdf"
+      },
+      {
+        "name": "Section-3 C Programming",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11810/1/Section-3.pdf"
+      },
+      {
+        "name": "Section-4 Network Programming and Administration Exercises",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11811/1/Section-4.pdf"
       }
     ]
   },
@@ -861,8 +928,8 @@
     "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Web Programming Lab",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11815/1/Web%20Programming%20Lab.pdf"
       }
     ]
   },
@@ -872,8 +939,8 @@
     "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Lab Manual",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/52141/1/Lab%20Manual.pdf"
       }
     ]
   },

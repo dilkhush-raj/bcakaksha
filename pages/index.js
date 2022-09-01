@@ -46,12 +46,12 @@ export default function Home() {
   const Category = [
     {
       title: "Links",
-      path: "/links",
+      path: "/pages/links",
       img: "icons8-external-link.svg"
     },
     {
       title: "Notice Board",
-      path: "/notice",
+      path: "/pages/notice",
       img: "icons8-noticeboard.svg"
     },
     {
@@ -61,12 +61,12 @@ export default function Home() {
     },
     {
       title: "Resources",
-      path: "",
+      path: "/pages/resources",
       img: "icons8-albums.svg"
     },
     {
       title: "Exam Timer",
-      path: "/exam-countdown",
+      path: "/pages/exam-countdown",
       img: "icons8-timer.svg"
     },
   ];

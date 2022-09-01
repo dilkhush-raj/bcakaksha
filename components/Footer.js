@@ -13,7 +13,8 @@ function Footer() {
           <li><Link href="https://www.youtube.com/channel/UC_id0Cd62I7jtSFqmi4ew1A"><a target="_blank"><SiYoutube /></a></Link></li>
           </ul>
         {/* <div className="row">End of the page.</div> */}
-        <div className="row">Created and designed by Dilkhush Raj</div>
+        <div className="row">Created and designed by Dilkhush Raj</div><br />
+        <div>Copyright &copy; 2022 IGNOU की BCA कक्षा. All Rights Reserved</div>
       </footer>
       </>
     );

@@ -1,20 +1,24 @@
 import Link from "next/dist/client/link";
-import NoticeBoard from "../components/NoticeBoard"
+import HeadTag from "../../components/HeadTag";
 
 function Notice() {
-
+  const headData = {
+    title: "Blog",
+  };
   return (
     <div className="page">
-    <h1 className="page-heading">Notice Board</h1>
+      <HeadTag title="Blog - IGNOU की BCA कक्षा" />
+      <h1 className="page-heading">Blog</h1>
       <ul className="breadcrumbs">
         <li>
           <Link underline="hover" key="1" color="inherit" href="/">
             Home
           </Link>
         </li>
-        <li>Notice Board</li>
+        <li>Blog</li>
       </ul>
-        <NoticeBoard />
+
+      <h1>Comming Soon....</h1>
     </div>
   );
 }

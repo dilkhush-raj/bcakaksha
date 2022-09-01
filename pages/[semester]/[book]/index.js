@@ -19,8 +19,6 @@ export default function Semester2() {
 
   const test = router.query.book;
   if (!test) return <p></p>;
-  const pdf = "/pdf/" + test;
-  console.log(pdf);
   var date = examDate[router.query.book];
   if (!date) date = "August 01 2022 14:00:00 UTC+0530";
   if (!post) return <></>;
@@ -58,8 +56,7 @@ export default function Semester2() {
         <li>{post.name}</li>
       </ul>
       <div className="index">
-
-        <Timer date={date.date} />
+        <Timer date={date.date} subject={post.name} />
 
         {/* <Timer  date="12/31/2023 23:59:59"/> */}
         {/* <div>{console.log({post})}</div> */}
