@@ -269,7 +269,7 @@ body {
 /* ##########  Footer Section Starts  ########## */
 
 footer {
-  background-color: white;
+  background-color: #eef;
   color: #222;
   display: flex;
   align-items: center;
@@ -676,22 +676,34 @@ embed {
 .grade-form{
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 1rem;
+  padding: 1rem;
   width: 100%;
   margin: auto;
+  flex-direction: column;
+  background-color: #fff;
+  width: max-content;
+  gap: .5rem;
+  border: 1px solid black;
+}
+
+.grade-form input, .grade-form select{
+  padding: .5rem;
+  margin: auto;
+  width: max-content;
 }
 
 table{
   background-color: white;
   border-collapse: collapse;
   border: 1px solid black;
-  margin: 1rem auto;
+  margin: 1rem .5rem;
   font-size: small;
+  height: max-content;
 }
 
 td, th{
   border: 1px solid black;
-  padding: 1rem 0.2rem;
+  padding: .5rem 0.2rem;
   /* word-break: break-all; */
 }
 
@@ -710,4 +722,22 @@ td, th{
 
 .menu-button{
   cursor: pointer;
+}
+
+
+.grade-card{
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: 0 1rem;
+}
+
+.capitalize{
+  text-transform: uppercase;
 }
