@@ -699,11 +699,14 @@ table{
   margin: 1rem .5rem;
   font-size: small;
   height: max-content;
+
 }
 
 td, th{
   border: 1px solid black;
+
   padding: .5rem 0.2rem;
+
   /* word-break: break-all; */
 }
 
