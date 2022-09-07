@@ -50,7 +50,7 @@ export default function Semester() {
           ))}
         </div>
 
-        <h2>Notes</h2>
+        {/* <h2>Notes</h2>
         <div className="book-wrap">
           {post.notes.map((value, index) => (
             <Link key={index} href={"pdf/" + value.url}>
@@ -59,7 +59,7 @@ export default function Semester() {
               </a>
             </Link>
           ))}
-        </div>
+        </div> */}
 
         <h2>Assignments</h2>
         <div className="book-wrap">

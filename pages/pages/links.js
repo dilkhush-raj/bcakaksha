@@ -1,11 +1,14 @@
 import Link from "next/dist/client/link";
 import Image from "next/image";
+import HeadTag from "../../components/HeadTag";
 
 function ImportantLinks() {
+  
+  const pageTitle = "Links";
   const links = [
     {
       title: "IGNOU Official Website",
-      path: "https://ignou.ac.in",
+      path: "http://ignou.ac.in",
       className: "nav-text",
     },
     {
@@ -26,6 +29,11 @@ function ImportantLinks() {
     {
       title: "Exam Datesheet",
       path: "http://www.ignou.ac.in/ignou/aboutignou/division/sed/datesheet",
+      className: "nav-text",
+    },
+    {
+      title: "Student Login",
+      path: "https://admission.ignou.ac.in/changeadmdata/AdmissionStatusNew.asp",
       className: "nav-text",
     },
     {
@@ -87,6 +95,7 @@ function ImportantLinks() {
 
   return (
     <div className="page">
+    <HeadTag title={pageTitle + " - IGNOU की BCA कक्षा"} />
       <h1 className="page-heading">Important Links</h1>
       <ul className="breadcrumbs">
         <li>

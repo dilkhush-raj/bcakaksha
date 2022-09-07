@@ -84,6 +84,12 @@ function Sidebar() {
       className: "nav-text",
     },
     {
+      title: "Grade Calculator",
+      path: "/pages/grade-calculator",
+      img: "icons8-exam.svg",
+      className: "nav-text",
+    },
+    {
       title: "FAQ",
       path: "/pages/faq",
       img: "icons8-faq.svg",
