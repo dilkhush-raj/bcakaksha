@@ -47,7 +47,6 @@ export default function GradeCalculator() {
           (theoryMarks * theoryPercentage) / 100,
       },
     ]);
-
   };
 
   const clear = () => {
@@ -109,7 +108,7 @@ export default function GradeCalculator() {
         </li>
         <li>{pageTitle}</li>
       </ul>
-    <h3>Design will be improved soon</h3>
+      <h3>Design will be improved soon</h3>
       <table>
         <thead>
           <tr>
