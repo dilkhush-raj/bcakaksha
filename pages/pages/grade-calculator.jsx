@@ -116,7 +116,6 @@ export default function GradeCalculator() {
             <th>Subject Code</th>
             <th>Assignment Marks</th>
             <th>Theory Marks</th>
-            <th>Assignment Weightage</th>
             <th>Total</th>
           </tr>
         </thead>
@@ -127,7 +126,6 @@ export default function GradeCalculator() {
                 <td>{item.s}</td>
                 <td>{item.a}</td>
                 <td>{item.t}</td>
-                <td>{item.p}</td>
                 <td>{item.total}</td>
               </tr>
             );
