@@ -62,7 +62,6 @@ export default function GradeCalculator() {
     const totalPercent = totalMarks / lenghtOfArray;
     setTotalPercentage(totalPercent);
 
-
     if (totalPercent >= 80) {
       setGrades("A");
     } else if (totalPercent >= 60) {
@@ -110,7 +109,6 @@ export default function GradeCalculator() {
                 <th>Assignment Marks</th>
                 <th>Theory Marks</th>
                 <th>Total %</th>
-
               </tr>
             </thead>
             <tbody>
@@ -125,8 +123,8 @@ export default function GradeCalculator() {
                 );
               })}
               <tr>
-              <td colSpan={2}>Total % - {totalPercentage}</td>
-              <td colSpan={2}>Grade - {grades}</td>
+                <td colSpan={2}>Total % - {totalPercentage}</td>
+                <td colSpan={2}>Grade - {grades}</td>
               </tr>
             </tbody>
           </table>
