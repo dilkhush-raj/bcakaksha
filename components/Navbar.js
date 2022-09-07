@@ -1,5 +1,4 @@
 import Link from "next/dist/client/link";
-import Image from "next/image";
 import { IoMdArrowRoundUp } from "react-icons/io";
 
 function Navbar() {

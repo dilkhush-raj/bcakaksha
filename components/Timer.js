@@ -14,6 +14,20 @@ function Timer(data) {
   const d = target.getDate();
   const m = target.getMonth() + 1;
   const y = target.getFullYear();
+  const h = target.getHours();
+  const min = target.getMinutes();
+  const s = target.getSeconds();
+  
+  const timeStrings = h + ":00:00";
+  const timeString = timeStrings;
+
+  // console.log(timeStrings);
+  // const timeString = "18:00:00";
+// Prepend any date. Use your birthday.
+const timeString12hr = new Date('1970-01-01T' + timeString + 'Z')
+  .toLocaleTimeString('en-US',
+    {timeZone:'UTC',hour12:true,hour:'numeric',minute:'numeric'}
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,7 +69,7 @@ function Timer(data) {
     <div>
       <>
         <div className="timer-wrapper">
-          <span>{sub} Exam Countdown for July 2022 Exam - </span>
+          <span><span className="sub">{sub}</span> Tentative Date for December 2022 Exam - <span>{dayName + ", " + d + "/" + m + "/" + y + " at " + timeString12hr}</span></span>
           <div className="timer-inner">
             <div className="timer-segment">
               <span className="time">{days}</span>
@@ -77,7 +91,6 @@ function Timer(data) {
               <span className="label">Seconds</span>
             </div>
           </div>
-          <span>{dayName + ", " + d + "/" + m + "/" + y}</span>
         </div>
       </>
     </div>

@@ -13,9 +13,9 @@ import PdfViewer from "../../../components/PdfViewer";
 export default function Semester2() {
   
   const router = useRouter();
-  const post = books[router.query.book];
+  const slug = [router.query.book];
+  const post = books[slug];
   const sem = semesters[router.query.semester];
-
 
   const test = router.query.book;
   if (!test) return <p></p>;
@@ -56,7 +56,7 @@ export default function Semester2() {
         <li>{post.name}</li>
       </ul>
       <div className="index">
-        <Timer date={date.date} subject={post.name} />
+        <Timer date={date.date} subject={slug} />
 
         {/* <Timer  date="12/31/2023 23:59:59"/> */}
         {/* <div>{console.log({post})}</div> */}

@@ -8,9 +8,9 @@ function ExamCountdown() {
   const property = Object.keys(Date);
   const propertyValues = Object.values(Date);
 
-  console.log(property);
+  // console.log(property);
 
-  console.log(propertyValues);
+  // console.log(propertyValues);
 
   return (
     <div className="page">
@@ -26,7 +26,7 @@ function ExamCountdown() {
       </ul>
 
       <div className="index">
-        <h3>Design will be improved soon</h3>
+        <span>Arranged in alphabetical order</span>
 
         {property.map((value, index) => (
           <div key={index}>
