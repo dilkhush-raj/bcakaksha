@@ -64,7 +64,7 @@ export default function GradeCalculator() {
     // console.log(totalPercentage);
 
     // getGrade();
-    if (totalPercentage >= 80) {
+    if (totalPercent >= 80) {
       setGrades("A");
     } else if (totalPercent >= 60) {
       setGrades("B");
