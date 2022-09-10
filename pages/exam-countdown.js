@@ -23,8 +23,6 @@ function ExamCountdown() {
           </Link>
         </li>
         <li>Exam Countdown</li>
-
-        
       </ul>
 
         <h3>Design will be improved soon</h3>
