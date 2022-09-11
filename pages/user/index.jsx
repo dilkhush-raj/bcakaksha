@@ -14,7 +14,7 @@ export default function User() {
     <>
       {CheckUser(user) ? (
         <div>
-          <h1 className="page-heading">{user.displayName}'s Account</h1>
+          <h1 className="page-heading">{user.displayName + "Account"}</h1>
           <ul className="breadcrumbs">
             <li>
               <Link underline="hover" key="1" color="inherit" href="/">
