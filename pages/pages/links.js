@@ -18,7 +18,7 @@ function ImportantLinks() {
     },
     {
       title: "Assignments",
-      path: "https://webservices.ignou.ac.in/assignments/schools/socis/bca/bca.html",
+      path: "https://webservices.ignou.ac.in/assignments/Bachelor-Degree/BCA/bca.html",
       className: "nav-text",
     },
     {
