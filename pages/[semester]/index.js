@@ -65,7 +65,7 @@ export default function Semester() {
         <div className="book-wrap">
           {post.assignments.map((value, index) => (
             <Link key={index} href={value.url}>
-              <a className="books">
+              <a className="books" target="_blank">
                 <h2>{value.name}</h2>
               </a>
             </Link>
