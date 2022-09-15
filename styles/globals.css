@@ -469,7 +469,20 @@ embed {
   font-family: 'Pangolin', cursive;
   /* border-inline-color: rgb(74, 74, 74); */
   border-style: ridge;
+  overflow-y: scroll;
 }
+
+.notice-board::-webkit-scrollbar {
+  width: 10px;
+}
+.notice-board::-webkit-scrollbar-track {
+  background: rgb(0, 169, 118);
+}
+.notice-board::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(#350288, #8b02fb);
+}
+
 
 .notice-board a{
   color: white;
