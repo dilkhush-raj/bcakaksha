@@ -1,23 +1,26 @@
 import { useRouter } from "next/router";
-import books from "../../../data/semester.json";
-import examDate from "../../../data/exam-date.json";
 import semesters from "../../../data/semesters.json";
-import HeadTag from "../../../components/Head";
+import Head from "next/head";
 import pyqp from "../../../data/pyqp.json";
 import Link from "next/link";
 
-export default function Semester2() {
+export default function Pyqp() {
   const router = useRouter();
   const slug = router.query.subject;
   const sem = semesters[router.query.semester];
 
   const data = pyqp[slug];
 
-  console.log(data);
-
   return (
-    <div>
-      {/* <HeadTag title={"Previous Year Question Paper - IGNOU की BCA कक्षा"} /> */}
+    <div className="page">
+      <Head>
+        <title>Question Paper - IGNOU की BCA कक्षा</title>
+        <meta
+          name="description"
+          content="IGNOU की BCA कक्षा: Ebooks, Syllabus, Previous Year Question Paper, Assignments, Notes and many more."
+        />
+        <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+      </Head>
       <h1 className="page-heading"><span className="capitalize">{data.path}</span> <span> Question Paper</span></h1>
       <ul className="breadcrumbs">
         <li>
@@ -34,21 +37,16 @@ export default function Semester2() {
       </ul>
       <br />
       <div className="book-wrap">
-        {/* {data.pyqp.map((value, index) => (
+        {data.pyqp.map((value, index) => (
           <Link key={index} href={value.path}>
             <a className="books" target="_blank">
               <h2>{value.name}</h2>
             </a>
           </Link>
-        ))} */}
-        <Link href={data.pyqp[0].path}>
-          <a className="books" target="_blank">
-            <h2>{data.pyqp[0].name}</h2>
-          </a>
-        </Link>
+        ))}
       </div>
         <br />
-        <span> ** More coming soon...</span>
+        <span> ** Open first one only. More coming soon...</span>
     </div>
   );
 }
