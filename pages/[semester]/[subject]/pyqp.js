@@ -12,8 +12,6 @@ export default function Pyqp() {
   const data = pyqp[slug];
   if (!data) return <p></p>;
 
-
-
   return (
     <div className="page">
       <Head>
@@ -24,7 +22,10 @@ export default function Pyqp() {
         />
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
-      <h1 className="page-heading"><span className="capitalize">{data.path}</span> <span> Question Paper</span></h1>
+      <h1 className="page-heading">
+        <span className="capitalize">{data.path}</span>{" "}
+        <span> Question Paper</span>
+      </h1>
       <ul className="breadcrumbs">
         <li>
           <Link underline="hover" key="1" color="inherit" href="/">
@@ -40,16 +41,21 @@ export default function Pyqp() {
       </ul>
       <br />
       <div className="book-wrap">
-        {data.pyqp.map((value, index) => (
+        {/* {data.pyqp.map((value, index) => (
           <Link key={index} href={value.path}>
             <a className="books" target="_blank">
               <h2>{value.name}</h2>
             </a>
           </Link>
-        ))}
+        ))} */}
+        <Link href={data.pyqp[0].path}>
+          <a className="books" target="_blank">
+            <h2>{data.pyqp[0].name}</h2>
+          </a>
+        </Link>
       </div>
-        <br />
-        <span> ** Open first one only. More coming soon...</span>
+      <br />
+      <span> ** More coming soon...</span>
     </div>
   );
 }
