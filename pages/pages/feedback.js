@@ -17,6 +17,7 @@ export default function Feedback() {
       </ul>
 
       <h1>Comming Soon....</h1>
+      Until then you can give your feedback on our Discord Server or mail at dilkhush_raj@yahoo.com
     </div>
   );
 }

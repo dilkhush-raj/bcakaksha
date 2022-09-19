@@ -16,7 +16,7 @@ export default function Contact() {
         <li>{pageTitle}</li>
       </ul>
 
-      <h1>Comming Soon....</h1>
+      Email: dilkhush_raj@yahoo.com
     </div>
   );
 }

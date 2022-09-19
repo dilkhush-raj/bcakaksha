@@ -16,7 +16,7 @@ export default function Support() {
         <li>{pageTitle}</li>
       </ul>
 
-      <h1>Comming Soon....</h1>
+      <h2>Support by sharing it with your friends</h2>
     </div>
   );
 }

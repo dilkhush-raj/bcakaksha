@@ -13,13 +13,13 @@ import PdfViewer from "../../../components/PdfViewer";
 export default function Semester2() {
   
   const router = useRouter();
-  const slug = [router.query.book];
+  const slug = [router.query.subject];
   const post = books[slug];
   const sem = semesters[router.query.semester];
 
-  const test = router.query.book;
+  const test = router.query.subject;
   if (!test) return <p></p>;
-  var date = examDate[router.query.book];
+  var date = examDate[router.query.subject];
   if (!date) date = "August 01 2022 14:00:00 UTC+0530";
   if (!post) return <></>;
   // if (!post) return (
