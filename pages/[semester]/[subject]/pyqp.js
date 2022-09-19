@@ -10,6 +10,9 @@ export default function Pyqp() {
   const sem = semesters[router.query.semester];
 
   const data = pyqp[slug];
+  if (!data) return <p></p>;
+
+
 
   return (
     <div className="page">
