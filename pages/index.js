@@ -4,11 +4,6 @@ import Image from "next/image";
 import Button from '@mui/material/Button';
 
 export default function Home() {
-  function explore() {
-    var element = document.getElementById("menu");
-    element.classList.toggle("open-menu");
-    window.scrollTo(0, 0);
-  }
 
   const SemesterBags = [
     {

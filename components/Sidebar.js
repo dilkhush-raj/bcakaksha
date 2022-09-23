@@ -2,18 +2,21 @@ import Link from "next/dist/client/link";
 import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import Image from "next/image";
+import Login from "./Login";
+import { useUserAuth } from "../firebase/UserAuthContext";
 
 function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
   const ShowSidebar = () => setSidebar(!sidebar);
 
+  const { user } = useUserAuth();
+  function CheckUser(user) {
+    if (user) {
+      return true;
+    }
+  }
+
   const InternalLinks = [
-    {
-      title: "Home",
-      path: "/",
-      className: "nav-text",
-      img: "icons8-home.svg",
-    },
     {
       title: "Semester 1",
       path: "/semester1",
@@ -126,11 +129,47 @@ function Sidebar() {
       >
         <div className="nav-menu" id="header">
           <ul className="menu">
+            <Link href="/">
+              <a>
+                <li className="nav-text">
+                  <Image
+                    src={"/images/icons8-home.svg"}
+                    width="20px"
+                    height="20px"
+                  />{" "}
+                  Home
+                </li>
+              </a>
+            </Link>
+            {CheckUser(user) ? (
+              <Link href={"/user"}>
+                <a>
+                  <li className="nav-text">
+                    <Image
+                      src={"/images/icons8-male-user-50.svg"}
+                      width="20px"
+                      height="20px"
+                    />{" "}
+                    Account
+                  </li>
+                </a>
+              </Link>
+            ) : (
+              <></>
+            )}
+
             {InternalLinks.map((item, index) => {
               return (
                 <Link key={index} href={item.path}>
                   <a>
-                    <li className={item.className}><Image src={"/images/" + item.img} width="20px" height="20px" /> {item.title}</li>
+                    <li className={item.className}>
+                      <Image
+                        src={"/images/" + item.img}
+                        width="20px"
+                        height="20px"
+                      />{" "}
+                      {item.title}
+                    </li>
                   </a>
                 </Link>
               );
@@ -141,11 +180,19 @@ function Sidebar() {
               return (
                 <Link key={index} href={item.path}>
                   <a>
-                    <li className={item.className}><Image src={"/images/" + item.img} width="20px" height="20px" /> {item.title}</li>
+                    <li className={item.className}>
+                      <Image
+                        src={"/images/" + item.img}
+                        width="20px"
+                        height="20px"
+                      />{" "}
+                      {item.title}
+                    </li>
                   </a>
                 </Link>
               );
             })}
+            <Login />
           </ul>
         </div>
       </div>
