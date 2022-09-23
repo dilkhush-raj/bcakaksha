@@ -47,7 +47,7 @@ export default function User() {
     <>
       {CheckUser(user) ? (
         <div>
-          <h1 className="page-heading">{user.displayName + "Account"}</h1>
+          <h1 className="page-heading">{user.displayName + " Account"}</h1>
           <ul className="breadcrumbs">
             <li>
               <Link underline="hover" key="1" color="inherit" href="/">
@@ -56,9 +56,8 @@ export default function User() {
             </li>
             <li>Account</li>
           </ul>
-          <div>{user.email}</div>
-          <button onClick={saveNote}>Add Data</button>
-          <button onClick={getData}>Get Data</button>
+          <div>Welcome! {user.displayName}</div>
+          <div>Your email: {user.email}</div>
         </div>
       ) : (
         <>

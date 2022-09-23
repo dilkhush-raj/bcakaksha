@@ -49,16 +49,13 @@ function Notice() {
     
   }
 
- 
+  const colRef = collection(database, 'notice')
 
-  const getData = async () => {
-    
-    const notesSnapshot = await getDocs(collection(database, "notice"));
-    const notesList = notesSnapshot.docs.map((doc) => doc.data());
+  getDocs(colRef)
+  .then((snapshot) => {
+    const notesList = snapshot.docs.map((doc) => doc.data());
     setNotices(notesList)
-    return notesList;
-  };
-
+  })
 
 
   return (
@@ -117,7 +114,6 @@ function Notice() {
             <></>
           )}
 
-<button onClick={getData}>Load Notice</button>
         
     </div>
   );

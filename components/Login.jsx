@@ -67,8 +67,8 @@ export default function Login() {
             <li onClick={handleLogout} className="nav-text"><Image src="/images/icons8-login-rounded-50.svg" width="20px" height="20px" />Log Out</li>
           ) : (
             <>
-            <li onClick={handleSubmit} className="nav-text"><Image src="/images/icons8-login-rounded-50.svg" width="20px" height="20px" />Google</li>
-            <li onClick={loginWithGithub} className="nav-text"><Image src="/images/icons8-login-rounded-50.svg" width="20px" height="20px" />Github</li>
+            <li onClick={handleSubmit} className="nav-text"><Image src="/images/icons8-login-rounded-50.svg" width="20px" height="20px" />Login with Google</li>
+            {/* <li onClick={loginWithGithub} className="nav-text"><Image src="/images/icons8-login-rounded-50.svg" width="20px" height="20px" />Github</li> */}
             </>
           )}
         </div>
