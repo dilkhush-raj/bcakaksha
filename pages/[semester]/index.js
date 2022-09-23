@@ -1,17 +1,18 @@
 import { useRouter } from "next/router";
 import semesters from "../../data/semesters.json";
+import pyqp from "../../data/sub-pyqp.json";
 import Link from "next/link";
 import Head from "next/head";
 
 export default function Semester() {
   const router = useRouter();
   const post = semesters[router.query.semester];
+  const subPyqp = pyqp[router.query.semester];
   if (!post) return <p></p>;
 
   return (
     <div>
       <Head>
-
         <title>{post.name + " - IGNOU की BCA कक्षा"}</title>
         <meta
           name="description"
@@ -21,12 +22,10 @@ export default function Semester() {
       </Head>
       <h1 className="page-heading">{post.name}</h1>
 
-
       <ul className="breadcrumbs">
         <li>
           <Link underline="hover" key="1" color="inherit" href="/">
             Home
-
           </Link>
         </li>
         <li>{post.name}</li>
@@ -37,7 +36,6 @@ export default function Semester() {
           <span className="breadcrumbs1"></span>
           <span key="2" className="breadcrumbs2"></span>
         </Breadcrumbs> */}
-
 
         <h2>Books</h2>
         <div className="book-wrap">
@@ -65,7 +63,7 @@ export default function Semester() {
         <div className="book-wrap">
           {post.assignments.map((value, index) => (
             <Link key={index} href={value.url}>
-              <a className="books">
+              <a className="books" target="_blank">
                 <h2>{value.name}</h2>
               </a>
             </Link>
@@ -74,17 +72,24 @@ export default function Semester() {
 
         <h2>Previous Year Question Paper</h2>
         <div className="book-wrap">
-          {post.pyqp.map((value, index) => (
+          {/* {post.pyqp.map((value, index) => (
             <Link key={index} href={value.url}>
+              <a className="books">
+                <h2>{value.name}</h2>
+              </a>
+            </Link>
+          ))} */}
+
+          {subPyqp.book.map((value, index) => (
+            <Link key={index} href={post.path + "/" + value.url + "/pyqp"}>
               <a className="books">
                 <h2>{value.name}</h2>
               </a>
             </Link>
           ))}
         </div>
-{/* <div className="shapes-9"></div> */}
+        {/* <div className="shapes-9"></div> */}
       </div>
     </div>
   );
 }
-

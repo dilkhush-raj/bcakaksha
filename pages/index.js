@@ -89,7 +89,7 @@ export default function Home() {
             <br />
             IGNOU की BCA कक्षा
           </h1>
-          <h4>This website is under-construction. </h4>
+          <h4>More features and content is being added one by one. So, keep checking for anything new. </h4>
 
           {/* <button className="cta">
             <Link href="https://discord.gg/M4CXzrud3e">

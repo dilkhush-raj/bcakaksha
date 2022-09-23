@@ -10,7 +10,7 @@ export default function Semester2() {
   const test = router.query.pdf;
   
   // const book = test.book;
-  const post = books[router.query.book];
+  const post = books[router.query.subject];
   if (!post) return <p></p>;
 
   // console.log(test);
@@ -19,7 +19,7 @@ export default function Semester2() {
   // console.log(book);
 
 
-  const unit = post.book[test];
+  const unit = post.subject[test];
 
   const pdf = unit.path;
   // console.log(pdf); 

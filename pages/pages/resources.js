@@ -17,6 +17,7 @@ export default function Resources() {
       </ul>
 
       <h1>Comming Soon....</h1>
+      Until then check our discord server for free resources.
     </div>
   );
 }

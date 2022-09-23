@@ -17,6 +17,7 @@ export default function Faq() {
       </ul>
 
       <h1>Comming Soon....</h1>
+      Until then, ask your questions on our discord server.
     </div>
   );
 }
