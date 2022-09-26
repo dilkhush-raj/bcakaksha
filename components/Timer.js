@@ -55,10 +55,10 @@ const timeString12hr = new Date('1970-01-01T' + timeString + 'Z')
         setSeconds("R");
       }
       if (!d && !h && !m && !s) {
-        setDays("Check");
+        setDays("On");
         setHours("Your");
         setMinutes("RC");
-        setSeconds("Website");
+        setSeconds("Site");
       }
     }, 1000);
 

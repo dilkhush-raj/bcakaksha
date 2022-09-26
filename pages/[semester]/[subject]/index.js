@@ -60,11 +60,12 @@ export default function Semester2() {
 
         {/* <Timer  date="12/31/2023 23:59:59"/> */}
         {/* <div>{console.log({post})}</div> */}
-        <div className="book-wrap">
+        <div className="chapter-list-heading">Chapter List</div>
+        <div className="chapter-wrap">
           {post.book.map((value, index) => (
             <Link key={index} href={value.path}>
-              <a className="books" target="_blank">
-                <h2>{value.name}</h2>
+              <a className="chapter-list" target="_blank">
+                {value.name}
               </a>
             </Link>
           ))}
