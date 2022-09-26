@@ -757,3 +757,34 @@ td, th{
 .capitalize{
   text-transform: uppercase;
 }
+
+.chapter-wrap{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.chapter-list{
+  padding: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chapter-list:nth-child(even){
+  background-color: #ffffff;
+}
+.chapter-list:nth-child(odd){
+  background-color: #f5f5f5;
+}
+
+.chapter-list-heading{
+  font-weight: 700;
+  background-color: lightskyblue;
+  padding: .5rem;
+}
+
+@media screen and (min-width: 450px) {
+  .chapter-wrap{
+    width: max-content;
+  }
+}
