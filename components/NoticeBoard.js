@@ -3,19 +3,19 @@ import Link from "next/link";
 export default function NoticeBoard() {
   const Notice = [
     {
-      title: "Hall Ticket for June 2022 Term End Examination",
-      path: "http://www.ignou.ac.in/ignou/bulletinboard/news/latest/detail/Hall_Ticket_for_June_2022_Term_End_Examination-854",
+      title: "Online Submission of Examination Form for December 2022 Term End Examination",
+      path: "https://exam.ignou.ac.in/",
       className: "nav-text",
     },
     {
-      title: "Date Sheet for June 2022 Term End Examination",
-      path: "http://www.ignou.ac.in/userfiles/datesheet.pdf",
+      title: "The last date for submission of Assignments for TEE December, 2022 is extended upto 31st October, 2022",
+      path: "http://ignou.ac.in/userfiles/Extension%20till%2031_10_22.pdf",
       className: "nav-text",
     },
     {
       title:
-        "The Last Date for Re-Registration for July 2022 Session extended till 12th August, 2022",
-      path: "https://onlinerr.ignou.ac.in/",
+        "Link of Online Application for Re-Evaluation of Answerscripts for TEE June 2022",
+      path: "https://onlineservices.ignou.ac.in/reevaluation/",
       className: "nav-text",
     },
   ];

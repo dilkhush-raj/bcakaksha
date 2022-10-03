@@ -1,17 +1,8 @@
 import Link from "next/dist/client/link";
 import NoticeBoard from "../../components/NoticeBoard";
-import Button from "@mui/material/Button";
-import { useState } from "react";
-import { app, database } from "../../firebase/config";
-import { useUserAuth } from "../../firebase/UserAuthContext";
-import {
-  collection,
-  addDoc,
-  getDocs,
-  doc,
-  updateDoc,
-  setDoc,
-} from "firebase/firestore";
+
+import Head from "next/head";
+
 
 function Notice() {
 
@@ -60,6 +51,14 @@ function Notice() {
 
   return (
     <div className="page">
+      <Head>
+        <title>{"Notice Board - IGNOU की BCA कक्षा"}</title>
+        <meta
+          name="description"
+          content="IGNOU की BCA कक्षा: Ebooks, Syllabus, Previous Year Question Paper, Assignments, Notes and many more."
+        />
+        <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+      </Head>
     <h1 className="page-heading">Notice Board</h1>
       <ul className="breadcrumbs">
         <li>
