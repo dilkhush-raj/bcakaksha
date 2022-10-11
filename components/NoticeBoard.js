@@ -3,6 +3,11 @@ import Link from "next/link";
 export default function NoticeBoard() {
   const Notice = [
     {
+      title: "Tentative Datasheet for December 2022 Term End Examination",
+      path: "http://www.ignou.ac.in/userfiles/datesheet.pdf",
+      className: "nav-text",
+    },
+    {
       title: "Online Submission of Examination Form for December 2022 Term End Examination",
       path: "https://exam.ignou.ac.in/",
       className: "nav-text",
