@@ -8,9 +8,6 @@ function ExamCountdown() {
   const property = Object.keys(Date);
   const propertyValues = Object.values(Date);
 
-  // console.log(property);
-
-  // console.log(propertyValues);
 
   return (
     <div className="page">
