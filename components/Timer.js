@@ -69,7 +69,7 @@ const timeString12hr = new Date('1970-01-01T' + timeString + 'Z')
     <div>
       <>
         <div className="timer-wrapper">
-          <span><span className="sub">{sub}</span> Tentative Date for December 2022 Exam - <span>{dayName + ", " + d + "/" + m + "/" + y + " at " + timeString12hr}</span></span>
+          <span><span className="sub">{sub}</span> Exam Date for December 2022 Exam - <span>{dayName + ", " + d + "/" + m + "/" + y + " at " + timeString12hr}</span></span>
           <div className="timer-inner">
             <div className="timer-segment">
               <span className="time">{days}</span>

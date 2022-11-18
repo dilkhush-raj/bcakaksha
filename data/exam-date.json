@@ -3,10 +3,10 @@
         "date": "December 06 2022 10:00:00 UTC+0530"
     },
     "bcs-012" : {
-        "date": "December 07 2022 10:00:00 UTC+0530"
+        "date": "January 07 2023 10:00:00 UTC+0530"
     },
     "bcs-031" : {
-        "date": "December 08 2022 10:00:00 UTC+0530"
+        "date": "January 09 2022 10:00:00 UTC+0530"
     },
     "bcs-040" : {
         "date": "December 09 2022 10:00:00 UTC+0530"
@@ -36,7 +36,7 @@
         "date": "December 27 2022 14:00:00 UTC+0530"
     },
     "eco-01" : {
-        "date": "December 31 2023 10:00:00 UTC+0530"
+        "date": "December 31 2022 10:00:00 UTC+0530"
     },
     "eco-02" : {
         "date": "December 21 2022 14:00:00 UTC+0530"
@@ -48,10 +48,10 @@
         "date": "December 06 2022 14:00:00 UTC+0530"
     },
     "mcs-012" : {
-        "date": "December 07 2022 14:00:00 UTC+0530"
+        "date": "January 07 2023 14:00:00 UTC+0530"
     },
     "mcs-013" : {
-        "date": "December 08 2022 14:00:00 UTC+0530"
+        "date": "January 09 2023 14:00:00 UTC+0530"
     },
     "mcs-014" : {
         "date": "January 02 2023 14:00:00 UTC+0530"
@@ -66,7 +66,7 @@
         "date": "December 13 2022 14:00:00 UTC+0530"
     },
     "mcs-023" : {
-        "date": "December 12 2022 14:00:00 UTC+0530"
+        "date": "December 22 2022 14:00:00 UTC+0530"
     },
     "mcs-024" : {
         "date": "December 23 2022 14:00:00 UTC+0530"
