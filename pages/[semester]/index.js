@@ -32,11 +32,6 @@ export default function Semester() {
       </ul>
 
       <div className="index">
-        {/* <Breadcrumbs aria-label="breadcrumb" className="breadcrumbs">
-          <span className="breadcrumbs1"></span>
-          <span key="2" className="breadcrumbs2"></span>
-        </Breadcrumbs> */}
-
         <h2>Books</h2>
         <div className="book-wrap">
           {post.book.map((value, index) => (
@@ -72,14 +67,6 @@ export default function Semester() {
 
         <h2>Previous Year Question Paper</h2>
         <div className="book-wrap">
-          {/* {post.pyqp.map((value, index) => (
-            <Link key={index} href={value.url}>
-              <a className="books">
-                <h2>{value.name}</h2>
-              </a>
-            </Link>
-          ))} */}
-
           {subPyqp.book.map((value, index) => (
             <Link key={index} href={post.path + "/" + value.url + "/pyqp"}>
               <a className="books">
@@ -88,7 +75,6 @@ export default function Semester() {
             </Link>
           ))}
         </div>
-        {/* <div className="shapes-9"></div> */}
       </div>
     </div>
   );

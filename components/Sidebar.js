@@ -56,12 +56,12 @@ function Sidebar() {
   ];
 
   const ExternalLinks = [
-    {
-      title: "Blog",
-      path: "/blog",
-      img: "icons8-blog.svg",
-      className: "nav-text",
-    },
+    // {
+    //   title: "Blog",
+    //   path: "/blog",
+    //   img: "icons8-blog.svg",
+    //   className: "nav-text",
+    // },
     {
       title: "Links",
       path: "/pages/links",
@@ -74,12 +74,12 @@ function Sidebar() {
       img: "icons8-noticeboard.svg",
       className: "nav-text",
     },
-    {
-      title: "Resources",
-      path: "/pages/resources",
-      img: "icons8-albums.svg",
-      className: "nav-text",
-    },
+    // {
+    //   title: "Resources",
+    //   path: "/pages/resources",
+    //   img: "icons8-albums.svg",
+    //   className: "nav-text",
+    // },
     {
       title: "Exam Timer",
       path: "/pages/exam-countdown",
@@ -92,30 +92,30 @@ function Sidebar() {
       img: "icons8-exam.svg",
       className: "nav-text",
     },
-    {
-      title: "FAQ",
-      path: "/pages/faq",
-      img: "icons8-faq.svg",
-      className: "nav-text",
-    },
-    {
-      title: "Feedback",
-      path: "/pages/feedback",
-      img: "icons8-feedback-hub.svg",
-      className: "nav-text",
-    },
-    {
-      title: "Support Us",
-      path: "/pages/support",
-      img: "icons8-charity-box.svg",
-      className: "nav-text",
-    },
-    {
-      title: "Contact Us",
-      path: "/pages/contact",
-      img: "icons8-contact-us.svg",
-      className: "nav-text",
-    },
+    // {
+    //   title: "FAQ",
+    //   path: "/pages/faq",
+    //   img: "icons8-faq.svg",
+    //   className: "nav-text",
+    // },
+    // {
+    //   title: "Feedback",
+    //   path: "/pages/feedback",
+    //   img: "icons8-feedback-hub.svg",
+    //   className: "nav-text",
+    // },
+    // {
+    //   title: "Support Us",
+    //   path: "/pages/support",
+    //   img: "icons8-charity-box.svg",
+    //   className: "nav-text",
+    // },
+    // {
+    //   title: "Contact Us",
+    //   path: "/pages/contact",
+    //   img: "icons8-contact-us.svg",
+    //   className: "nav-text",
+    // },
   ];
 
   return (

@@ -41,13 +41,6 @@ export default function Pyqp() {
       </ul>
       <br />
       <div className="book-wrap">
-        {/* {data.pyqp.map((value, index) => (
-          <Link key={index} href={value.path}>
-            <a className="books" target="_blank">
-              <h2>{value.name}</h2>
-            </a>
-          </Link>
-        ))} */}
         <Link href={data.pyqp[0].path}>
           <a className="books" target="_blank">
             <h2>{data.pyqp[0].name}</h2>
