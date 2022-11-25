@@ -3,11 +3,16 @@ import semesters from "../../data/semesters.json";
 import pyqp from "../../data/sub-pyqp.json";
 import Link from "next/link";
 import Head from "next/head";
+import TimerTwo from "../../components/TimerTwo";
+import examDate from "../../data/exam-date.json";
 
 export default function Semester() {
   const router = useRouter();
   const post = semesters[router.query.semester];
   const subPyqp = pyqp[router.query.semester];
+  console.log(examDate);
+  const date = examDate["bcs-011"];
+  console.log(date);
   if (!post) return <p></p>;
 
   return (
@@ -30,8 +35,13 @@ export default function Semester() {
         </li>
         <li>{post.name}</li>
       </ul>
-
       <div className="index">
+      {post.book.map((value, index) => (
+          <>
+            <TimerTwo key={index} date={examDate[value.url]} subject={value.url} />
+          </>
+        ))}
+
         <h2>Books</h2>
         <div className="book-wrap">
           {post.book.map((value, index) => (
@@ -75,6 +85,7 @@ export default function Semester() {
             </Link>
           ))}
         </div>
+
       </div>
     </div>
   );
