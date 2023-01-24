@@ -2,19 +2,19 @@
     "semester1":{
       "book": [
         {
-          "name": "FEG-02 Last 6 Question Paper",
+          "name": "FEG-02 Previous Year Question Paper",
           "url": "feg-02"
         },
         {
-          "name": "ECO-01 Last 6 Question Paper",
+          "name": "ECO-01 Previous Year Question Paper",
           "url": "eco-01"
         },
         {
-          "name": "BCS-011 Last 6 Question Paper",
+          "name": "BCS-011 Previous Year Question Paper",
           "url": "bcs-011"
         },
         {
-          "name": "BCS-012 Last 6 Question Paper",
+          "name": "BCS-012 Previous Year Question Paper",
           "url": "bcs-012"
         }
       ]
@@ -22,23 +22,23 @@
     "semester2":{
       "book": [
         {
-          "name": "ECO-02 Last 6 Question Paper",
+          "name": "ECO-02 Previous Year Question Paper",
           "url": "eco-02"
         },
         {
-          "name": "MCS-011 Last 6 Question Paper",
+          "name": "MCS-011 Previous Year Question Paper",
           "url": "mcs-011"
         },
         {
-          "name": "MCS-012 Last 6 Question Paper",
+          "name": "MCS-012 Previous Year Question Paper",
           "url": "mcs-012"
         },
         {
-          "name": "MCS-013 Last 6 Question Paper",
+          "name": "MCS-013 Previous Year Question Paper",
           "url": "mcs-013"
         },
         {
-          "name": "MCS-015 Last 6 Question Paper",
+          "name": "MCS-015 Previous Year Question Paper",
           "url": "mcs-015"
         }
     ]
@@ -46,19 +46,19 @@
     "semester3":{
       "book": [
         {
-          "name": "MCS-014 Last 6 Question Paper",
+          "name": "MCS-014 Previous Year Question Paper",
           "url": "mcs-014"
         },
         {
-          "name": "MCS-021 Last 6 Question Paper",
+          "name": "MCS-021 Previous Year Question Paper",
           "url": "mcs-021"
         },
         {
-          "name": "MCS-023 Last 6 Question Paper",
+          "name": "MCS-023 Previous Year Question Paper",
           "url": "mcs-023"
         },
         {
-          "name": "BCS-031 Last 6 Question Paper",
+          "name": "BCS-031 Previous Year Question Paper",
           "url": "bcs-031"
         }
       ]
@@ -66,19 +66,19 @@
     "semester4":{
       "book": [
         {
-          "name": "BCS-040 Last 6 Question Paper",
+          "name": "BCS-040 Previous Year Question Paper",
           "url": "bcs-040"
         },
         {
-          "name": "MCS-024 Last 6 Question Paper",
+          "name": "MCS-024 Previous Year Question Paper",
           "url": "mcs-024"
         },
         {
-          "name": "BCS-041 Last 6 Question Paper",
+          "name": "BCS-041 Previous Year Question Paper",
           "url": "bcs-041"
         },
         {
-          "name": "BCS-042 Last 6 Question Paper",
+          "name": "BCS-042 Previous Year Question Paper",
           "url": "bcs-042"
         }
       ]
@@ -86,23 +86,23 @@
     "semester5":{
       "book": [
         {
-          "name": "BCS-051 Last 6 Question Paper",
+          "name": "BCS-051 Previous Year Question Paper",
           "url": "bcs-051"
         },
         {
-          "name": "BCS-052 Last 6 Question Paper",
+          "name": "BCS-052 Previous Year Question Paper",
           "url": "bcs-052"
         },
         {
-          "name": "BCS-053 Last 6 Question Paper",
+          "name": "BCS-053 Previous Year Question Paper",
           "url": "bcs-053"
         },
         {
-          "name": "BCS-054 Last 6 Question Paper",
+          "name": "BCS-054 Previous Year Question Paper",
           "url": "bcs-054"
         },
         {
-          "name": "BCS-055 Last 6 Question Paper",
+          "name": "BCS-055 Previous Year Question Paper",
           "url": "bcs-055"
         }
       ]
@@ -110,11 +110,11 @@
     "semester6":{
       "book": [
         {
-          "name": "BCS-062 Last 6 Question Paper",
+          "name": "BCS-062 Previous Year Question Paper",
           "url": "bcs-062"
         },
         {
-          "name": "MCS-022 Last 6 Question Paper",
+          "name": "MCS-022 Previous Year Question Paper",
           "url": "mcs-022"
         }
       ]

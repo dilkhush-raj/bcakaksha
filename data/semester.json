@@ -707,8 +707,60 @@
     "date": "August 01 2022 14:00:00 UTC+0530",
     "book": [
       {
-        "name": "",
-        "path": ""
+        "name": "Unit-1 Descriptive Statistics",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11663/1/Unit-1.pdf"
+      },
+      {
+        "name": "Unit-2 Probability Concepts",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11664/1/Unit-2.pdf"
+      },
+      {
+        "name": "Unit-3 Probability Distributions",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11665/1/Unit-3.pdf"
+      },
+      {
+        "name": "Unit-4 Sampling Distributions",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11666/1/Unit-4.pdf"
+      },
+      {
+        "name": "Unit-5 Estimation",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11667/1/Unit-5.pdf"
+      },
+      {
+        "name": "Unit-6 Tests of Significance",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11668/1/Unit-6.pdf"
+      },
+      {
+        "name": "Unit-7 Applications of Chi-Square In Problems With Categorical Data",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11669/1/Unit-7.pdf"
+      },
+      {
+        "name": "Unit-8 Analysis of Variance: One-Way Classification",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11670/1/Unit-8.pdf"
+      },
+      {
+        "name": "Unit-9 Regression Analysis",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/21275/1/Unit-9.pdf"
+      },
+      {
+        "name": "Unit-10 Forecasting and Time Series - Analysis",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11673/1/Unit-10.pdf"
+      },
+      {
+        "name": "Unit-11 Statistical Quality Control",
+        "path": "https://egyankosh.ac.in/bitstream/123456789/11674/1/Unit-11.pdf"
+      },
+      {
+        "name": "Unit-12 Simple Random Sampling and Systematic Sampling",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11676/1/Unit-12.pdf"
+      },
+      {
+        "name": "Unit-13 Stratified Sampling",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11678/1/Unit-13.pdf"
+      },
+      {
+        "name": "Unit-14 Cluster Sampling and Multistage Sampling",
+        "path": "https://www.egyankosh.ac.in/bitstream/123456789/11680/1/Unit-14.pdf"
       }
     ]
   },

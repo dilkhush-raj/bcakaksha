@@ -1,0 +1,74 @@
+[
+  {
+    "title": "BCS-062 E-Commerce",
+    "slug": "bcs-062",
+    "visible": true,
+    "semester": 6,
+    "exam-date": "",
+    "blocks": [
+      {
+        "title": "Block-1 E-Commerce concepts and models",
+        "units": [
+          {
+            "title": "Block-1 E-Commerce concepts and models",
+            "link": "https://egyankosh.ac.in/bitstream/123456789/51830/1/Block-1.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Block-2 Practices in E-commerce",
+        "units": [
+          {
+            "title": "Block-2 Practices in E-commerce",
+            "link": "https://egyankosh.ac.in/bitstream/123456789/51831/1/Block-2.pdf"
+          }
+        ]
+      }
+    ],
+    "notes": [],
+    "question-paper": [],
+    "links": []
+  },
+  {
+    "title": "",
+    "slug": "",
+    "visible": false,
+    "semester": "",
+    "exam-date": "",
+    "blocks": [
+      {
+        "title": "",
+        "units": [
+          {
+            "title": "",
+            "slug": ""
+          }
+        ]
+      }
+    ],
+    "notes": [],
+    "question-paper": [],
+    "links": []
+  },
+  {
+    "title": "",
+    "slug": "",
+    "visible": false,
+    "semester": "",
+    "exam-date": "",
+    "blocks": [
+      {
+        "title": "",
+        "units": [
+          {
+            "title": "",
+            "slug": ""
+          }
+        ]
+      }
+    ],
+    "notes": [],
+    "question-paper": [],
+    "links": []
+  }
+]

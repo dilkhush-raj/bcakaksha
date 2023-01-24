@@ -6,9 +6,6 @@ import Link from "next/link";
 import Head from "next/head";
 import Timer from "../../../components/Timer";
 
-import Typography from "@mui/material/Typography";
-import PdfViewer from "../../../components/PdfViewer";
-
 
 export default function Semester2() {
   
@@ -22,11 +19,6 @@ export default function Semester2() {
   var date = examDate[router.query.subject];
   if (!date) date = "August 01 2022 14:00:00 UTC+0530";
   if (!post) return <></>;
-  // if (!post) return (
-  // <>
-  // <PdfViewer pdf={pdf}/>
-  // </>
-  // );
   if (!sem) return <p></p>;
 
 
@@ -57,9 +49,6 @@ export default function Semester2() {
       </ul>
       <div className="index">
         <Timer date={date.date} subject={slug} />
-
-        {/* <Timer  date="12/31/2023 23:59:59"/> */}
-        {/* <div>{console.log({post})}</div> */}
         <div className="chapter-list-heading">Chapter List</div>
         <div className="chapter-wrap">
           {post.book.map((value, index) => (
