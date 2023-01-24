@@ -1,0 +1,15 @@
+.content{
+    padding: 1rem;
+}
+
+.main img{
+    max-width: 600px;
+}
+
+.main p{
+    padding: .5rem 0;
+}
+
+.main ol, .main ul{
+    margin-left: 1.5rem;
+}

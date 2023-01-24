@@ -1,0 +1,64 @@
+.main{
+  /* background-color: #a6b6cc; */
+  /* background: linear-gradient(315deg,  #a4bfef 0%,  #eef8ff 74%); */
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-image: url(/images/hero.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 50vw;
+}
+
+.semesterBags{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 500px;
+}
+
+.bags{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+}
+
+.bag{
+    cursor: pointer;
+}
+
+.bags a:hover{
+    transform: translateY(-5px);
+    transition: all .2s ease-in-out;
+}
+
+
+.logo{
+    font-size: 64px;
+}
+
+@media (max-width: 600px) {
+    .main{
+        grid-template-columns: 1fr;
+        background-image: none;
+        padding: .2rem;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .bags{
+        gap: 0;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .semesterBags{
+        max-width: none;
+    }
+    .bag{
+        width: 100px;
+    }
+}
