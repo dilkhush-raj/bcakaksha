@@ -2,20 +2,13 @@ import Link from "next/dist/client/link";
 import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import Image from "next/image";
-import Login from "./Login";
-import { useUserAuth } from "../firebase/UserAuthContext";
 import { useRouter } from 'next/router'
 
 import styles from "../styles/Sidebar.module.css";
 
 const routes = [
   {
-    title: "Home",
-    path: "/",
-    className: "nav-text",
-    icon: "icons8-home.svg",
-  },
-  {
+
     title: "Semester 1",
     path: "/semester1",
     className: "nav-text",
@@ -101,16 +94,44 @@ const Sidebar = () => {
           </div>
         </div>
         <section className={styles.routes}>
+
+        <Link href={'/'} >
+                <div
+                  className={
+                    router.asPath == "/"
+                      ? styles.link_active
+                      : styles.link
+                  }
+                >
+                  <div className={styles.icon}>
+                    <Image
+                      src={"/images/icons8-home.svg"}
+                      width="20px"
+                      height="20px"
+                      alt={"icons8-home.svg"}
+                      priority="true"
+                    />
+                  </div>
+
+                  <div>
+                    {isOpen && (
+                      <div className={styles.link_text}>{"Home"}</div>
+                    )}
+                  </div>
+                </div>
+              </Link>
+
           {routes.map((route, index) => {
             return (
               <Link href={route.path} key={index}>
                 <div
                   className={
-                    router.asPath == route.path
+
+                    router.asPath.startsWith(route.path)
                       ? styles.link_active
                       : styles.link
-                  }
-                >
+                  }>
+
                   <div className={styles.icon}>
                     <Image
                       src={"/images/" + route.icon}
@@ -165,26 +186,6 @@ const Sidebar = () => {
   );
 };
 
+
 export default Sidebar;
 
-// function Sidebar() {
-//   const [sidebar, setSidebar] = useState(false);
-//   const ShowSidebar = () => setSidebar(!sidebar);
-
-//   const { user } = useUserAuth();
-//   function CheckUser(user) {
-//     if (user) {
-//       return true;
-//     }
-//   }
-
-//
-
-//
-
-//   return (
-//     <nav className={styles.nav}>
-
-//     </nav>
-//   );
-// }

@@ -1,15 +1,16 @@
-import productsData from "../../../data/blog.json";
+import Blog from "../../../modals/Blog"
+import connectDB from "../../../middleware/mongoose"
 
-export default function ProductData (req, res) {
-  const { query } = req;
-  const params = query.product;
+const handler = async (req, res) => {
+    const { query } = req;
+    const params = query.blog;
+    let blogs = await Blog.find();
+    try {
+      let blog = blogs.find((item) => item.slug === params);
+      res.status(200).json({ blog})
+    } catch (err) {
+      res.status(500).json({ statusCode: 500, message: err.message });
+    }
+};
 
-  let data = productsData;
-
-  let product = data.find((item) => item.url === params);
-  try {
-    res.status(200).json(product);
-  } catch (err) {
-    res.status(500).json({ statusCode: 500, message: err.message });
-  }
-}
+export default connectDB(handler);

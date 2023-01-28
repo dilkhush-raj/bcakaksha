@@ -1,16 +1,38 @@
 import Link from "next/dist/client/link";
 import HeadTag from "../../components/HeadTag";
 import { useState, useEffect } from "react";
-import parse from "html-react-parser";
 import Loader from "../../components/Loader";
+import { useUserAuth } from "../../firebase/UserAuthContext";
+import styles from "../../styles/Blogs.module.css";
 
 function Notice() {
+  const { user } = useUserAuth();
+
+  useEffect(() => {
+    function CheckUser(user) {
+      if (user) {
+        const id = user.uid;
+        console.log(id);
+        if (id === "H6Tx2hVSQBhC3Ub5eMQVWgftTPb2") {
+          setadmin(true);
+        } else {
+          setadmin(false);
+        }
+      }
+    }
+    CheckUser(user);
+  }, [user]);
+
   const [data, setData] = useState(null);
+  const [admin, setadmin] = useState(false);
+
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch("/api/blog");
+
+        const res = await fetch("/api/blogs");
+
         const json = await res.json();
         setData(json);
       } catch (err) {
@@ -18,14 +40,17 @@ function Notice() {
       }
     }
     fetchData();
-  },);
+  });
+
 
   if (!data) {
     return <Loader />;
   }
 
   return (
-    <div className="page">
+
+    <div className={styles.main}>
+
       <HeadTag title="Blog - IGNOU की BCA कक्षा" />
       <h1 className="page-heading">Blog</h1>
 
@@ -38,14 +63,20 @@ function Notice() {
         <li>Blog</li>
       </ul>
 
-    {data.map((item, index) => {
-      return (
-        <>
-        <h2>{item.title}</h2>
-        <Link href={"/blog/" + item.slug}>View</Link>
-        </>
-      )
-    })}
+      <div className={styles.container}>
+        {data.blogs.map((item, index) => {
+          return (
+            <div key={index} className={styles.card}>
+              <img src={item.image} />
+              <div className={styles.row}>
+                <div className={styles.heading}>{item.title}</div>
+                <Link href={"/blog/" + item.slug} className={styles.btn} >Read</Link>
+              </div>
+              {admin && <Link href={"/blog/edit?post=" + item.slug}>Edit</Link>}s
+            </div>
+          );
+        })}
+      </div>
 
     </div>
   );
