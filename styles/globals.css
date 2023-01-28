@@ -641,6 +641,21 @@ th {
   padding: 0.5rem;
 }
 
+.login{
+  width: max-content;
+}
+
+.login-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5em;
+  border-radius: 20px;
+  margin: 1rem;
+  box-shadow: 1px 1px 3px #cdcdcd;
+  background-color: rgb(186, 186, 186);
+}
+
 @media screen and (min-width: 450px) {
   .chapter-wrap {
     width: max-content;

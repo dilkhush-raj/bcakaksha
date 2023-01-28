@@ -21,9 +21,10 @@ const Blog = () => {
         // Make a GET request to the server for the product data
         const res = await fetch(`/api/blogs/${params}`);
         const json = await res.json();
+        const blog= json.blog;
 
         // Update the state with the product data
-        setData(json);
+        setData(blog);
       } catch (err) {
         console.error(err);
       }
