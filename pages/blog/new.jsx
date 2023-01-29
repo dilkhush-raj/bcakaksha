@@ -20,7 +20,7 @@ const NewBlog = () => {
     console.log(formData);
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:3000/api/blogs/new', [formData]);
+      const res = await axios.post('/api/blogs/new', [formData]);
       console.log(res.data);
     } catch (err) {
       console.error(err);
