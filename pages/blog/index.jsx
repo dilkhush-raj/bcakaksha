@@ -63,9 +63,11 @@ function Notice() {
               <img src={item.image} />
               <div className={styles.row}>
                 <div className={styles.heading}>{item.title}</div>
-                <Link href={"/blog/" + item.slug} className={styles.btn} >Read</Link>
+                <div className={styles.buttons}>
+                  <Link href={"/blog/" + item.slug}>Read</Link>
+                </div>
               </div>
-              {admin && <Link href={"/blog/edit?post=" + item.slug}>Edit</Link>}s
+              {admin && <Link href={"/blog/edit?post=" + item.slug}>Edit</Link>}
             </div>
           );
         })}

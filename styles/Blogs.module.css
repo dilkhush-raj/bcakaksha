@@ -34,7 +34,12 @@
     justify-content: space-between;
 }
 
-.btn{
-    background-color: aquamarine;
-    padding: 1rem;
+.buttons{
+    background-color: rgb(127, 225, 255);
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.buttons:hover{
+    background-color: rgb(0, 140, 255);
 }

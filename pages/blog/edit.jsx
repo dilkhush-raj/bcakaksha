@@ -47,7 +47,7 @@ const EditBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/blogs/update', [formData]);
+      await axios.post('/api/blogs/update', [formData]);
     } catch (err) {
       console.error(err);
     }
