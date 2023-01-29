@@ -26,10 +26,13 @@ function Notice() {
   const [data, setData] = useState(null);
   const [admin, setadmin] = useState(false);
 
+
   useEffect(() => {
     async function fetchData() {
       try {
+
         const res = await fetch("/api/blogs");
+
         const json = await res.json();
         setData(json);
       } catch (err) {
@@ -39,12 +42,15 @@ function Notice() {
     fetchData();
   });
 
+
   if (!data) {
     return <Loader />;
   }
 
   return (
+
     <div className={styles.main}>
+
       <HeadTag title="Blog - IGNOU की BCA कक्षा" />
       <h1 className="page-heading">Blog</h1>
 
@@ -56,6 +62,7 @@ function Notice() {
         </li>
         <li>Blog</li>
       </ul>
+
       <div className={styles.container}>
         {data.blogs.map((item, index) => {
           return (
@@ -72,6 +79,7 @@ function Notice() {
           );
         })}
       </div>
+
     </div>
   );
 }

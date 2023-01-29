@@ -639,6 +639,7 @@ th {
   font-weight: 700;
   background-color: lightskyblue;
   padding: 0.5rem;
+
 }
 
 .login{
@@ -654,6 +655,7 @@ th {
   margin: 1rem;
   box-shadow: 1px 1px 3px #cdcdcd;
   background-color: rgb(186, 186, 186);
+
 }
 
 @media screen and (min-width: 450px) {

@@ -8,6 +8,7 @@ import styles from "../styles/Sidebar.module.css";
 
 const routes = [
   {
+
     title: "Semester 1",
     path: "/semester1",
     className: "nav-text",
@@ -93,6 +94,7 @@ const Sidebar = () => {
           </div>
         </div>
         <section className={styles.routes}>
+
         <Link href={'/'} >
                 <div
                   className={
@@ -118,15 +120,18 @@ const Sidebar = () => {
                   </div>
                 </div>
               </Link>
+
           {routes.map((route, index) => {
             return (
               <Link href={route.path} key={index}>
                 <div
                   className={
+
                     router.asPath.startsWith(route.path)
                       ? styles.link_active
                       : styles.link
                   }>
+
                   <div className={styles.icon}>
                     <Image
                       src={"/images/" + route.icon}
@@ -181,4 +186,6 @@ const Sidebar = () => {
   );
 };
 
+
 export default Sidebar;
+
