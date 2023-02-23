@@ -13,3 +13,30 @@
 .main ol, .main ul{
     margin-left: 1.5rem;
 }
+
+.content{
+    width: 100%;
+    height: 400px;
+}
+
+.preview, .Edit form{
+    width: 100%;
+    height: calc(80vh);
+    overflow-y: auto;
+}
+
+.Edit{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Edit button{
+    background-color: rgb(141, 214, 251);
+    padding: .2rem .5rem;
+    border-radius: 15px;
+}
+
+.Edit img{
+    max-width: 500px;
+}

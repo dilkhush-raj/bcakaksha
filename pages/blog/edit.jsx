@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Loader from '../../components/Loader';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import Loader from "../../components/Loader";
+import axios from "axios";
 import { useRouter } from "next/router";
+import styles from "../../styles/Blog.module.css";
 
 const EditBlog = () => {
   const [data, setData] = useState(null);
@@ -12,7 +13,7 @@ const EditBlog = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await axios.get("/api/blogs/" + query );
+        const res = await axios.get("/api/blogs/" + query);
         setData(res.data);
       } catch (err) {
         console.error(err);
@@ -31,7 +32,7 @@ const EditBlog = () => {
         image: data.blog.image,
         tag: data.blog.tag,
         author: data.blog.author,
-        content: data.blog.content
+        content: data.blog.content,
       });
     }
   }, [data]);
@@ -47,7 +48,7 @@ const EditBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/blogs/update', [formData]);
+      await axios.post("/api/blogs/update", [formData]);
     } catch (err) {
       console.error(err);
     }
@@ -116,9 +117,10 @@ const EditBlog = () => {
             name="content"
             value={formData.content}
             onChange={handleChange}
+            className={styles.content}
           />
         </label>
-        <button type="submit">Edit Blog</button>
+        <button type="submit">Save</button>
       </form>
     </div>
   );

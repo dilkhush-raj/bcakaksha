@@ -1,6 +1,4 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { GithubAuthProvider } from "firebase/auth";
-import { app } from "../firebase/config";
 import Image from "next/image";
 
 import { useUserAuth } from "../firebase/UserAuthContext";
@@ -10,7 +8,6 @@ export default function Login() {
   const { user } = useUserAuth();
   let auth = getAuth();
   const provider = new GoogleAuthProvider();
-  const githubProvider = new GithubAuthProvider();
 
   const handleSubmit = () => {
     signInWithPopup(auth, provider)
@@ -37,26 +34,16 @@ export default function Login() {
 
   return (
     <>
-      <div className="login">
+      <div >
         <div>
           {CheckUser(user) ? (
-            <div onClick={handleLogout} className="login-btn">
-              <Image
-                src="/images/icons8-login-rounded-50.svg"
-                width="20px"
-                height="20px"
-              />
-              LogOut
+            <div onClick={handleLogout}>
+              Log Out
             </div>
           ) : (
             <>
-              <div onClick={handleSubmit}  className="login-btn">
-                <Image
-                  src="/images/icons8-login-rounded-50.svg"
-                  width="20px"
-                  height="20px"
-                />
-                LogIn
+              <div onClick={handleSubmit}>
+                Log In
               </div>
             </>
           )}

@@ -1,6 +1,6 @@
 import Button from "@mui/material/Button";
 import { useState, useEffect, useRef  } from "react";
-
+import { useRouter } from "next/router";
 import Loader from "../../components/Loader";
 import Image from "next/image";
 import { useUserAuth } from "../../firebase/UserAuthContext";
@@ -9,11 +9,13 @@ import { Link } from "@mui/material";
 import Login from "../../components/Login";
 
 export default function Accounts() {
-  const { user } = useUserAuth();
+    
+  const router = useRouter();
+  
 
   const [data, setData] = useState(null); // State to store the product data
 
-  const uid = user?.uid;
+  const uid = router.query.user;
 
   const [copyStatus, setCopyStatus] = useState('Copy');
   const textRef = useRef(null);
@@ -48,18 +50,6 @@ export default function Accounts() {
   }
   
 
-  // Show a loading spinner while the data is being fetched
-  // console.log(data);
-  if (!user) {
-    return (
-      <>
-        <Login />
-      </>
-    );
-  }
-
-  // Destructure user and data properties
-  const { photoURL, displayName } = user;
 
   return (
     <>
@@ -67,13 +57,8 @@ export default function Accounts() {
       <div className="p-5">
         <div className="relative custombg p-4 bg-[#fff] max-w-5xl mx-auto rounded-md flex flex-col drop-shadow-md">
           <div className="absolute flex right-5 top-5">
-            <Button>
-              <Login />
-            </Button>
-
-            <Link href="/user/edit">
-              <Button type="primary">Edit</Button>
-            </Link>
+          <span ref={textRef} style={{display: "none"}}>{"https://bcakaksha.vercel.app/user/" + uid}</span>
+              <button onClick={handleCopy}>{copyStatus}</button>
           </div>
           <div className="absolute flex p-2 gap-5 right-0 top-[138px]">
             <div>
@@ -91,13 +76,10 @@ export default function Accounts() {
           </div>
           <div className="max-w-2xl mt-[100px] ">
             <img src={data?.profileImage} className="w-[100px] rounded-full" />
-            <h2 className="">{displayName}</h2>
+            <h2 className="">{data?.name}</h2>
 
             <div>{data?.about}</div>
-            <div>
-              <span ref={textRef} style={{display: "none"}}>{"https://bcakaksha.vercel.app/user/" + uid}</span>
-              <button onClick={handleCopy}>{copyStatus}</button>
-            </div>
+            
           </div>
         </div>
       </div>
