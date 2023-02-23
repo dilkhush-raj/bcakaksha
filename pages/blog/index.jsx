@@ -12,7 +12,6 @@ function Notice() {
     function CheckUser(user) {
       if (user) {
         const id = user.uid;
-        console.log(id);
         if (id === "H6Tx2hVSQBhC3Ub5eMQVWgftTPb2") {
           setadmin(true);
         } else {
@@ -40,7 +39,7 @@ function Notice() {
       }
     }
     fetchData();
-  });
+  }, []);
 
 
   if (!data) {

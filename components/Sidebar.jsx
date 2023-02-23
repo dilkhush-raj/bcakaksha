@@ -9,6 +9,13 @@ import styles from "../styles/Sidebar.module.css";
 const routes = [
   {
 
+    title: "My Profile",
+    path: "/user",
+    className: "nav-text",
+    icon: "user.svg",
+  },
+  {
+
     title: "Semester 1",
     path: "/semester1",
     className: "nav-text",

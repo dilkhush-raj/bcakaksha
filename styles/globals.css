@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *::selection {
   color: white;
   background-color: rgba(67, 1, 121, 0.5);
@@ -38,6 +43,16 @@ a {
   --primary-color: #350288;
 }
 
+@font-face {
+  font-family: heading;
+  src: url("../public/fonts/heading.otf");
+}
+
+h1,
+h2 {
+  font-family: heading;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -49,7 +64,6 @@ body {
   background-color: #b8c6db;
   background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
 }
-
 
 /* ##########  Index Section Starts  ########## */
 
@@ -107,7 +121,7 @@ footer {
   /* background-color: #3bb78f;
   background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); */
   background-color: #485461;
-background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
   color: #ddd;
   display: flex;
   align-items: center;
@@ -639,23 +653,21 @@ th {
   font-weight: 700;
   background-color: lightskyblue;
   padding: 0.5rem;
-
 }
 
-.login{
+.login {
   width: max-content;
 }
 
-.login-btn{
+.login-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 20px;
   margin: 1rem;
   box-shadow: 1px 1px 3px #cdcdcd;
   background-color: rgb(186, 186, 186);
-
 }
 
 @media screen and (min-width: 450px) {
@@ -665,7 +677,13 @@ th {
 }
 
 @media (max-width: 600px) {
-  .App{
+  .App {
     padding-left: 45px;
+    grid-template-columns: 1fr;
   }
+}
+
+.custombg {
+  background: linear-gradient(to bottom, rgb(250, 218, 255) 170px, white 170px);
+  background-color: white;
 }
