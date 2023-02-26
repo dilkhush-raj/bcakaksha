@@ -4,7 +4,7 @@ import connectDB from "../../../middleware/mongoose";
 const handler = async (req, res) => {
     
   if (req.method === "POST") {
-    console.log(req.body);
+    console.log(req.body.social);
     try {
       for (let i = 0; i < req.body.length; i++) {
         const user = await User.findOneAndUpdate(

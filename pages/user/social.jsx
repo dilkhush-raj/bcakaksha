@@ -1,66 +1,56 @@
-import { useState } from 'react';
-import axios from 'axios';
+import { useState } from "react";
 
-export default function SocialForm({ userId }) {
-  const [socialLinks, setSocialLinks] = useState([]);
+export default function CreateTodoForm() {
+  const [userId, setUserId] = useState("");
+  const [desc, setDesc] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
-      const response = await axios.post('/api/user/socialLink', {
-        userId,
-        socialLinks,
+      const res = await fetch("/api/user/todo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userId,
+          desc,
+        }),
       });
-      console.log('Social links saved successfully');
-      console.log(socialLinks);
+      if (!res.ok) {
+        throw new Error("Network response was not ok");
+      }
+      setUserId("");
+      setDesc("");
     } catch (error) {
-      console.error('Failed to save social links', error);
+      console.error("Error creating todo:", error);
     }
-  };
-
-  const handleInputChange = (e, index, field) => {
-    const updatedLinks = [...socialLinks];
-    updatedLinks[index][field] = e.target.value;
-    setSocialLinks(updatedLinks);
-  };
-
-  const handleAddLink = () => {
-    setSocialLinks([...socialLinks, { displayText: '', link: '' }]);
-  };
-
-  const handleRemoveLink = (index) => {
-    const updatedLinks = [...socialLinks];
-    updatedLinks.splice(index, 1);
-    setSocialLinks(updatedLinks);
+    setLoading(false);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      {socialLinks.map((link, index) => (
-        <div key={index}>
-          <label htmlFor={`socialLinkDisplayText-${index}`}>Display Text</label>
-          <input
-            type="text"
-            id={`socialLinkDisplayText-${index}`}
-            value={link.displayText}
-            onChange={(e) => handleInputChange(e, index, 'displayText')}
-          />
-          <label htmlFor={`socialLinkUrl-${index}`}>Link URL</label>
-          <input
-            type="text"
-            id={`socialLinkUrl-${index}`}
-            value={link.link}
-            onChange={(e) => handleInputChange(e, index, 'link')}
-          />
-          <button type="button" onClick={() => handleRemoveLink(index)}>
-            Remove
-          </button>
-        </div>
-      ))}
-      <button type="button" onClick={handleAddLink}>
-        Add Link
+      <label htmlFor="userId">User ID:</label>
+      <input
+        id="userId"
+        type="text"
+        value={userId}
+        onChange={(e) => setUserId(e.target.value)}
+      />
+      <br />
+      <label htmlFor="desc">Description:</label>
+      <input
+        id="desc"
+        type="text"
+        value={desc}
+        onChange={(e) => setDesc(e.target.value)}
+      />
+      <br />
+      <button type="submit" disabled={loading}>
+        {loading ? "Loading..." : "Create Todo"}
       </button>
-      <button type="submit">Save Links</button>
     </form>
   );
 }

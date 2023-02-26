@@ -684,6 +684,14 @@ th {
 }
 
 .custombg {
-  background: linear-gradient(to bottom, rgb(250, 218, 255) 170px, white 170px);
+  background: linear-gradient(to bottom, rgb(186, 244, 255) 170px, white 170px);
   background-color: white;
+}
+
+form input, form textarea, form select{
+  background-color: #ddd;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px;
 }
