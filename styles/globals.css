@@ -48,10 +48,6 @@ a {
   src: url("../public/fonts/heading.otf");
 }
 
-h1,
-h2 {
-  font-family: heading;
-}
 
 html {
   scroll-behavior: smooth;
@@ -263,6 +259,11 @@ footer {
   padding-left: 0.5rem;
 }
 
+.book-wrap a{
+  text-decoration: none;
+  color: white;
+}
+
 .book-page {
   padding: 1rem;
 }
@@ -298,6 +299,14 @@ footer {
 
 .books h2 {
   font-size: 0.8rem;
+}
+
+.marks-grid{
+  grid-template-columns: 30px 100px 80px 100px 40px 100px;
+}
+
+.marks-grid-update{
+  grid-template-columns: 40px 100px 80px 100px 100px 125px 55px 40px;
 }
 
 /* .books li:hover{
@@ -684,6 +693,15 @@ th {
 }
 
 .custombg {
-  background: linear-gradient(to bottom, rgb(250, 218, 255) 170px, white 170px);
+  background: linear-gradient(to bottom, rgb(186, 244, 255) 170px, white 170px);
   background-color: white;
 }
+
+form input, form textarea, form select{
+  background-color: #ddd;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
