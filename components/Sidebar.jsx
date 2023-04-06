@@ -73,8 +73,8 @@ const externalRoutes = [
     className: "nav-text",
   },
   {
-    title: "Find Grade",
-    path: "/pages/grade-calculator",
+    title: "Grade Card",
+    path: "/grade-card",
     icon: "icons8-exam.svg",
     className: "nav-text",
   },

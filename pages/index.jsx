@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 import { style } from "@mui/system";
 import { useState, useEffect } from "react";
 import Loader from "../components/Loader";
+import Login from "../components/Login";
 
 export default function Home() {
   const SemesterBags = [
@@ -66,30 +67,9 @@ export default function Home() {
 
   return (
     <div className={styles.main}>
-      <div className={styles.top_row}>
-        <h1 className={styles.logo}>Welcome to <br /> IGNOU Ki BCA Kaksha</h1>
-        {/* <div className={styles.links}>
-          {Category.map((item, index) => {
-            return (
-              <Link key={index} href={item.path}>
-                <a>
-                  <Image
-                    src={"/images/" + item.img}
-                    width={20}
-                    height={20}
-                    alt={""}
-                  />
-                  {item.title}
-                </a>
-              </Link>
-            );
-          })}
-        </div> */}
-      </div>
-      <div></div>
-
-      <div className={styles.semesterBags}>
-        <ul className={styles.bags}>
+        <h1 className="text-5xl font-bold uppercase mx-auto my-5 p-4 text-center">Welcome to IGNOU Ki BCA Kaksha</h1>
+        <Login login={"Login"} logout={"Logout"} />
+        <div className="flex flex-wrap justify-center gap-4 mb-5 mx-a max-w-[400px]">
           {SemesterBags.map((item, index) => {
             return (
               <Link key={index} href={item.path}>
@@ -105,9 +85,7 @@ export default function Home() {
               </Link>
             );
           })}
-        </ul>
-      </div>
-      {/* <Image src={"/images/hero.svg"} width={600} height={400} alt={"hero-image"} /> */}
+        </div>
     </div>
   );
 }

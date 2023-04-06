@@ -6,36 +6,53 @@ import { useUserAuth } from "../../firebase/UserAuthContext";
 import axios from "axios";
 
 export default function Accounts() {
-  const router = useRouter();
-  const { user } = useUserAuth();
+  const {
+    user: { uid },
+  } = useUserAuth();
 
-  const [formData, setFormData] = useState();
+  const [formData, setFormData] = useState({
+    uid: uid,
+    name: "",
+    profileImage: "",
+    semester: "",
+    about: "",
+    rc: "",
+    github: "",
+    linkedin: "",
+    portfolio: ""
+  });
 
-  const [socialLinks, setSocialLinks] = useState([]);
-  console.log(socialLinks);
+  // const [socialLinks, setSocialLinks] = useState([]);
+  const [marks, setMarks] = useState([]);
 
-  const uid = user.uid; // Check if user exists before destructuring uid
+  console.log(marks);
 
   // Fetch product data on mount
   useEffect(() => {
     async function fetchData() {
       try {
         // Make a GET request to the server for the product data
-        const res = await axios.get(`/api/user/edit/${uid}`);
+        const api = axios.create({
+          baseURL: "/api/user/",
+        });
+        const res = await api.get(`edit/${uid}`);
         const json = res.data;
 
         // Update the state with the product data
-        const fetchData = json.userData;
+        const fetchData = json.userData || {};
 
         setFormData({
           uid: fetchData.uid || uid,
-          name: fetchData.name,
-          profileImage: fetchData.profileImage,
-          semester: fetchData.semester,
-          about: fetchData.about,
-          rc: fetchData.rc,
+          name: fetchData.name || "",
+          profileImage: fetchData.profileImage || "",
+          semester: fetchData.semester || "",
+          about: fetchData.about || "",
+          rc: fetchData.rc || "",
+          github: fetchData.github || "",
+          linkedin: fetchData.linkedin || "",
+          portfolio: fetchData.portfolio || ""
         });
-        setSocialLinks(fetchData.social || [])
+        // setSocialLinks(fetchData.social || []);
       } catch (err) {
         console.error(err);
       }
@@ -44,21 +61,15 @@ export default function Accounts() {
       fetchData();
     }
   }, [uid]); // Pass uid to the dependency array to run the effect whenever it changes
-
-  // Show a loading spinner while the data is being fetched
-  //  console.log(data);
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log(formData);
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      social: socialLinks,
-    }));
+   
     try {
       await axios.post("/api/user/update", [formData]);
 
@@ -72,6 +83,10 @@ export default function Accounts() {
     const updatedLinks = [...socialLinks];
     updatedLinks[index][field] = e.target.value;
     setSocialLinks(updatedLinks);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      social: socialLinks,
+    }));
   };
 
   const handleAddLink = () => {
@@ -82,6 +97,26 @@ export default function Accounts() {
     const updatedLinks = [...socialLinks];
     updatedLinks.splice(index, 1);
     setSocialLinks(updatedLinks);
+  };
+
+  const handleMarksChange = (e, index, field) => {
+    const updatedLinks = [...marks];
+    updatedLinks[index][field] = e.target.value;
+    setMarks(updatedLinks);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      marks: marks,
+    }));
+  };
+
+  const handleAddMarks = () => {
+    setMarks([...marks, { theory_marks: "", assignment_marks: "", assignment_weightage: "", semester: "" }]);
+  };
+
+  const handleRemoveMarks = (index) => {
+    const updatedLinks = [...marks];
+    updatedLinks.splice(index, 1);
+    setMarks(updatedLinks);
   };
 
   return (
@@ -124,6 +159,27 @@ export default function Accounts() {
           <option value="6">Semester 6</option>
         </select>
         {/* {formData?.semester && <p>You selected semester {formData.semester}.</p>} */}
+        <label>GitHub</label>
+        <input
+          type="text"
+          name="github"
+          value={formData?.github}
+          onChange={handleChange}
+        />
+        <label>LinkedIn</label>
+        <input
+          type="text"
+          name="linkedin"
+          value={formData?.linkedin}
+          onChange={handleChange}
+        />
+        <label>Portfolio</label>
+        <input
+          type="text"
+          name="portfolio"
+          value={formData?.portfolio}
+          onChange={handleChange}
+        />
         <label>RC Centre</label>
         <input
           type="text"
@@ -140,39 +196,65 @@ export default function Accounts() {
           onChange={handleChange}
         ></textarea>
 
-        
+        {/* {socialLinks.map((link, index) => (
+          <div key={index}>
+            <label htmlFor={`socialLinkDisplayText-${index}`}>
+              Display Text
+            </label>
+            <input
+              type="text"
+              id={`socialLinkDisplayText-${index}`}
+              value={link.displayText}
+              onChange={(e) => handleInputChange(e, index, "displayText")}
+            />
+            <label htmlFor={`socialLinkUrl-${index}`}>Link URL</label>
+            <input
+              type="text"
+              id={`socialLinkUrl-${index}`}
+              value={link.link}
+              onChange={(e) => handleInputChange(e, index, "link")}
+            />
+            <button type="button" onClick={() => handleRemoveLink(index)}>
+              Remove
+            </button>
+          </div>
+        ))} */}
+        <button type="button" onClick={handleAddLink}>
+          Add Link
+        </button>
+        {marks.map((link, index) => (
+          <div key={index}>
+            <label htmlFor={`theory_marks-${index}`}>
+            theory_marks
+            </label>
+            <input
+              type="text"
+              id={`theory_marks-${index}`}
+              value={link.theory_marks}
+              onChange={(e) => handleMarksChange(e, index, "theory_marks")}
+            />
+            
+    {/* setMarks([...marks, { theory_marks: "", assignment_marks: "", assignment_weightage: "", semester: "" }]); */}
+            <label htmlFor={`socialLinkUrl-${index}`}>Link URL</label>
+            <input
+              type="text"
+              id={`socialLinkUrl-${index}`}
+              value={link.link}
+              onChange={(e) => handleInputChange(e, index, "link")}
+            />
+            <button type="button" onClick={() => handleRemoveMarks(index)}>
+              Remove
+            </button>
+          </div>
+        ))}
+        <button type="button" onClick={handleAddMarks}>
+          Add Link
+        </button>
 
         <Button type="submit" className="w-5">
           Submit
         </Button>
       </form>
-
-      <form>
-      {socialLinks.map((link, index) => (
-        <div key={index}>
-          <label htmlFor={`socialLinkDisplayText-${index}`}>Display Text</label>
-          <input
-            type="text"
-            id={`socialLinkDisplayText-${index}`}
-            value={link.displayText}
-            onChange={(e) => handleInputChange(e, index, 'displayText')}
-          />
-          <label htmlFor={`socialLinkUrl-${index}`}>Link URL</label>
-          <input
-            type="text"
-            id={`socialLinkUrl-${index}`}
-            value={link.link}
-            onChange={(e) => handleInputChange(e, index, 'link')}
-          />
-          <button type="button" onClick={() => handleRemoveLink(index)}>
-            Remove
-          </button>
-        </div>
-      ))}
-      <button type="button" onClick={handleAddLink}>
-        Add Link
-      </button>
-    </form>
     </>
   );
 }

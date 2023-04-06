@@ -3,7 +3,10 @@ import Image from "next/image";
 
 import { useUserAuth } from "../firebase/UserAuthContext";
 
-export default function Login() {
+export default function Login(prop) {
+
+  const text = prop;
+  console.log(text);
   const { logOut } = useUserAuth();
   const { user } = useUserAuth();
   let auth = getAuth();
@@ -38,12 +41,12 @@ export default function Login() {
         <div>
           {CheckUser(user) ? (
             <div onClick={handleLogout}>
-              Log Out
+              {prop.logout}
             </div>
           ) : (
             <>
               <div onClick={handleSubmit}>
-                Log In
+                {prop.login}
               </div>
             </>
           )}
