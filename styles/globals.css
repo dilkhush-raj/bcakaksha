@@ -48,6 +48,7 @@ a {
   src: url("../public/fonts/heading.otf");
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -703,3 +704,4 @@ form input, form textarea, form select{
   border-radius: 5px;
   padding: 5px;
 }
+

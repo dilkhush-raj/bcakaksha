@@ -10,6 +10,7 @@ export default function Home(props) {
 
 	console.log(tasks);
 
+
 	const handleChange = ({ currentTarget: input }) => {
 		input.value === ""
 			? setTask({ task: "" })
@@ -131,6 +132,7 @@ export default function Home(props) {
 				{tasks.length === 0 && <h2 className={styles.no_tasks}>No tasks</h2>}
 			</div>
 			<button onClick={handleSubmit}>submit</button>
+
 		</main>
 	);
 }

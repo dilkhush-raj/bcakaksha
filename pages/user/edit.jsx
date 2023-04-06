@@ -2,10 +2,12 @@ import Button from "@mui/material/Button";
 import { useState, useEffect } from "react";
 import Loader from "../../components/Loader";
 import { useRouter } from "next/router";
+
 import { useUserAuth } from "../../firebase/UserAuthContext";
 import axios from "axios";
 
 export default function Accounts() {
+
   const {
     user: { uid },
   } = useUserAuth();
@@ -25,13 +27,14 @@ export default function Accounts() {
   // const [socialLinks, setSocialLinks] = useState([]);
   const [marks, setMarks] = useState([]);
 
-  console.log(marks);
+
 
   // Fetch product data on mount
   useEffect(() => {
     async function fetchData() {
       try {
         // Make a GET request to the server for the product data
+
         const api = axios.create({
           baseURL: "/api/user/",
         });
@@ -53,6 +56,7 @@ export default function Accounts() {
           portfolio: fetchData.portfolio || ""
         });
         // setSocialLinks(fetchData.social || []);
+
       } catch (err) {
         console.error(err);
       }
@@ -61,23 +65,28 @@ export default function Accounts() {
       fetchData();
     }
   }, [uid]); // Pass uid to the dependency array to run the effect whenever it changes
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     
+
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log(formData);
+
    
     try {
       await axios.post("/api/user/update", [formData]);
 
       // router.back();
+
     } catch (err) {
       console.error(err);
     }
   };
+
 
   const handleInputChange = (e, index, field) => {
     const updatedLinks = [...socialLinks];
@@ -122,11 +131,13 @@ export default function Accounts() {
   return (
     <>
       <h1 className="text-center text-3xl font-bold p-2 mb-5 m-auto max-w-4xl">
+
         Edit Account
       </h1>
 
       <form
         className="flex flex-col drop-shadow-md p-5 bg-[#fff] row-span-2 rounded-md m-auto max-w-2xl"
+
         onSubmit={handleSubmit}
       >
         <label>Name</label>
@@ -178,6 +189,7 @@ export default function Accounts() {
           type="text"
           name="portfolio"
           value={formData?.portfolio}
+
           onChange={handleChange}
         />
         <label>RC Centre</label>
@@ -188,6 +200,7 @@ export default function Accounts() {
           onChange={handleChange}
         />
         <label>About</label>
+
         <textarea
           rows="10"
           cols="80"
@@ -250,6 +263,7 @@ export default function Accounts() {
         <button type="button" onClick={handleAddMarks}>
           Add Link
         </button>
+
 
         <Button type="submit" className="w-5">
           Submit
