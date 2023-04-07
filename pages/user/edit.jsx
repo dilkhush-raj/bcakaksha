@@ -25,7 +25,6 @@ export default function Accounts() {
   // const [socialLinks, setSocialLinks] = useState([]);
   const [marks, setMarks] = useState([]);
 
-  console.log(marks);
 
   // Fetch product data on mount
   useEffect(() => {
@@ -61,9 +60,11 @@ export default function Accounts() {
       fetchData();
     }
   }, [uid]); // Pass uid to the dependency array to run the effect whenever it changes
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     
+
   };
 
   const handleSubmit = async (e) => {
@@ -74,10 +75,7 @@ export default function Accounts() {
       await axios.post("/api/user/update", [formData]);
 
       // router.back();
-    } catch (err) {
-      console.error(err);
     }
-  };
 
   const handleInputChange = (e, index, field) => {
     const updatedLinks = [...socialLinks];
@@ -127,10 +125,7 @@ export default function Accounts() {
 
       <form
         className="flex flex-col drop-shadow-md p-5 bg-[#fff] row-span-2 rounded-md m-auto max-w-2xl"
-        onSubmit={handleSubmit}
-      >
         <label>Name</label>
-        <input
           type="text"
           name="name"
           value={formData?.name}

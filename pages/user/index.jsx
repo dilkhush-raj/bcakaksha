@@ -1,6 +1,8 @@
 import Button from "@mui/material/Button";
+
 import { useState, useEffect, useRef } from "react";
 import semesters from "../../data/semesters.json";
+
 
 import Loader from "../../components/Loader";
 import Image from "next/image";
@@ -31,20 +33,26 @@ export default function Accounts() {
     async function fetchData() {
       try {
         // Make a GET request to the server for the product data
+
         const res = await axios.get(`/api/user/edit/${uid}`);
+
         const json = res.data;
 
         // Update the state with the product data
         setData(json.userData);
+
         setUserId(json.userData._id);
+
         // console.log(json);
       } catch (err) {
         console.error(err);
       }
+
     }
     if (uid) {
       fetchData();
     }
+
   }, [uid]); // Pass uid to the dependency array to run the effect whenever it changes
 
   function handleCopy() {

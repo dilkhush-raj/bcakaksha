@@ -41,16 +41,16 @@ export default function Login(prop) {
         <div>
           {CheckUser(user) ? (
             <div onClick={handleLogout}>
+
               {prop.logout}
+
             </div>
           ) : (
             <>
               <div onClick={handleSubmit}>
-                {prop.login}
               </div>
             </>
           )}
-        </div>
       </div>
     </>
   );

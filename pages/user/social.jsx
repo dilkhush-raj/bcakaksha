@@ -32,25 +32,7 @@ export default function CreateTodoForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="userId">User ID:</label>
-      <input
-        id="userId"
-        type="text"
-        value={userId}
-        onChange={(e) => setUserId(e.target.value)}
-      />
-      <br />
-      <label htmlFor="desc">Description:</label>
-      <input
-        id="desc"
-        type="text"
-        value={desc}
-        onChange={(e) => setDesc(e.target.value)}
-      />
-      <br />
-      <button type="submit" disabled={loading}>
         {loading ? "Loading..." : "Create Todo"}
-      </button>
     </form>
   );
 }
