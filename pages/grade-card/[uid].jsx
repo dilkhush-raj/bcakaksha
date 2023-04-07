@@ -1,19 +1,12 @@
 import { useState, useEffect } from "react";
-import { useUserAuth } from "../../firebase/UserAuthContext";
+import { useRouter } from "next/router";
 import axios from "axios";
-import Link from "next/link";
-import Login from "../../components/Login";
 
 export default function GradeCard() {
-  const { user } = useUserAuth();
-
-  function CheckUser(user) {
-    if (user) {
-      return true;
-    }
-  }
-
-  const uid = user?.uid;
+    
+  const router = useRouter();
+  
+  const uid = router.query.uid;
 
   const [marks, setMarks] = useState([
     {
@@ -25,7 +18,15 @@ export default function GradeCard() {
     },
   ]);
 
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([
+    {
+      theory_marks: "",
+      assignment_marks: "",
+      assignment_weightage: "",
+      semester: "",
+      course: "",
+    },
+  ]);
 
   // Fetch product data on mount
   useEffect(() => {
@@ -67,26 +68,16 @@ export default function GradeCard() {
     }
   };
 
-  if(user && !data) {
-    return <>Preparing your Grade Card. Please Wait...</>
-  }
-
-  
   return (
     <>
       <h1 className="text-center text-3xl font-bold p-2  m-auto max-w-4xl">
         Grade Card
-      </h1>
-
-      {CheckUser(user) ? (
-        <>
-          <div className="flex justify-end px-4 rounded-md mb-2">
-            <Link href="/grade-card/update">Update</Link>
-          </div>
+      </h1> 
           <div className="overflow-auto px-2">
-          <div className=" bg-[#fff] w-max  mx-auto rounded-md drop-shadow-md p-4">
+            <div className=" bg-[#fff] w-max  mx-auto rounded-md drop-shadow-md p-4">
               <div className="flex justify-between px-4 rounded-md mb-2">
                 <select id="semester" name="semester" onChange={handleChange}>
+                  <option value="">Select a semester</option>
                   <option value="all">All</option>
                   <option value="1">Semester 1</option>
                   <option value="2">Semester 2</option>
@@ -95,8 +86,7 @@ export default function GradeCard() {
                   <option value="5">Semester 5</option>
                   <option value="6">Semester 6</option>
                 </select>
-                {totalMarks ? <div>Total = {totalMarks} %</div> : null}
-                
+                <div>Total = {totalMarks} %</div>
               </div>
               <div className="grid marks-grid gap-4 px-4 bg-[#444] text-[#fff] rounded-md p-2 mb-2">
                 <div>No.</div>
@@ -123,15 +113,8 @@ export default function GradeCard() {
                   <div>Semester {mark.semester}</div>
                 </div>
               ))}
-{!marks.length && <div className="text-center">No Marks Found</div>}
             </div>
           </div>
-        </>
-      ) : (
-        <>
-          Please login to view your grade card <Login login="Login" />
-        </>
-      )}
     </>
   );
 }

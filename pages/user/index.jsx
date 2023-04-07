@@ -28,7 +28,6 @@ export default function Accounts() {
   const [copyStatus, setCopyStatus] = useState("Copy");
   const textRef = useRef(null);
 
-
   // Fetch product data on mount
   useEffect(() => {
     async function fetchData() {
@@ -58,7 +57,7 @@ export default function Accounts() {
 
   function handleCopy() {
     // Copy the text to clipboard
-    navigator.clipboard.writeText(textRef.current.textContent);
+    navigator.clipboard.writeText(uid);
 
     // Update the copy status
     setCopyStatus("Copied!");
@@ -74,7 +73,6 @@ export default function Accounts() {
     );
   }
 
-
   // Destructure user and data properties
   const { photoURL, displayName } = user;
 
@@ -89,7 +87,6 @@ export default function Accounts() {
             </Button>
 
             <Link href={"/user/edit"}>
-
               <Button type="primary">Edit</Button>
             </Link>
           </div>
@@ -99,7 +96,6 @@ export default function Accounts() {
               <div>{"Semester " + data?.semester}</div>
             </div>
             <div className="flex items-center justify-center gap-1">
-
               <Image
                 src={"/images/icons8_place_marker.svg"}
                 width={20}
@@ -125,7 +121,6 @@ export default function Accounts() {
               src={data?.profileImage || "/images/user.svg"}
               className="w-[100px] rounded-full"
             />
-
             <h2 className="">{displayName}</h2>
 
             <div>{data?.about}</div>
@@ -133,7 +128,7 @@ export default function Accounts() {
               <span ref={textRef} style={{ display: "none" }}>
                 {"https://bcakaksha.vercel.app/user/" + uid}
               </span>
-              {/* <button onClick={handleCopy}>{copyStatus}</button> */}
+              <button onClick={handleCopy}>{copyStatus}</button>
             </div>
 
             {/* <div>{data?.social ? data.social.map((item, index) => {
@@ -173,7 +168,6 @@ export default function Accounts() {
               </Link>
             ))}
           </div> */}
-
         </div>
       </div>
     </>

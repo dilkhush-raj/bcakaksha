@@ -1,12 +1,7 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import Image from "next/image";
-
 import { useUserAuth } from "../firebase/UserAuthContext";
 
 export default function Login(prop) {
-
-  const text = prop;
-  console.log(text);
   const { logOut } = useUserAuth();
   const { user } = useUserAuth();
   let auth = getAuth();
@@ -14,9 +9,7 @@ export default function Login(prop) {
 
   const handleSubmit = () => {
     signInWithPopup(auth, provider)
-      .then((response) => {
-        // console.log(response.user);
-      })
+      .then((response) => {})
       .catch((err) => {
         alert(err.message);
       });
@@ -37,24 +30,18 @@ export default function Login(prop) {
 
   return (
     <>
-      <div >
-        <div>
-          {CheckUser(user) ? (
-            <div onClick={handleLogout}>
-
-              {prop.logout}
-
+      <div>
+        {CheckUser(user) ? (
+          <div onClick={handleLogout} className="cursor-pointer">
+            {prop.logout}
+          </div>
+        ) : (
+          <>
+            <div onClick={handleSubmit} className="cursor-pointer">
+              {prop.login}
             </div>
-          ) : (
-            <>
-              <div onClick={handleSubmit}>
-
-                {prop.login}
-
-              </div>
-            </>
-          )}
-        </div>
+          </>
+        )}
       </div>
     </>
   );
