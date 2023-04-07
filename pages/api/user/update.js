@@ -34,10 +34,6 @@ const handler = async (req, res) => {
     } else {
       res.status(400).json({ error: "Bad Request" });
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 0d75c02d3ce8d1310dc3f5ea0372136306eb7699
   }
 };
 

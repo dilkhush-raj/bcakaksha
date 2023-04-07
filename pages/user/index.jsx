@@ -57,7 +57,7 @@ export default function Accounts() {
 
   function handleCopy() {
     // Copy the text to clipboard
-    navigator.clipboard.writeText(textRef.current.textContent);
+    navigator.clipboard.writeText(uid);
 
     // Update the copy status
     setCopyStatus("Copied!");
@@ -128,7 +128,7 @@ export default function Accounts() {
               <span ref={textRef} style={{ display: "none" }}>
                 {"https://bcakaksha.vercel.app/user/" + uid}
               </span>
-              {/* <button onClick={handleCopy}>{copyStatus}</button> */}
+              <button onClick={handleCopy}>{copyStatus}</button>
             </div>
 
             {/* <div>{data?.social ? data.social.map((item, index) => {
