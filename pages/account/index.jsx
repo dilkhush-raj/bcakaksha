@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 
 import { useState, useEffect, useRef } from "react";
 import semesters from "../../data/semesters.json";
-
+import regionalCenters from "../../data/rc.json"
 
 import Loader from "../../components/Loader";
 import Image from "next/image";
@@ -14,17 +14,18 @@ import Login from "../../components/Login";
 export default function Accounts() {
   const { user } = useUserAuth();
 
-  const [data, setData] = useState(null); // State to store the product data
+  function CheckUser(user) {
+    if (user) {
+      return true;
+    }
+  }
 
-  console.log(data);
+  const [data, setData] = useState(null); // State to store the product data
+  const [rc, setRc] = useState([]); // State to store the product data
+
   const semester = semesters["semester" + data?.semester];
 
   const uid = user?.uid;
-
-  const [userId, setUserId] = useState("");
-  const [desc, setDesc] = useState("");
-  const [loading, setLoading] = useState(false);
-
   const [copyStatus, setCopyStatus] = useState("Copy");
   const textRef = useRef(null);
 
@@ -41,7 +42,6 @@ export default function Accounts() {
         // Update the state with the product data
         setData(json.userData);
 
-        setUserId(json.userData._id);
 
         // console.log(json);
       } catch (err) {
@@ -52,9 +52,15 @@ export default function Accounts() {
     if (uid) {
       fetchData();
     }
+   
 
   }, [uid]); // Pass uid to the dependency array to run the effect whenever it changes
 
+  useEffect(() => {
+    
+  const center = regionalCenters.filter((center) => center.name == data?.rc);
+  setRc(center)
+  }, [data?.rc])
   function handleCopy() {
     // Copy the text to clipboard
     navigator.clipboard.writeText(uid);
@@ -62,31 +68,17 @@ export default function Accounts() {
     // Update the copy status
     setCopyStatus("Copied!");
   }
+  
 
-  // Show a loading spinner while the data is being fetched
-  // console.log(data);
-  if (!user) {
-    return (
-      <>
-        <Login />
-      </>
-    );
-  }
-
-  // Destructure user and data properties
-  const { photoURL, displayName } = user;
 
   return (
     <>
       <h1 className="page-heading">Account</h1>
+      {CheckUser(user) ? (
       <div className="p-5">
         <div className="relative custombg p-4 bg-[#fff] max-w-5xl mx-auto rounded-md flex flex-col drop-shadow-md">
           <div className="absolute flex right-5 top-5">
-            <Button>
-              <Login />
-            </Button>
-
-            <Link href={"/user/edit"}>
+            <Link href={"/account/edit"}>
               <Button type="primary">Edit</Button>
             </Link>
           </div>
@@ -101,7 +93,7 @@ export default function Accounts() {
                 width={20}
                 height={20}
               />
-              <div>{"Study Centre: " + data?.rc}</div>
+              <div><Link href={rc[0]?.url || "#"} className="text-[#000]"  target="_blank">{rc[0]?.name || "Update Your RC"}</Link></div>
             </div>
           </div>
           <div className="absolute flex p-2 pr-8 gap-5 right-0 top-[180px]">
@@ -121,23 +113,15 @@ export default function Accounts() {
               src={data?.profileImage || "/images/user.svg"}
               className="w-[100px] rounded-full"
             />
-            <h2 className="">{displayName}</h2>
+            <h2 className="">{data?.name}</h2>
 
             <div>{data?.about}</div>
-            <div>
+            {/* <div>
               <span ref={textRef} style={{ display: "none" }}>
                 {"https://bcakaksha.vercel.app/user/" + uid}
               </span>
               <button onClick={handleCopy}>{copyStatus}</button>
-            </div>
-
-            {/* <div>{data?.social ? data.social.map((item, index) => {
-              return(
-                <div key={index}>
-                  <Link href={item.link}>{item.displayText}</Link>
-                </div>
-              )
-            }) : null}</div> */}
+            </div> */}
           </div>
         </div>
 
@@ -155,7 +139,7 @@ export default function Accounts() {
             ))}
           </div>
 
-          {/* <h2>Assignments</h2>
+          <h2>Assignments</h2>
           <div className="book-wrap">
             {semester?.assignments.map((value, index) => (
               <Link
@@ -167,9 +151,9 @@ export default function Accounts() {
                 <h2>{value.name}</h2>
               </Link>
             ))}
-          </div> */}
+          </div>
         </div>
-      </div>
+      </div>) : <>Please Login first <Login login="Login"/></>}
     </>
   );
 }

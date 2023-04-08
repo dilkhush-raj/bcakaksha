@@ -15,7 +15,16 @@ export default function Book() {
         });
         const res = await api.get(`/${slug}`);
         const json = res.data.data;
-        setData(json);
+        setForm(
+          {
+            name: json.name,
+            slug: json.slug,
+            semester: json.semester,
+            examDate: json.examDate,
+          }
+        );
+        setAssignment(json.assignment);
+        setBlock(json.block)
         // console.log(json);
       } catch (err) {
         console.error(err);
@@ -30,7 +39,7 @@ export default function Book() {
   const [form, setForm] = useState([]);
   const [assignment, setAssignment] = useState([]);
   const [block, setBlock] = useState([]);
-
+  console.log(form);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -41,14 +50,12 @@ export default function Book() {
     // console.log(formData);
 
     try {
-      await axios.post("/api/course", [
-        form
-      ]);
+      await axios.post("/api/course", [form]);
     } catch (err) {
       console.error(err);
     }
+    history.back();
   };
-
 
   // ASSIGNMENT SECTION STARTS HERE
   const handleAddAssignment = () => {
@@ -59,38 +66,56 @@ export default function Book() {
     const updatedLinks = [...assignment];
     updatedLinks.splice(index, 1);
     setAssignment(updatedLinks);
-    setForm({...form, assignment})
+    setForm({ ...form, assignment });
   };
-  
+
   const handleAssignmentInput = (e, index, field) => {
     const updatedLinks = [...assignment];
     updatedLinks[index][field] = e.target.value;
     setAssignment(updatedLinks);
-    setForm({...form, assignment})
+    setForm({ ...form, assignment });
   };
 
   // ASSIGNMENT SECTION ENDS HERE
 
   // BLOCK SECTION STARTS HERE
   const handleAddBlock = () => {
-    setBlock([...block, { name: ""}]);
+    setBlock([...block, { name: "", units: [{ name: "", url: "" }] }]);
   };
 
-  const handleRemoveBlock = (index) => {
-    const updatedLinks = [...block];
-    updatedLinks.splice(index, 1);
-    setBlock(updatedLinks);
-    setForm({...form, block})
-  };
-  
+  // State update function for changing the name of a block
   const handleBlockInput = (e, index, field) => {
-    const updatedLinks = [...block];
-    updatedLinks[index][field] = e.target.value;
-    setBlock(updatedLinks);
-    setForm({...form, block})
+    const newBlocks = [...block];
+    newBlocks[index][field] = e.target.value;
+    setBlock(newBlocks);
+    setForm({ ...form, block });
   };
 
-  // BLOCK SECTION ENDS HERE
+  // State update function for changing the name or URL of a unit within a block
+  const handleUnitInput = (e, blockIndex, unitIndex, field) => {
+    const newBlocks = [...block];
+    const newUnits = [...newBlocks[blockIndex].units];
+    newUnits[unitIndex][field] = e.target.value;
+    newBlocks[blockIndex].units = newUnits;
+    setBlock(newBlocks);
+    setForm({ ...form, block });
+  };
+
+  // State update function for removing a block
+  const handleRemoveBlock = (index) => {
+    const newBlocks = [...block];
+    newBlocks.splice(index, 1);
+    setBlock(newBlocks);
+    setForm({ ...form, block });
+  };
+
+  const handleAddUnit = (index, event) => {
+    event.preventDefault();
+    const newBlocks = [...block];
+    newBlocks[index].units.push({ name: "", url: "" });
+    setBlock(newBlocks);
+    setForm({ ...form, block });
+  };
 
   return (
     <>
@@ -98,8 +123,8 @@ export default function Book() {
         Update Course
       </h1>
       <div className="overflow-auto">
-        <div className=" bg-[#fff] w-max  mx-auto rounded-md drop-shadow-md p-4">
-          <form className="flex flex-col">
+        <div className=" bg-[#fff]  m-4 rounded-md drop-shadow-md p-4">
+          <form className="flex update-book flex-col">
             <label>Name</label>
             <input
               type="text"
@@ -138,7 +163,10 @@ export default function Book() {
             />
             <label>Assignment</label>
             {assignment.map((link, index) => (
-              <div key={index} className="flex bg-[#ddd] p-2 gap-5 rounded-md justify-center items-center mx-2">
+              <div
+                key={index}
+                className="flex bg-[#ddd] p-2 gap-5 rounded-md justify-center items-center mx-2"
+              >
                 <label>Title</label>
                 <input
                   type="text"
@@ -153,7 +181,10 @@ export default function Book() {
                   onChange={(e) => handleAssignmentInput(e, index, "url")}
                   className="bg-[#fff]"
                 />
-                <button type="button" onClick={() => handleRemoveAssignment(index)}>
+                <button
+                  type="button"
+                  onClick={() => handleRemoveAssignment(index)}
+                >
                   Remove
                 </button>
               </div>
@@ -161,21 +192,49 @@ export default function Book() {
             <button type="button" onClick={handleAddAssignment}>
               Add Assignment
             </button>
-            <label>Block</label>
+            <div className="">
             {block.map((item, index) => (
-              <div key={index} className="flex bg-[#ddd] p-2 gap-5 rounded-md justify-center items-center mx-2">
-                <label>Title</label>
+              <div
+                key={index}
+                className="flex flex-col bg-gray-200 p-2 gap-5 rounded-md justify-center items-center my-4"
+              >
+                <div className="gap-4 grid grid-cols-[70px_1fr] w-full justify-center items-center p-2"><label className="flex ">Block- { index + 1}</label>
                 <input
                   type="text"
                   value={item.name}
                   onChange={(e) => handleBlockInput(e, index, "name")}
-                  className="bg-[#fff]"
-                />
-                <button type="button" onClick={() => handleRemoveBlock(index)}>
-                  Remove
+                  className="bg-[#fff] "
+                /></div>
+                {item.units.map((unit, unitIndex) => (
+                  <div key={unitIndex} className="grid grid-cols-[30px_1fr_30px_1fr] w-full items-center gap-4">
+                    <label>Title:</label>
+                    <input
+                      type="text"
+                      value={unit.name}
+                      onChange={(e) =>
+                        handleUnitInput(e, index, unitIndex, "name")
+                      }
+                      className="bg-[#fff]"
+                    />
+                    <label>Link:</label>
+                    <input
+                      type="text"
+                      value={unit.url}
+                      onChange={(e) =>
+                        handleUnitInput(e, index, unitIndex, "url")
+                      }
+                      className="bg-[#fff]"
+                    />
+                  </div>
+                ))}
+                <button onClick={() => handleAddUnit(index, event)}>
+                  Add Unit
                 </button>
+
+                <button onClick={handleRemoveBlock}>Remove Block</button>
               </div>
-            ))}
+            ))}</div>
+
             <button type="button" onClick={handleAddBlock}>
               Add Block
             </button>
