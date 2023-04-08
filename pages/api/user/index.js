@@ -5,9 +5,7 @@ const handler = async (req, res) => {
   if (req.method === "POST") {
     try {
       const user = new User({
-
         userId: req.body.userId,
-
         uid: req.body.uid,
         name: req.body.name,
         profileImage: req.body.profileImage,
@@ -15,7 +13,6 @@ const handler = async (req, res) => {
         about: req.body.about,
         rc: req.body.rc,
       });
-
       await user.save();
       res.status(200).json({ message: "Message added successfully" });
     } catch (error) {
