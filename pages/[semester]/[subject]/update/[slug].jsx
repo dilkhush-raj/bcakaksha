@@ -15,13 +15,13 @@ export default function Book() {
         });
         const res = await api.get(`/${slug}`);
         const json = res.data.data;
+        setId(res)
         setForm(
           {
             name: json.name,
             slug: json.slug,
             semester: json.semester,
             examDate: json.examDate,
-            category: json.category,
           }
         );
         setAssignment(json.assignment);
@@ -36,11 +36,10 @@ export default function Book() {
     }
   }, [slug]); // Pass uid to the dependency array to run the effect whenever it changes
 
-  const [data, setData] = useState([]);
+  const [id, setId] = useState([]);
   const [form, setForm] = useState([]);
-  const [assignment, setAssignment] = useState([]);
+  // const [assignment, setAssignment] = useState([]);
   const [block, setBlock] = useState([]);
-  // console.log(form);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -57,6 +56,7 @@ export default function Book() {
     }
     history.back();
   };
+
 
   // ASSIGNMENT SECTION STARTS HERE
   // const handleAddAssignment = () => {
@@ -123,6 +123,7 @@ export default function Book() {
       <h1 className="text-center text-3xl font-bold p-2  m-auto max-w-4xl">
         Update Course
       </h1>
+      
       <div className="overflow-auto">
         <div className=" bg-[#fff]  m-4 rounded-md drop-shadow-md p-4">
           <form className="flex update-book flex-col">

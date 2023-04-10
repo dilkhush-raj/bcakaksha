@@ -10,18 +10,19 @@ const BlockSchema = new mongoose.Schema({
     units: [UnitSchema],
 });
 
-const AssignmentSchema = new mongoose.Schema({
-    name: String,
-    url: String,
-});
+// const AssignmentSchema = new mongoose.Schema({
+//     name: String,
+//     url: String,
+// });
 
 const CourseSchema = new mongoose.Schema({
     name: String,
     slug: String,
     semester: Number,
     examDate: Date,
+    category: String,
     block: [BlockSchema],
-    assignment: [AssignmentSchema],
+    // assignment: [AssignmentSchema],
 });
 
 
