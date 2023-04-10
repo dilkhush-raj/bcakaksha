@@ -110,7 +110,7 @@ export default function Semester() {
               {categoryData.map((item, index) => (
                 <Link key={index} href={post?.path + "/" + item?.slug}>
                   <a className="books">
-                    <h2>{item.name}</h2>
+                   {item.name}
                   </a>
                 </Link>
               ))}

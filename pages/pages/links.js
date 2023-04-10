@@ -107,7 +107,7 @@ function ImportantLinks() {
 
       </ul>
 
-      <div className="imp-links">
+      <div className="px-2 py-2 flex flex-col gap-3">
         {links.map((item, index) => {
           return (
             <Link href={item.path} key={index}>

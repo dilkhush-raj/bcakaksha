@@ -82,7 +82,7 @@ export default function Semester2() {
         />
         <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
       </Head>
-      <h1 className="page-heading">{post?.name}</h1>
+      <h1 className="page-heading">{post?.name || data?.name}</h1>
 
       <ul className="breadcrumbs">
         <li>
@@ -100,7 +100,7 @@ export default function Semester2() {
             {sem?.name || ""}
           </Link>
         </li>
-        <li>{post?.name}</li>
+        <li>{post?.name || data?.name}</li>
       </ul>
       <div className="fixed top-20 right-10">
         {admin && (
@@ -117,8 +117,8 @@ export default function Semester2() {
       </div>
       <div className="index">
         <div className="chapter-list-heading">Chapter List</div>
-        <div className="chapter-wrap">
-          {post?.book?.map((value, index) => (
+        <div className="flex flex-col flex-wrap">
+          {post && post?.book?.map((value, index) => (
             <Link key={index} href={value?.path || "#"}>
               <a className="chapter-list" target="_blank">
                 {value?.name}
