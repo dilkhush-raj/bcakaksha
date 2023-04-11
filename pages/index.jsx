@@ -11,9 +11,6 @@ export default function Home() {
           <h2 className="font-bold p-4 text-center text-3xl text-[#111]">
             Welcome
           </h2>
-          <div className="absolute top-[5px] right-[15px]">
-            <Login login={"Login"} logout={"Logout"} />
-          </div>
         </div>
         <div className="m-2 sm:m-4 bg-[#ccf] h-[40px] flex-wrap items-center justify-center flex gap-3 rounded-md">
           {Category.map((c, index) => {

@@ -1,4 +1,4 @@
-import Link from "next/dist/client/link";
+import Link from "next/link";
 import HeadTag from "../../components/HeadTag";
 
 export default function Contact() {
@@ -15,8 +15,7 @@ export default function Contact() {
         </li>
         <li>{pageTitle}</li>
       </ul>
-
-      Email: dilkhush_raj@yahoo.com
+      <div className="p-4">Email: <Link href={"mailto:dilkhush_raj@yahoo.com"}>dilkhush_raj@yahoo.com</Link></div>
     </div>
   );
 }
