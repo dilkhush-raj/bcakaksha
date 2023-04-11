@@ -10,7 +10,7 @@ const routes = [
   {
 
     title: "My Profile",
-    path: "/user",
+    path: "/account",
     className: "nav-text",
     icon: "user.svg",
   },

@@ -62,7 +62,7 @@ export default function Accounts() {
           </div>
           <div className="absolute flex p-2 gap-5 right-0 top-[138px]">
             <div>
-              <Image src={"/images/gcap.svg"} width={20} height={20} />
+              <Image src={"/images/gcap.svg"} width={20} height={20} alt="" />
               {" " + data?.semester}
             </div>
             <div>
@@ -70,12 +70,13 @@ export default function Accounts() {
                 src={"/images/icons8_place_marker.svg"}
                 width={20}
                 height={20}
+                alt=""
               />
               {" " + data?.rc}
             </div>
           </div>
           <div className="max-w-2xl mt-[100px] ">
-            <img src={data?.profileImage} className="w-[100px] rounded-full" />
+            <img src={data?.profileImage} className="w-[100px] rounded-full" alt="" />
             <h2 className="">{data?.name}</h2>
 
             <div>{data?.about}</div>

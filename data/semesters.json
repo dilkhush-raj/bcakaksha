@@ -160,56 +160,10 @@
     "semester4":{
       "name": "Semester 4",
       "path": "semester4",
-      "book": [
-        {
-          "name": "BCS-040: Statistical Techniques",
-          "url": "bcs-040"
-        },
-        {
-          "name": "MCS-024: Object Oriented Technologies and Java Programming",
-          "url": "mcs-024"
-        },
-        {
-          "name": "BCS-041: Fundamental of Computer Networks",
-          "url": "bcs-041"
-        },
-        {
-          "name": "BCS-042: Analysis and Design of Algorithms",
-          "url": "bcs-042"
-        },
-        {
-          "name": "MCSL-016: Internet Concepts and Web Design (Lab Course)",
-          "url": "mcsl-016"
-        },
-        {
-          "name": "BCSL-043: Java Programming Lab",
-          "url": "bcsl-043"
-        },
-        {
-          "name": "BCSL-044: Statistical Techniques Lav",
-          "url": "bcsl-044"
-        },
-        {
-          "name": "BCSL-045: Analysis and Design of Algorithms Lab",
-          "url": "bcsl-045"
-        }
-      ],
       "notes": [
         {
           "name": "MCS-024 Help Book",
           "url": "MCS-024.pdf"
-        }
-      ],
-      "assignments": [
-        {
-          "name": "July-January (2022 & 2023)",
-          "url": "https://webservices.ignou.ac.in/assignments/Bachelor-Degree/BCA/2022-23/Final_BCA%20SEMESTER-IV%202022-23.pdf"
-        }
-      ],
-      "pyqp": [
-        {
-          "name": "Coming Soon",
-          "url": "#"
         }
       ]
     },

@@ -107,7 +107,7 @@ function ImportantLinks() {
 
       </ul>
 
-      <div className="imp-links">
+      <div className="px-2 py-2 flex flex-col gap-3">
         {links.map((item, index) => {
           return (
             <Link href={item.path} key={index}>
@@ -115,7 +115,7 @@ function ImportantLinks() {
                 <Image
                   src="/images/icons8-link.svg"
                   width="20px"
-                  height="20px"
+                  height="20px" alt=""
                 />{" "}
                 {item.title}
               </a>
