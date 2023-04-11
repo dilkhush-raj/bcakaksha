@@ -2,20 +2,18 @@ import Link from "next/dist/client/link";
 import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import Image from "next/image";
-import { useRouter } from 'next/router'
-
+import { useRouter } from "next/router";
+import Login from "./Login";
 import styles from "../styles/Sidebar.module.css";
 
 const routes = [
   {
-
     title: "My Profile",
     path: "/account",
     className: "nav-text",
     icon: "user.svg",
   },
   {
-
     title: "Semester 1",
     path: "/semester1",
     className: "nav-text",
@@ -81,7 +79,7 @@ const externalRoutes = [
 ];
 
 const Sidebar = () => {
-  const router = useRouter()
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -95,44 +93,38 @@ const Sidebar = () => {
           </div>
         </div>
         <section className={styles.routes}>
+          <Link href={"/"}>
+            <div
+              className={
+                router.asPath == "/" ? styles.link_active : styles.link
+              }
+            >
+              <div className={styles.icon}>
+                <Image
+                  src={"/images/icons8-home.svg"}
+                  width="20px"
+                  height="20px"
+                  alt={"icons8-home.svg"}
+                  priority="true"
+                />
+              </div>
 
-        <Link href={'/'} >
-                <div
-                  className={
-                    router.asPath == "/"
-                      ? styles.link_active
-                      : styles.link
-                  }
-                >
-                  <div className={styles.icon}>
-                    <Image
-                      src={"/images/icons8-home.svg"}
-                      width="20px"
-                      height="20px"
-                      alt={"icons8-home.svg"}
-                      priority="true"
-                    />
-                  </div>
-
-                  <div>
-                    {isOpen && (
-                      <div className={styles.link_text}>{"Home"}</div>
-                    )}
-                  </div>
-                </div>
-              </Link>
+              <div>
+                {isOpen && <div className={styles.link_text}>{"Home"}</div>}
+              </div>
+            </div>
+          </Link>
 
           {routes.map((route, index) => {
             return (
               <Link href={route.path} key={index}>
                 <div
                   className={
-
                     router.asPath.startsWith(route.path)
                       ? styles.link_active
                       : styles.link
-                  }>
-
+                  }
+                >
                   <div className={styles.icon}>
                     <Image
                       src={"/images/" + route.icon}
@@ -157,11 +149,13 @@ const Sidebar = () => {
           {externalRoutes.map((route, index) => {
             return (
               <Link href={route.path} key={index}>
-                <div className={
+                <div
+                  className={
                     router.asPath.startsWith(route.path)
                       ? styles.link_active
                       : styles.link
-                  }>
+                  }
+                >
                   <div className={styles.icon}>
                     <Image
                       src={"/images/" + route.icon}
@@ -181,12 +175,25 @@ const Sidebar = () => {
               </Link>
             );
           })}
+          <div className="fixed bottom-5 left-2 cursor-pointer">
+            <div className={styles.icon}>
+              <Image
+                src="/images/icons8_login.svg"
+                width={20}
+                height={20}
+                alt=""
+              />
+              {isOpen && (
+                <div className="ml-2">
+                  <Login login="Log In" logout="Log Out" />
+                </div>
+              )}
+            </div>
+          </div>
         </section>
       </div>
     </div>
   );
 };
 
-
 export default Sidebar;
-

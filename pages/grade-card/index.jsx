@@ -68,7 +68,13 @@ export default function GradeCard() {
   };
 
   if (user && !data) {
-    return <>Preparing your Grade Card. Please Wait...</>;
+    return (
+      <div className="flex h-[80%] items-center justify-center flex-col gap-4 m-2">
+        <div className="text-center">
+          Preparing your Grade Card. Please Wait...
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -127,8 +133,12 @@ export default function GradeCard() {
         </>
       ) : (
         <div className="flex h-[80%] items-center justify-center flex-col gap-4 m-2">
-          <div className="text-center">Please login to view your grade card </div>
-          <div className="bg-[#0ad] px-4 py-2 rounded-md "><Login login="Continue with Google" /></div>
+          <div className="text-center">
+            Please login to view your grade card{" "}
+          </div>
+          <div className="bg-[#0ad] px-4 py-2 rounded-md ">
+            <Login login="Continue with Google" />
+          </div>
         </div>
       )}
     </>
