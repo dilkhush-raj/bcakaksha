@@ -161,6 +161,25 @@ export default function Semester2() {
             </div>
           ))}
         </div>
+        {data?.block?.map((value, index) => (
+          <div key={index} className="p-2 flex flex-col gap-2 w-[500px]">
+            <div className="bg-[#333] text-[#fff] py-1 px-4 rounded-md">
+              {value.name}
+            </div>
+            {value.units.map((unit, index) => {
+              return (
+                <div
+                  key={index}
+                  className="ml-10 px-4 py-1 rounded-md flex flex-col gap-4 even:bg-gray-300"
+                >
+                  <Link href={unit?.url || "#"}>
+                    <a target="_blank">{unit.name}</a>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        ))}
       </div>
     </div>
   );
