@@ -249,6 +249,7 @@ export default function Book() {
           </form>
           <button onClick={handleSubmit}>Submit</button>
         </div>
+        <button onClick={() => history.back()} className="my-5 mx-7 bg-[#f00] px-3 py-2 text-[#fff] rounded-md">Cancel</button>
       </div>
     </>
   );

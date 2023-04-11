@@ -6,6 +6,7 @@ import Head from "next/head";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useUserAuth } from "../../../firebase/UserAuthContext";
+import Image from "next/image";
 
 export default function Semester2() {
   // const slug = 2;
@@ -102,49 +103,64 @@ export default function Semester2() {
         </li>
         <li>{post?.name || data?.name}</li>
       </ul>
-      <div className="fixed top-20 right-10">
-        {admin && (
-          <>
-            <Link href={"/semester/update/" + slug}>Update</Link>
-            <h1
-              className="text-center text-3xl font-bold p-2  m-auto max-w-4xl"
-              onClick={() => handleDelete(data?._id)}
-            >
-              Delete
-            </h1>
-          </>
-        )}
-      </div>
+      {admin && (
+        <div className="absolute bottom-5 right-5 cursor-pointer flex flex-col gap-2 items-center">
+          <Link href={"/semester/update/" + slug}>
+            <Image
+              src="/images/icons8_update.svg"
+              width={25}
+              height={25}
+              alt="Update"
+            />
+          </Link>
+          <div
+            className="text-center text-3xl font-bold p-2  m-auto max-w-4xl"
+            onClick={() => handleDelete(data?._id)}
+          >
+            <Image
+              src="/images/icons8_Remove_1.svg"
+              width={30}
+              height={30}
+              alt="Del"
+            />
+          </div>
+        </div>
+      )}
       <div className="index">
-        <div className="chapter-list-heading">Chapter List</div>
         <div className="flex flex-col flex-wrap">
-          {post && post?.book?.map((value, index) => (
-            <Link key={index} href={value?.path || "#"}>
-              <a className="chapter-list" target="_blank">
-                {value?.name}
-              </a>
-            </Link>
+          {post?.book &&
+            post?.book?.map((value, index) => (
+              <div
+                key={index}
+                className="p-2 flex flex-wrap odd:bg-[#f5f5f5] even:bg-[#fff]"
+              >
+                <Link href={value?.path || "#"}>
+                  <a target="_blank">
+                    <div>{value?.name}</div>
+                  </a>
+                </Link>
+              </div>
+            ))}
+          {data?.block?.map((value, index) => (
+            <div key={index}>
+              <div className="p-2 flex flex-wrap bg-[#87cefa]">
+                {value.name}
+              </div>
+              {value.units.map((unit, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="p-2 flex flex-wrap odd:bg-[#f5f5f5] even:bg-[#fff]"
+                  >
+                    <Link href={unit?.url || "#"}>
+                      <a target="_blank">{unit.name}</a>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
           ))}
         </div>
-        {data?.block?.map((value, index) => (
-          <div key={index} className="p-2 flex flex-col gap-2 w-[500px]">
-            <div className="bg-[#333] text-[#fff] py-1 px-4 rounded-md">
-              {value.name}
-            </div>
-            {value.units.map((unit, index) => {
-              return (
-                <div
-                  key={index}
-                  className="ml-10 px-4 py-1 rounded-md flex flex-col gap-4 even:bg-gray-300"
-                >
-                  <Link href={unit?.url || "#"}>
-                    <a target="_blank">{unit.name}</a>
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        ))}
       </div>
     </div>
   );

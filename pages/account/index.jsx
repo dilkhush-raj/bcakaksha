@@ -1,7 +1,5 @@
 // Importing necessary libraries and components
-import Button from "@mui/material/Button";
 import { useState, useEffect, useRef } from "react";
-import semesters from "../../data/semesters.json";
 import regionalCenters from "../../data/rc.json";
 import Image from "next/image";
 import { useUserAuth } from "../../firebase/UserAuthContext";
@@ -69,23 +67,28 @@ export default function Accounts() {
     setCopyStatus("Copied!"); // Update the copy status
   }
 
-  // Get semester based on data
-  const semester = semesters[`semester${data?.semester}`];
+  const groupedData = book.reduce((obj, item) => {
+    if (!obj[item.category]) {
+      obj[item.category] = [];
+    }
+    obj[item.category].push(item);
+    return obj;
+  }, {});
 
   return (
     <>
       <h1 className="page-heading">Account</h1>
       {isUserLoggedIn(user) ? (
-        <div className="p-5">
+        <div className="p-2 sm:p-5">
           <div className="relative custombg p-4 bg-[#fff] max-w-5xl mx-auto rounded-md flex flex-col drop-shadow-md">
             {/* Edit button */}
             <div className="absolute flex right-5 top-5">
               <Link href={"/account/edit"}>
-                <Button type="primary">Edit</Button>
+                <div className="text-black">Edit</div>
               </Link>
             </div>
             {/* Semester and center details */}
-            <div className="absolute flex p-2 gap-5 right-0 top-[138px]">
+            <div className="absolute flex p-2 gap-2 right-0 top-[100px] flex-col-reverse sm:gap-5 sm:top-[138px] sm:flex-row">
               <div className="flex items-center justify-center gap-1">
                 <Image src={"/images/gcap.svg"} width={20} height={20} alt="" />
                 <div>{"Semester " + data?.semester}</div>
@@ -97,15 +100,15 @@ export default function Accounts() {
                   height={20}
                   alt=""
                 />
-                <div>
-                  <Link
-                    href={rc?.url || "#"}
-                    className="text-[#000]"
-                    target="_blank"
-                  >
+                <Link
+                  href={rc?.url || "#"}
+                  className="text-[#000]"
+                  target="_blank"
+                >
+                  <div className="text-[#000]">
                     {rc?.name || "Update Your RC"}
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </div>
             </div>
             {/* Social media links */}
@@ -139,7 +142,8 @@ export default function Accounts() {
             <div className="max-w-2xl mt-[100px]">
               <img
                 src={data?.profileImage || "/images/user.svg"}
-                className="w-[100px] rounded-full" alt=""
+                className="w-[100px] rounded-full"
+                alt=""
               />
               <h2 className="">{data?.name}</h2>
               <div>{data?.about}</div>
@@ -147,46 +151,28 @@ export default function Accounts() {
           </div>
           {/* Books and Assignments section */}
           <div className="relative my-4 p-4 bg-[#fff] max-w-5xl mx-auto rounded-md flex flex-col drop-shadow-md">
-            <h2 className="text-xl">Books</h2>
-            <div className="book-wrap">
-              {semester?.book.map((value, index) => (
-                <Link
-                  className="books"
-                  key={index}
-                  href={"semester" + data?.semester + "/" + value.url}
-                >
-                  <h2>{value.name}</h2>
-                </Link>
-              ))}
-              {book?.map((value, index) => (
-                <Link
-                  key={index}
-                  href={"/semester" + data?.semester + "/" + value?.slug}
-                  className="books"
-                >
-                  <h2>{value?.name}</h2>
-                </Link>
-              ))}
-            </div>
-            <h2>Assignments</h2>
-            <div className="book-wrap">
-              {semester?.assignments.map((value, index) => (
-                <Link
-                  className="books"
-                  traget="_blank"
-                  key={index}
-                  href={value.url}
-                >
-                  <h2>{value.name}</h2>
-                </Link>
-              ))}
-            </div>
+            {Object.entries(groupedData).map(([category, categoryData]) => (
+              <div key={category}>
+                <h2 className="capitalize">{category}</h2>
+                <ul className="book-wrap">
+                  {categoryData.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={"/semester" + data?.semester + "/" + item?.slug}
+                    >
+                      <div className="books">{item.name}</div>
+                    </Link>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       ) : (
-        <>
-          Please Login first <Login login="Login" />
-        </>
+        <div className="flex h-[80%] items-center justify-center flex-col gap-4 m-2">
+          <div className="text-center">Please login to view your Account </div>
+          <div className="bg-[#0ad] px-4 py-2 rounded-md "><Login login="Continue with Google" /></div>
+        </div>
       )}
     </>
   );
