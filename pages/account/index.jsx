@@ -87,7 +87,7 @@ export default function Accounts() {
             {/* Semester and center details */}
             <div className="absolute flex p-2 gap-5 right-0 top-[138px]">
               <div className="flex items-center justify-center gap-1">
-                <Image src={"/images/gcap.svg"} width={20} height={20} />
+                <Image src={"/images/gcap.svg"} width={20} height={20} alt="" />
                 <div>{"Semester " + data?.semester}</div>
               </div>
               <div className="flex items-center justify-center gap-1">
@@ -95,6 +95,7 @@ export default function Accounts() {
                   src={"/images/icons8_place_marker.svg"}
                   width={20}
                   height={20}
+                  alt=""
                 />
                 <div>
                   <Link
@@ -114,6 +115,7 @@ export default function Accounts() {
                   src={"/images/icons8_linkedin_circled_1.svg"}
                   width={35}
                   height={35}
+                  alt=""
                 />
               </Link>
               <Link href={data?.github || "#"} target="_blank">
@@ -121,6 +123,7 @@ export default function Accounts() {
                   src={"/images/icons8_github.svg"}
                   width={35}
                   height={35}
+                  alt=""
                 />
               </Link>
               <Link href={data?.portfolio || "#"} target="_blank">
@@ -128,6 +131,7 @@ export default function Accounts() {
                   src={"/images/icons8_resume_website.svg"}
                   width={35}
                   height={35}
+                  alt=""
                 />
               </Link>
             </div>
@@ -135,7 +139,7 @@ export default function Accounts() {
             <div className="max-w-2xl mt-[100px]">
               <img
                 src={data?.profileImage || "/images/user.svg"}
-                className="w-[100px] rounded-full"
+                className="w-[100px] rounded-full" alt=""
               />
               <h2 className="">{data?.name}</h2>
               <div>{data?.about}</div>

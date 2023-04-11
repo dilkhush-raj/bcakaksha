@@ -80,9 +80,9 @@ export default function Semester() {
         <li>{post?.name}</li>
       </ul>
       {admin && (
-        <div className="absolute bottom-5 right-5">
-          <Link href={post?.path + "/new"}>
-            <Image src="/images/icons8_add_2.svg" width={30} height={30} />
+        <div className="absolute bottom-5 right-5 cursor-pointer">
+          <Link href={"/semester/update/new"}>
+            <Image src="/images/icons8_add_2.svg" width={30} height={30} alt="add"/>
           </Link>
         </div>
       )}

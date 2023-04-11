@@ -122,7 +122,7 @@ export default function Accounts() {
         <select id="rc" name="rc" value={formData?.rc} onChange={handleChange}>
           <option value="">Select RC</option>
           {regionalCenters.map((rc, index) => {
-            return <option value={rc.name}>{rc.name}</option>;
+            return <option value={rc.name} key={index}>{rc.name}</option>;
           })}
         </select>
 

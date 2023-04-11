@@ -115,7 +115,7 @@ function ImportantLinks() {
                 <Image
                   src="/images/icons8-link.svg"
                   width="20px"
-                  height="20px"
+                  height="20px" alt=""
                 />{" "}
                 {item.title}
               </a>

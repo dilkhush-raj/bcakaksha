@@ -180,6 +180,7 @@ export default function Accounts() {
                     src="/images/icons8_clear_symbol.svg"
                     width={30}
                     height={30}
+                    alt="remove"
                   />
                 </button>
               </div>
@@ -189,7 +190,7 @@ export default function Accounts() {
           <div className="flex justify-end items-center">
             <div>
               <button type="button" onClick={() => handleAddFields()}>
-                <Image src="/images/icons8_add_1.svg" width={20} height={20} />{" "}
+                <Image src="/images/icons8_add_1.svg" width={20} height={20} alt="add" />{" "}
                 Add
               </button>
             </div>
@@ -199,6 +200,7 @@ export default function Accounts() {
                   src="/images/icons8_enter_key.svg"
                   width={20}
                   height={20}
+                  alt="submit"
                 />{" "}
                 Submit
               </button>
