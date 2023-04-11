@@ -67,16 +67,13 @@ export default function GradeCard() {
     }
   };
 
-  if(user && !data) {
-    return <>Preparing your Grade Card. Please Wait...</>
+  if (user && !data) {
+    return <>Preparing your Grade Card. Please Wait...</>;
   }
 
-  
   return (
     <>
-      <h1 className="text-center text-3xl font-bold p-2  m-auto max-w-4xl">
-        Grade Card
-      </h1>
+      <h1 className="page-heading font-bold text-center">Grade Card</h1>
 
       {CheckUser(user) ? (
         <>
@@ -84,7 +81,7 @@ export default function GradeCard() {
             <Link href="/grade-card/update">Update</Link>
           </div>
           <div className="overflow-auto px-2">
-          <div className=" bg-[#fff] w-max  mx-auto rounded-md drop-shadow-md p-4">
+            <div className=" bg-[#fff] w-max  mx-auto rounded-md drop-shadow-md p-4">
               <div className="flex justify-between px-4 rounded-md mb-2">
                 <select id="semester" name="semester" onChange={handleChange}>
                   <option value="all">All</option>
@@ -96,7 +93,6 @@ export default function GradeCard() {
                   <option value="6">Semester 6</option>
                 </select>
                 {totalMarks ? <div>Total = {totalMarks} %</div> : null}
-                
               </div>
               <div className="grid marks-grid gap-4 px-4 bg-[#444] text-[#fff] rounded-md p-2 mb-2">
                 <div>No.</div>
@@ -123,14 +119,17 @@ export default function GradeCard() {
                   <div>Semester {mark.semester}</div>
                 </div>
               ))}
-{!marks.length && <div className="text-center">No Marks Found</div>}
+              {!marks.length && (
+                <div className="text-center">No Marks Found</div>
+              )}
             </div>
           </div>
         </>
       ) : (
-        <>
-          Please login to view your grade card <Login login="Login" />
-        </>
+        <div className="flex h-[80%] items-center justify-center flex-col gap-4 m-2">
+          <div className="text-center">Please login to view your grade card </div>
+          <div className="bg-[#0ad] px-4 py-2 rounded-md "><Login login="Continue with Google" /></div>
+        </div>
       )}
     </>
   );

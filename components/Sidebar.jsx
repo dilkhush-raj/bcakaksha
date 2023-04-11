@@ -67,12 +67,6 @@ const externalRoutes = [
     className: "nav-text",
   },
   {
-    title: "Exam Timer",
-    path: "/pages/exam-countdown",
-    icon: "icons8-timer.svg",
-    className: "nav-text",
-  },
-  {
     title: "Grade Card",
     path: "/grade-card",
     icon: "icons8-exam.svg",

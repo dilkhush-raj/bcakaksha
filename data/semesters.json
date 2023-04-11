@@ -1,271 +1,27 @@
 {
     "semester1":{
       "name": "Semester 1",
-      "path": "semester1",
-      "book": [
-        {
-          "name": "FEG-02: Foundation Course in English-2",
-          "url": "feg-02"
-        },
-        {
-          "name": "ECO-01: Business Organisation",
-          "url": "eco-01"
-        },
-        {
-          "name": "BCS-011: Computer Basics and PC Software",
-          "url": "bcs-011"
-        },
-        {
-          "name": "BCS-012: Basic Mathematics",
-          "url": "bcs-012"
-        },
-        {
-          "name": "BCSL-013: Computer Basics and PC Software Lab",
-          "url": "bcsl-013"
-        }
-      ],
-      "notes": [
-        {
-          "name": "ECO-01 Help Book",
-          "url": "ECO-01.pdf"
-        },
-        {
-          "name": "BCS-011 Help Book",
-          "url": "BCS-011.pdf"
-        }
-      ],
-      "assignments": [
-        {
-          "name": "July-January (2022 & 2023)",
-          "url": "https://webservices.ignou.ac.in/assignments/Bachelor-Degree/BCA/2022-23/Final_BCA%20SEMESTER-I%202022-23.pdf"
-        }
-      ],
-      "pyqp": [
-        {
-          "name": "Coming Soon",
-          "url": "#"
-        }
-      ]
+      "path": "semester1"
     },
     "semester2":{
       "name": "Semester 2",
-      "path": "semester2",
-      "book": [
-        {
-          "name": "ECO-02: Accountancy-I",
-          "url": "eco-02"
-        },
-        {
-          "name": "MCS-011: Problem Solving and Programming",
-          "url": "mcs-011"
-        },
-        {
-          "name": "MCS-012: Computer Organisation and Assembly Language Programming",
-          "url": "mcs-012"
-        },
-        {
-          "name": "MCS-013: Discrete Mathematics",
-          "url": "mcs-013"
-        },
-        {
-          "name": "MCS-015: Communication Skills",
-          "url": "mcs-015"
-        },
-        {
-          "name": "BCSL-021: C Language Programming Lab",
-          "url": "bcsl-021"
-        },
-        {
-          "name": "BCSL-022: Assembly Language Programming Lab",
-          "url": "bcsl-022"
-        }
-      ],
-      "notes": [
-        {
-          "name": "MCS-011 Help Book",
-          "url": "MCS-011.pdf"
-        },
-        {
-          "name": "MCS-012 Notes",
-          "url": "MCS-012.pdf"
-        }
-      ],
-      "assignments": [
-        {
-          "name": "July-January (2022 & 2023)",
-          "url": "https://webservices.ignou.ac.in/assignments/Bachelor-Degree/BCA/2022-23/Final_BCA%20SEMESTER-II%202022-23.pdf"
-        }
-      ],
-      "pyqp": [
-        {
-          "name": "Coming Soon",
-          "url": "#"
-        }
-      ]
+      "path": "semester2"
     },
     "semester3":{
       "name": "Semester 3",
-      "path": "semester3",
-      "book": [
-        {
-          "name": "MCS-014: Systems Analysis and Design",
-          "url": "mcs-014"
-        },
-        {
-          "name": "MCS-021: Data and File Structures",
-          "url": "mcs-021"
-        },
-        {
-          "name": "MCS-023: Introduction to Database Management System",
-          "url": "mcs-023"
-        },
-        {
-          "name": "BCS-031: Programming in C++",
-          "url": "bcs-031"
-        },
-        {
-          "name": "BCSL-032: C++ Programming Lab",
-          "url": "bcsl-032"
-        },
-        {
-          "name": "BCSL-033: Data and File Structures Lab",
-          "url": "bcsl-033"
-        },
-        {
-          "name": "BCSL-034: DBMS Lab",
-          "url": "bcsl-034"
-        }
-      ],
-      "notes": [
-        {
-          "name": "MCS-014 Help Book",
-          "url": "MCS-014.pdf"
-        },
-        {
-          "name": "BCS-031 Help Book",
-          "url": "BCS-031.pdf"
-        }
-      ],
-      "assignments": [{
-        "name": "July-January (2022 & 2023)",
-        "url": "https://webservices.ignou.ac.in/assignments/Bachelor-Degree/BCA/2022-23/Final_BCA%20SEMESTER-III%202022-23.pdf"
-      }],
-      "pyqp": [
-        {
-          "name": "Coming Soon",
-          "url": "#"
-        }
-      ]
+      "path": "semester3"
     },
     "semester4":{
       "name": "Semester 4",
-      "path": "semester4",
-      "notes": [
-        {
-          "name": "MCS-024 Help Book",
-          "url": "MCS-024.pdf"
-        }
-      ]
+      "path": "semester4"
     },
     "semester5":{
       "name": "Semester 5",
-      "path": "semester5",
-      "book": [
-        {
-          "name": "BCS-051: Introduction to Software Engineering",
-          "url": "bcs-051"
-        },
-        {
-          "name": "BCS-052: Network Programming and Administration",
-          "url": "bcs-052"
-        },
-        {
-          "name": "BCS-053: Web Programming",
-          "url": "bcs-053"
-        },
-        {
-          "name": "BCS-054: Computer Oriented Numerical Techniques",
-          "url": "bcs-054"
-        },
-        {
-          "name": "BCS-055: Business Communication",
-          "url": "bcs-055"
-        },
-        {
-          "name": "BCSL-056: Network Programming and Adminnistration Lab",
-          "url": "bcsl-056"
-        },
-        {
-          "name": "BCSL-057: Web Programming Lab",
-          "url": "bcsl-057"
-        },
-        {
-          "name": "BCSL-058: Computer Oriented Numerical Techniques Lab",
-          "url": "bcsl-058"
-        }
-      ],
-      "notes": [
-        {
-          "name": "BCS-055 Help Book",
-          "url": "BCS-055.pdf"
-        }
-      ],
-      "assignments": [
-        {
-          "name": "July-January (2022 & 2023)",
-          "url": "https://webservices.ignou.ac.in/assignments/Bachelor-Degree/BCA/2022-23/Final_BCA%20SEMESTER-V%202022-23.pdf"
-        }
-      ],
-      "pyqp": [
-        {
-          "name": "Coming Soon",
-          "url": "#"
-        }
-      ]
+      "path": "semester5"
     },
     "semester6":{
       "name": "Semester 6",
-      "path": "semester6",
-      "book": [
-        {
-          "name": "BCS-062: E-Commerce",
-          "url": "bcs-062"
-        },
-        {
-          "name": "MCS-022: Operating System Concepts and Networking Management",
-          "url": "mcs-022"
-        },
-        {
-          "name": "BCSL-063: Lab (Operating System Concepts and Networking Management)",
-          "url": "bcsl-063"
-        },
-        {
-          "name": "BCSP-064: Project",
-          "url": "bcsp-064"
-        }
-      ],
-      "notes": [
-        {
-          "name": "Not Available",
-          "url": "#"
-        }
-      ],
-      "assignments": [
-        {
-          "name": "July-January (2022 & 2023)",
-          "url": "https://webservices.ignou.ac.in/assignments/Bachelor-Degree/BCA/2022-23/Final_BCA%20SEMESTER-VI%202022-23.pdf"
-        },
-        {
-          "name": "BCSP-064 July-January (2022 & 2023)",
-          "url": "https://webservices.ignou.ac.in/assignments/Bachelor-Degree/BCA/2022-23/CRC%20-%20BCSP064_Project_Guideline%20July%202022.pdf"
-        }
-      ],
-      "pyqp": [
-        {
-          "name": "Coming Soon",
-          "url": "#"
-        }
-      ]
+      "path": "semester6"
     }
   }
   

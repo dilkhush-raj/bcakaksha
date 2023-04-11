@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -56,21 +54,6 @@ body {
 .index {
   padding: 1rem 0.5rem;
 }
-.home-index {
-  padding: 1rem 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.semester-bags {
-  list-style: none;
-  padding: 1rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  max-width: 620px;
-}
 
 /* ##########  Index Section Ends  ########## */
 
@@ -84,6 +67,18 @@ body {
 .page-wrap {
   height: 100vh;
   overflow-y: scroll;
+}
+
+.hero{
+  background-image: url("/images/b.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
 }
 
 
@@ -104,7 +99,6 @@ body {
   align-items: flex-end;
   padding: 1rem;
   padding-left: 1.3rem;
-  color: white;
   flex-wrap: wrap;
   text-decoration: none;
   color: white;
@@ -186,24 +180,6 @@ body {
   padding: 0 1rem;
 }
 
-.chapter-list {
-  padding: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.chapter-list:nth-child(even) {
-  background-color: #ffffff;
-}
-.chapter-list:nth-child(odd) {
-  background-color: #f5f5f5;
-}
-
-.chapter-list-heading {
-  font-weight: 700;
-  background-color: lightskyblue;
-  padding: 0.5rem;
-}
 
 @media (max-width: 600px) {
   .App {
@@ -224,7 +200,7 @@ body {
   }
 }
 .custombg {
-  background: linear-gradient(to bottom, rgb(186, 244, 255) 170px, white 170px);
+  background: linear-gradient(to bottom, rgb(151, 193, 255) 170px, white 170px);
   background-color: white;
 }
 
@@ -241,6 +217,11 @@ form input, form textarea, form select{
     padding-left: 0px;
   }
   .index {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 673px) {
+  .home-grid{
     grid-template-columns: 1fr;
   }
 }
