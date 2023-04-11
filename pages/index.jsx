@@ -56,7 +56,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 py-2">
               <h1>Welcome to our website!</h1>
               <p>
-                We're here to help IGNOU BCA students succeed in their studies.
+                We are here to help IGNOU BCA students succeed in their studies.
                 Our website provides a range of resources, including books in
                 PDF format, assignments, and a grade calculator.{" "}
               </p>
@@ -67,12 +67,12 @@ export default function Home() {
                 you track your academic progress accurately.
               </p>
               <p>
-                We're committed to regularly updating our website with new
-                resources, so check back often to see what's new.
+                We are committed to regularly updating our website with new
+                resources, so check back often to see what is new.
               </p>
               <p>
                 Thank you for choosing our website as your go-to resource for
-                IGNOU BCA studies. Let's help you achieve your academic goals
+                IGNOU BCA studies. Let us help you achieve your academic goals
                 together!
               </p>
             </div>
