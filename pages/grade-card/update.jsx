@@ -53,6 +53,7 @@ export default function Accounts() {
           marks: marks,
         },
       ]);
+      history.back();
     } catch (err) {
       console.error(err);
     }
@@ -209,6 +210,7 @@ export default function Accounts() {
         </form>
       </div>
       </div>
+      <button onClick={() => history.back()} className="text-center m-4 w-full">Cancel</button>
       <br /><br />
     </>
   );

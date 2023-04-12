@@ -70,8 +70,10 @@ export default function GradeCard() {
   if (user && !data) {
     return (
       <div className="flex h-[80%] items-center justify-center flex-col gap-4 m-2">
-        <div className="text-center">
-          Preparing your Grade Card. Please Wait...
+        <div className="text-center p-4">
+          Preparing your Grade Card. Please Wait... <br /><br /> Note - If you haven't created your
+          grade card yet, please click on the update link below. <br />
+          <Link href={`/grade-card/update`}><u className="cursor-pointer">Update</u></Link>
         </div>
       </div>
     );

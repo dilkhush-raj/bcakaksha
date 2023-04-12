@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import Login from "../components/Login";
 
 export default function Home() {
   return (
@@ -91,7 +89,7 @@ export default function Home() {
         </div>
         <div className="bg-[#002] m-2 sm:m-4 rounded-md p-4 text-white text-center ">
           Empowering IGNOU BCA students with top-notch resources <br /> -
-          Created, Designed, and Developed with ❤ by Dilkhush Raj.
+          Created, Designed, and Developed by Dilkhush Raj.
         </div>
       </div>
     </>
