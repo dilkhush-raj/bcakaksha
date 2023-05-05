@@ -1,4 +1,3 @@
-import Button from "@mui/material/Button";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
@@ -156,9 +155,9 @@ export default function Accounts() {
           value={formData?.about}
           onChange={handleChange}
         ></textarea>
-        <Button type="submit" className="w-5">
+        <button type="submit" className="w-5">
           Submit
-        </Button>
+        </button>
       </form>
     </>
   );

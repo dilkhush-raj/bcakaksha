@@ -3,14 +3,9 @@
     border-right: 1px solid rgb(204, 204, 204);
     box-shadow: 1px 1px 3px #cdcdcd;
     overflow-y: auto;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999; */
 }
 
 .sidebar{
-    /* background-color: #002; */
     max-height: 100vh;
 }
 

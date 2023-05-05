@@ -11,23 +11,19 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@mui/material": "^5.10.2",
+    "antd": "^5.4.2",
     "axios": "^1.2.5",
     "firebase": "^9.9.3",
     "framer-motion": "^7.10.3",
-    "gray-matter": "^4.0.3",
     "html-react-parser": "^3.0.8",
     "marked": "^4.0.15",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
     "mongoose": "^6.9.0",
     "next": "12.1.4",
-    "pdfobject": "^2.2.8",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-draft-wysiwyg": "^1.15.0",
-    "react-google-button": "^0.7.2",
-    "react-icons": "^4.3.1",
-    "react-pdfobject": "^1.2.0",
-    "react-quill": "^2.0.0"
+    "react-google-button": "^0.7.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

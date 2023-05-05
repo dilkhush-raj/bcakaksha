@@ -1,6 +1,5 @@
 import Link from "next/dist/client/link";
 import React, { useState } from "react";
-import { BiMenu } from "react-icons/bi";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Login from "./Login";
@@ -70,6 +69,12 @@ const externalRoutes = [
     icon: "icons8-exam.svg",
     className: "nav-text",
   },
+  // {
+  //   title: "Notice Board",
+  //   path: "/notice-board",
+  //   icon: "icons8-noticeboard.svg",
+  //   className: "nav-text",
+  // },
   {
     title: "Contact Us",
     path: "/pages/contact",
@@ -102,8 +107,8 @@ const Sidebar = () => {
               <div className={styles.icon}>
                 <Image
                   src={"/images/icons8-home.svg"}
-                  width="20px"
-                  height="20px"
+                  width={20}
+                  height={20}
                   alt={"icons8-home.svg"}
                   priority="true"
                 />
@@ -128,8 +133,8 @@ const Sidebar = () => {
                   <div className={styles.icon}>
                     <Image
                       src={"/images/" + route.icon}
-                      width="20px"
-                      height="20px"
+                      width={20}
+                      height={20}
                       alt={route.icon}
                       priority="true"
                     />
@@ -159,8 +164,8 @@ const Sidebar = () => {
                   <div className={styles.icon}>
                     <Image
                       src={"/images/" + route.icon}
-                      width="20px"
-                      height="20px"
+                      width={20}
+                      height={20}
                       alt={route.icon}
                       priority="true"
                     />

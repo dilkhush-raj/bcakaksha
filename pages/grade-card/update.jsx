@@ -1,7 +1,4 @@
-import Button from "@mui/material/Button";
 import { useState, useEffect } from "react";
-import Loader from "../../components/Loader";
-import { useRouter } from "next/router";
 import { useUserAuth } from "../../firebase/UserAuthContext";
 import axios from "axios";
 import Image from "next/image";
@@ -83,14 +80,6 @@ export default function Accounts() {
     newMarks.splice(index, 1);
     setMarks(newMarks);
   };
-
-  // const Form = () => {
-  //   return (
-      
-  //   );
-  // };
-
-
 
   const total = marks.reduce((acc, mark) => {
     const final =

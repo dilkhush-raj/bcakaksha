@@ -4,7 +4,7 @@ import regionalCenters from "../../data/rc.json";
 import Image from "next/image";
 import { useUserAuth } from "../../firebase/UserAuthContext";
 import axios from "axios";
-import { Link } from "@mui/material";
+import Link from "next/link";
 import Login from "../../components/Login";
 
 // Main function of the Accounts page

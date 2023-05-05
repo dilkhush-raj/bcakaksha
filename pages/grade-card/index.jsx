@@ -3,6 +3,7 @@ import { useUserAuth } from "../../firebase/UserAuthContext";
 import axios from "axios";
 import Link from "next/link";
 import Login from "../../components/Login";
+import { Empty } from "antd";
 
 export default function GradeCard() {
   const { user } = useUserAuth();
@@ -127,9 +128,7 @@ export default function GradeCard() {
                   <div>Semester {mark.semester}</div>
                 </div>
               ))}
-              {!marks.length && (
-                <div className="text-center">No Marks Found</div>
-              )}
+              {!marks.length && <Empty />}
             </div>
           </div>
         </>
