@@ -1,12 +1,11 @@
-import Button from "@mui/material/Button";
 import { useState, useEffect, useRef  } from "react";
 import { useRouter } from "next/router";
 import Loader from "../../components/Loader";
 import Image from "next/image";
 import { useUserAuth } from "../../firebase/UserAuthContext";
 import axios from "axios";
-import { Link } from "@mui/material";
 import Login from "../../components/Login";
+import Link from "next/link";
 
 export default function Accounts() {
     
