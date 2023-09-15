@@ -133,8 +133,7 @@ export default function Home() {
           </div>
         </div>
         <div className=" bg-slate-800 text-white  m-2 sm:m-4 rounded-md p-4 text-center shadow-md border-4 border-white ">
-          Empowering IGNOU BCA students with top-notch resources <br /> -
-          Created, Designed, and Developed by Dilkhush Raj.
+          This is a project developed Dilkhush Raj not actual website of IGNOU. <br />
         </div>
       </div>
     </>
