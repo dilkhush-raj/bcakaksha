@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export async function fetchSemesterData(slug) {
+export default async function fetchSemesterData(slug) {
   try {
     const api = axios.create({
       baseURL: "/api/course/semester",
