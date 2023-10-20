@@ -767,35 +767,17 @@
   "mcs-024": {
     "name": "MCS-024: Object Oriented Technologies and Java Programming",
     "path": "mcs-024",
-    "date": "August 01 2022 14:00:00 UTC+0530",
-    "book": [
-      {
-        "name": "",
-        "path": ""
-      }
-    ]
+    "date": "August 01 2022 14:00:00 UTC+0530"
   },
   "bcs-041": {
     "name": "BCS-041: Fundamental of Computer Networks",
     "path": "bcs-041",
-    "date": "August 01 2022 14:00:00 UTC+0530",
-    "book": [
-      {
-        "name": "",
-        "path": ""
-      }
-    ]
+    "date": "August 01 2022 14:00:00 UTC+0530"
   },
   "bcs-042": {
     "name": "BCS-042: Analysis and Design of Algorithms",
     "path": "bcs-042",
-    "date": "August 01 2022 14:00:00 UTC+0530",
-    "book": [
-      {
-        "name": "",
-        "path": ""
-      }
-    ]
+    "date": "August 01 2022 14:00:00 UTC+0530"
   },
   "mcsl-016": {
     "name": "MCSL-016: Internet Concepts and Web Design (Lab Course)",
@@ -899,57 +881,27 @@
   "bcs-051": {
     "name": "BCS-051: Introduction to Software Engineering",
     "path": "bcs-051",
-    "date": "August 01 2022 14:00:00 UTC+0530",
-    "book": [
-      {
-        "name": "",
-        "path": ""
-      }
-    ]
+    "date": "August 01 2022 14:00:00 UTC+0530"
   },
   "bcs-052": {
     "name": "BCS-052: Network Programming and Administration",
     "path": "bcs-052",
-    "date": "August 01 2022 14:00:00 UTC+0530",
-    "book": [
-      {
-        "name": "",
-        "path": ""
-      }
-    ]
+    "date": "August 01 2022 14:00:00 UTC+0530"
   },
   "bcs-053": {
     "name": "BCS-053: Web Programming",
     "path": "bcs-053",
-    "date": "August 01 2022 14:00:00 UTC+0530",
-    "book": [
-      {
-        "name": "",
-        "path": ""
-      }
-    ]
+    "date": "August 01 2022 14:00:00 UTC+0530"
   },
   "bcs-054": {
     "name": "BCS-054: Computer Oriented Numerical Techniques",
     "path": "bcs-054",
-    "date": "August 01 2022 14:00:00 UTC+0530",
-    "book": [
-      {
-        "name": "",
-        "path": ""
-      }
-    ]
+    "date": "August 01 2022 14:00:00 UTC+0530"
   },
   "bcs-055": {
     "name": "BCS-055: Business Communication",
     "path": "bcs-055",
-    "date": "August 01 2022 14:00:00 UTC+0530",
-    "book": [
-      {
-        "name": "",
-        "path": ""
-      }
-    ]
+    "date": "August 01 2022 14:00:00 UTC+0530"
   },
   "bcsl-056": {
     "name": "BCSL-056: Network Programming and Adminnistration Lab",

@@ -5,8 +5,9 @@ const BlogSchema = new mongoose.Schema({
     slug: { type: String, required: true, unique: true },
     desc: { type: String, required: true },
     image: { type: String, required: true },
-    tag: { type: String },
-    author: { type: String },
+    tag: [String],
+    category: String,
+    author: String,
     content: { type: String, required: true }
 }, { timestamps: true });
 

@@ -45,8 +45,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #b8c6db;
-  background-image: linear-gradient(315deg, #dbe5f4 0%, #f5f7fa 74%);
+  background-color: #eee;
 }
 
 /* ##########  Index Section Starts  ########## */
@@ -68,10 +67,6 @@ body {
   height: 100vh;
 }
 
-.page-wrap {
-  height: 100vh;
-  overflow-y: scroll;
-}
 
 .hero{
   background-image: url("/images/ignou-logo.png");
@@ -218,9 +213,6 @@ form input, form textarea, form select{
 }
 
 @media (max-width: 768px) {
-  .page-wrap {
-    padding-left: 0px;
-  }
   .index {
     grid-template-columns: 1fr;
   }
@@ -229,4 +221,11 @@ form input, form textarea, form select{
   .home-grid{
     grid-template-columns: 1fr;
   }
+}
+
+.banner{
+  background-image: url("/images/banner.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

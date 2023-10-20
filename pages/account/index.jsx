@@ -76,7 +76,7 @@ export default function Accounts() {
   }, {});
 
   return (
-    <>
+    <div>
       <h1 className="page-heading">Account</h1>
       {isUserLoggedIn(user) ? (
         <div className="p-2 sm:p-5">
@@ -174,6 +174,6 @@ export default function Accounts() {
           <div className="bg-[#0ad] px-4 py-2 rounded-md "><Login login="Continue with Google" /></div>
         </div>
       )}
-    </>
+    </div>
   );
 }

@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@notionhq/client": "^2.2.9",
     "antd": "^5.4.2",
     "axios": "^1.2.5",
     "firebase": "^9.9.3",
@@ -20,12 +21,18 @@
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
     "mongoose": "^6.9.0",
-    "next": "12.1.4",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-google-button": "^0.7.2"
+    "net": "^1.0.2",
+    "next": "^13.5.3",
+    "notion-to-md": "^3.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-button": "^0.7.2",
+    "react-window": "^1.8.9",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1"
   },
   "devDependencies": {
+    "@types/react": "18.2.29",
     "autoprefixer": "^10.4.13",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",

@@ -13,6 +13,8 @@ export default function Semester2() {
   const slugM = useRouter().query.subject;
   const { user } = useUserAuth();
 
+  const [progress, setProgress] = useState([]);
+
   useEffect(() => {
     function CheckUser(user) {
       if (user) {
@@ -73,6 +75,21 @@ export default function Semester2() {
     }
   }
 
+  const handleRemoveProgress = function handleRemoveProgress(prop) {
+    if (!progress.some((item) => item === prop)) {
+      // If not present, add it to the progress array
+      setProgress([...progress, prop]);
+    } else {
+      // Use the filter method to create a new array without the specified prop
+      const updatedProgress = progress.filter((item) => item !== prop);
+
+      // Update the progress state with the updated array
+      setProgress(updatedProgress);
+    }
+  };
+
+  console.log(post);
+
   return (
     <div>
       <Head>
@@ -127,33 +144,54 @@ export default function Semester2() {
         </div>
       )}
       <div className="index">
-        <div className="flex flex-col flex-wrap max-w-[500px]">
+        <div className="flex flex-col flex-wrap max-w-4xl">
           {post?.book &&
             post?.book?.map((value, index) => (
               <div
                 key={index}
                 className="p-2 flex flex-wrap odd:bg-[#f5f5f5] even:bg-[#fff]"
               >
+                <button
+                  onClick={() => handleRemoveProgress(value?.path)}
+                  className=" px-2 my-auto flex justify-center"
+                >
+                  {progress.some((item) => item === value?.path) ? (
+                    <div className=" bg-green-500 w-5 h-5 rounded-full "></div>
+                  ) : (
+                    <div className="bg-red-500 w-5 h-5 rounded-full "></div>
+                  )}
+                </button>
                 <Link href={value?.path || "#"}>
-                  <a target="_blank">
+                  <div target="_blank">
                     <div>{value?.name}</div>
-                  </a>
+                  </div>
                 </Link>
               </div>
             ))}
           {data?.block?.map((value, index) => (
             <div key={index}>
-              <div className="p-2 flex flex-wrap bg-[#87cefa]">
-                {value.name}
+              <div className="p-2 flex gap-4 flex-wrap bg-[#87cefa]">
+                {/* <span className=" w-[40px]">Status</span> */}
+                <span>{value.name}</span>
               </div>
               {value.units.map((unit, index) => {
                 return (
                   <div
                     key={index}
-                    className="p-2 flex flex-wrap odd:bg-[#f5f5f5] even:bg-[#fff]"
+                    className={`p-2 flex gap-4  odd:bg-[#f5f5f5] even:bg-[#fff]`}
                   >
+                    <button
+                      onClick={() => handleRemoveProgress(unit?.url)}
+                      className=" px-2 my-auto flex justify-center"
+                    >
+                      {progress.some((item) => item === unit?.url) ? (
+                        <div className=" bg-green-500 w-5 h-5 rounded-full "></div>
+                      ) : (
+                        <div className="bg-red-500 w-5 h-5 rounded-full "></div>
+                      )}
+                    </button>
                     <Link href={unit?.url || "#"}>
-                      <a target="_blank">{unit.name}</a>
+                      <div target="_blank">{unit.name}</div>
                     </Link>
                   </div>
                 );

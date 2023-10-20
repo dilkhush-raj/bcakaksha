@@ -1,8 +1,8 @@
-import Link from "next/dist/client/link";
-import HeadTag from "../../components/HeadTag";
+import Link from "next/link";
+import HeadTag from "../components/HeadTag";
 
-export default function Faq() {
-    const pageTitle = "FAQ";
+export default function Contact() {
+    const pageTitle = "Contact Us";
   return (
     <div className="page">
       <HeadTag title={pageTitle + " - IGNOU की BCA कक्षा"} />
@@ -15,9 +15,7 @@ export default function Faq() {
         </li>
         <li>{pageTitle}</li>
       </ul>
-
-      <h1>Comming Soon....</h1>
-      Until then, ask your questions on our discord server.
+      <div className="p-4">Email: <Link href={"mailto:dilkhush_raj@yahoo.com"}>dilkhush_raj@yahoo.com</Link></div>
     </div>
   );
 }

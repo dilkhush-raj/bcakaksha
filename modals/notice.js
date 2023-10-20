@@ -4,6 +4,7 @@ const NoticeSchema = new mongoose.Schema({
     title: String,
     link: String,
     date: Date,
+    semester: String,
 }, { timestamps: true });
 
 mongoose.models = {}

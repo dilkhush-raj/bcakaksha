@@ -2,14 +2,15 @@ import { useRouter } from "next/router";
 import semesters from "../../data/semesters.json";
 import Link from "next/link";
 import Head from "next/head";
-import axios from "axios";
 import { useState, useEffect } from "react";
 import { useUserAuth } from "../../firebase/UserAuthContext";
 import Image from "next/image";
 
+import { fetchSemesterData } from "./data"; // Import the data fetching function
+
 export default function Semester() {
   const router = useRouter();
-  const semesterString = useRouter().query.semester;
+  const semesterString = router.query.semester;
   let slug = semesterString?.replace(/semester/gi, "");
   const { user } = useUserAuth();
 
@@ -18,38 +19,27 @@ export default function Semester() {
       if (user) {
         const id = user.uid;
         if (id === "H6Tx2hVSQBhC3Ub5eMQVWgftTPb2") {
-          setadmin(true);
+          setAdmin(true);
         } else {
-          setadmin(false);
+          setAdmin(false);
         }
       }
     }
     CheckUser(user);
   }, [user]);
 
+  const [data, setData] = useState([]);
+  const [admin, setAdmin] = useState(false);
+  const post = semesters[router.query.semester];
+
   // Fetch product data on mount
   useEffect(() => {
-    async function fetchData() {
-      try {
-        // Make a GET request to the server for the product data
-        const api = axios.create({
-          baseURL: "/api/course/semester",
-        });
-        const res = await api.get(`/${slug}`);
-        const json = res.data.data;
-        setData(json);
-      } catch (err) {
-        console.error(err);
-      }
-    }
     if (slug) {
-      fetchData();
+      fetchSemesterData(slug)
+        .then((json) => setData(json))
+        .catch((err) => console.error(err));
     }
-  }, [slug]); // Pass uid to the dependency array to run the effect whenever it changes
-
-  const [data, setData] = useState([]);
-  const [admin, setadmin] = useState(false);
-  const post = semesters[router.query.semester];
+  }, [slug]);
 
   const groupedData = data.reduce((obj, item) => {
     if (!obj[item.category]) {
@@ -58,6 +48,10 @@ export default function Semester() {
     obj[item.category].push(item);
     return obj;
   }, {});
+
+  // ... (rest of your component code)
+
+
 
   return (
     <div>
@@ -94,9 +88,9 @@ export default function Semester() {
             <div className="book-wrap">
               {post?.book?.map((value, index) => (
                 <Link key={index} href={post?.path + "/" + value?.url}>
-                  <a className="books">
+                  <div className="books">
                     <h2>{value?.name}</h2>
-                  </a>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -109,9 +103,9 @@ export default function Semester() {
             <ul className="book-wrap">
               {categoryData.map((item, index) => (
                 <Link key={index} href={post?.path + "/" + item?.slug}>
-                  <a className="books">
+                  <div className="books">
                    {item.name}
-                  </a>
+                  </div>
                 </Link>
               ))}
             </ul>
@@ -125,9 +119,9 @@ export default function Semester() {
             <div className="book-wrap">
               {post?.assignments?.map((value, index) => (
                 <Link key={index} href={value?.url}>
-                  <a className="books" target="_blank">
+                  <div className="books" target="_blank">
                     <h2>{value?.name}</h2>
-                  </a>
+                  </div>
                 </Link>
               ))}
             </div>
