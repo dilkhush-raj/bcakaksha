@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SemesterBags } from "../data/routes";
-import Noticeboard from "../components/Noticeboard";
+// import Noticeboard from "../components/Noticeboard";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
               })}
             </div>
           </div>
-          <Noticeboard />
+          {/* <Noticeboard /> */}
         </div>
       </div>
     </div>
