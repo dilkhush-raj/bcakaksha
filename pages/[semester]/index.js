@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { useUserAuth } from "../../firebase/UserAuthContext";
 import Image from "next/image";
 
-import { fetchSemesterData } from "./data"; // Import the data fetching function
+import fetchSemesterData  from "./data"; // Import the data fetching function
 
 export default function Semester() {
   const router = useRouter();
